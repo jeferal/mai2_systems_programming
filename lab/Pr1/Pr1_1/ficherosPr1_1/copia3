@@ -7,15 +7,12 @@ echo Observe que copia necesita dos argumentos
 exit 1
 else
 
-file_name=$(echo $2|tr " " "_")
-echo $var
-
-if cp $1 file_name 2>/dev/null
+if cp "$1" "$2" 2>/dev/null
 then
-echo " $1 ha sido copiado a $file_name "
+echo " $1 ha sido copiado a $2"
 exit 0
 else
-echo " $1 no ha sido copiado a $file_name "
+echo " $1 no ha sido copiado a $2 "
 exit 1
 fi
 fi
