@@ -1,0 +1,9 @@
+#!/bin/bash
+# Programa argumentos.
+
+for p in $(ls -d /proc/[1-9]*)
+do
+    content=$(cat $p/cmdline)
+    echo "$p:  $content"
+    printf \\n
+done

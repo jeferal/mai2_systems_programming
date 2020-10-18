@@ -1,0 +1,9 @@
+#!/bin/bash
+if test $# -eq 0 
+then echo "Utilizacion de la orden: $(basename $0) TituloColumna1 TituloColumnaN" >&2
+     exit 1
+fi
+echo "<TABLE BORDER>"
+echo "<TR>"
+for i;  do echo "<TH>$i</TH>"; done
+echo "</TR>"

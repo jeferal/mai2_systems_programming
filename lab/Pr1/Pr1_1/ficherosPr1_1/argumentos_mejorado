@@ -1,0 +1,11 @@
+#!/bin/bash
+# Programa argumentos.
+echo Orden tecleada: $0 $*
+echo Nombre de la orden: $0
+
+echo Hay $# argumentos y son
+
+for arg in $*
+do
+    echo Argumento: $arg
+done

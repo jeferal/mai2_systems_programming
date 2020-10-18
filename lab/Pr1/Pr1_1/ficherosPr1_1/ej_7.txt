@@ -1,0 +1,2 @@
+ Alumno: - $nombre $apellido -
+ Alumno: - Pepe Garcia -

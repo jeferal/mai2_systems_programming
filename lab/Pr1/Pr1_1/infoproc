@@ -1,0 +1,19 @@
+#!/bin/bash
+# Programa infoproc
+
+
+if test $# -ne 1
+then
+echo Uso de infoproc: infoproc id_proc
+echo Observe que infoproc necesita un argumentos
+exit 1
+else
+
+uid=$(awk -F" " '/Uid:/ { print $2 }' /proc/$1/status)
+gid=$(awk -F" " '/Gid:/ { print $2 }' /proc/$1/status)
+
+
+echo "Proceso: $1  Uid: $uid  Gid: $gid"
+
+fi
+

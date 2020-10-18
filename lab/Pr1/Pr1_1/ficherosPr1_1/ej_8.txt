@@ -1,0 +1,14 @@
+Orden tecleada: ./argumentos pera uva limon
+Nombre de la orden: ./argumentos
+Numero de argumentos: 3
+Argumento 1: pera
+Argumento 2: uva
+Argumento 3: limon
+
+
+Orden tecleada: ./argumentos pera uva limon
+Nombre de la orden: ./argumentos
+Numero de argumentos: 1
+Argumento 1: pera uva limon
+Argumento 2:
+Argumento 3:

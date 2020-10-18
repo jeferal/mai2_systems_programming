@@ -1,0 +1,15 @@
+#!/bin/bash
+if test $# -ne 2
+then echo "Utilizacion de la orden: $(basename $0) nivel texto" >&2
+     exit 1
+fi
+nivel=$1
+test $nivel -lt 1 -o $nivel -gt 3 2> /dev/null
+RESUL=$?
+if test $RESUL -eq 2 -o $RESUL -ne 1
+then echo "Utilizacion de la orden: $(basename $0) nivel texto" >&2
+	echo El nivel debe valer 1, 2 o 3 >&2
+     exit 1
+fi
+texto=$2
+echo "<H$nivel>$texto</H$nivel>"

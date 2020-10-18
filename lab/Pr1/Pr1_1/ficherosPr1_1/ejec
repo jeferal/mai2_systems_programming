@@ -1,0 +1,9 @@
+#!/bin/bash
+
+LISTADO=$(ls $1* 2>/dev/null)
+if [ -z "$LISTADO" ]
+then
+ echo "No existe ningún fichero que empiece por $1"
+else
+ echo "Existe algún fichero que empieza por $1"
+fi

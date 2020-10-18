@@ -1,0 +1,18 @@
+#!/bin/bash
+# Programa argumentos.
+
+#!/bin/bash
+# Programa argumentos.
+
+for p in $(ls -d /proc/[1-9]*)
+do
+    content=$(cat $p/cmdline | tr "\0" " " )
+    if [ -z "$content" ]
+    then
+        echo "$p: SIN MANDATO"
+    else
+        echo "$p:  $content"
+    fi
+    printf \\n
+done
+

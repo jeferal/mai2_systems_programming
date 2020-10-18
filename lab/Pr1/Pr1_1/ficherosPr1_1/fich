@@ -1,0 +1,8 @@
+#!/bin/bash
+# Programa argumentos.
+echo Orden tecleada: $0 $*
+echo Nombre de la orden: $0
+echo Numero de argumentos: $#
+echo Argumento 1: $1
+echo Argumento 2: $2
+echo Argumento 3: $3

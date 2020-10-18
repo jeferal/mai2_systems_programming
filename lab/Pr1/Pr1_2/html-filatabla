@@ -1,0 +1,8 @@
+#!/bin/bash
+if test $# -eq 0 
+then echo "Utilizacion de la orden: $(basename $0) Columna1 ColumnaN " >&2
+     exit 1
+fi
+echo "<TR>"
+for i; do echo "<TD>$i</TD>"; done
+echo "</TR>"

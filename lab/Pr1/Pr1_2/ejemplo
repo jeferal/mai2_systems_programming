@@ -1,0 +1,10 @@
+#!/bin/bash
+./html-ipagina "Practica 1" > ejemploHTMLejecutable.html
+./html-encabezado 2 "Ejercicio 1" >> ejemploHTMLejecutable.html
+./html-parrafo "El enunciado ..." >> ejemploHTMLejecutable.html
+./html-enlace http://www.upv.es UPV >> ejemploHTMLejecutable.html
+./html-itabla Inf. Sup. >> ejemploHTMLejecutable.html
+./html-filatabla -5 +5 >> ejemploHTMLejecutable.html
+./html-filatabla "menos cinco" "mas cinco" >> ejemploHTMLejecutable.html
+./html-ftabla  >> ejemploHTMLejecutable.html
+./html-fpagina >> ejemploHTMLejecutable.html

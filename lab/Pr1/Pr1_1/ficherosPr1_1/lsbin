@@ -1,0 +1,7 @@
+# lsbin
+for i in $*
+do
+echo PROGRAMAS QUE EMPIEZAN POR /usr/bin/$i
+echo ---------------------------------------
+ls /usr/bin/$i*
+done

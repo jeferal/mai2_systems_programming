@@ -1,0 +1,5 @@
+if test -w $2 -a -r $1
+then cat $1 >> $2
+else echo "No se puede anyadir $1 a $2"
+fi
+

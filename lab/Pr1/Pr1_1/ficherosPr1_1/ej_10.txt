@@ -1,0 +1,12 @@
+Orden tecleada: ./argumentos lun oct 5 12:47:03 CEST 2020
+Nombre de la orden: ./argumentos
+Numero de argumentos: 6
+Argumento 1: lun
+Argumento 2: oct
+Argumento 3: 5
+Orden tecleada: ./argumentos lun oct 5 12:47:09 CEST 2020
+Nombre de la orden: ./argumentos
+Numero de argumentos: 1
+Argumento 1: lun oct 5 12:47:09 CEST 2020
+Argumento 2:
+Argumento 3:

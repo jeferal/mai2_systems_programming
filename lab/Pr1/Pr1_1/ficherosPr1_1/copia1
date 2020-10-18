@@ -1,0 +1,10 @@
+#!/bin/bash
+# Programa copia1
+if cp $1 $2 2>/dev/null
+then
+echo " $1 ha sido copiado a $2 "
+else
+echo " $1 no ha sido copiado a $2 "
+fi
+
+

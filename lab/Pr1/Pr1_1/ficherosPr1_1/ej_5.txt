@@ -1,0 +1,29 @@
+total 52
+-rwxr-xr-x 1 usuario usuario  85 oct  8  2003 append
+-rwxr-xr-x 1 usuario usuario 183 oct  3  2003 argumentos
+-rwx--x--x 1 usuario usuario 138 oct  8  2003 copia1
+-rwx--x--x 1 usuario usuario 151 oct  8  2003 copia2
+-rwx--x--x 1 usuario usuario 266 oct  8  2003 copia3
+-rw-rw-r-- 1 usuario usuario 155 oct  5 12:26 ej_1.txt
+-rw-rw-r-- 1 usuario usuario 442 oct  5 12:28 ej_2.txt
+-rw-rw-r-- 1 usuario usuario  51 oct  5 12:32 ej_3.txt
+-rw-rw-r-- 1 usuario usuario 107 oct  5 12:35 ej_4.txt
+-rw-rw-r-- 1 usuario usuario   0 oct  5 12:37 ej_5.txt
+-rw-rw-r-- 1 usuario usuario  56 oct  5 12:33 err.dat
+-rwx--x--x 1 usuario usuario 133 oct 31  2002 lsbin
+-rw-rw-r-- 1 usuario usuario 107 oct  5 12:34 sal.dat
+-rw-rw-r-- 1 usuario usuario 455 oct  5 12:29 salida.dat
+
+
+
+-rwxr-xr-x 1 usuario usuario  85 oct  8  2003 append
+-rwxr-xr-x 1 usuario usuario 183 oct  3  2003 argumentos
+-rwx--x--x 1 usuario usuario 138 oct  8  2003 copia1
+-rwx--x--x 1 usuario usuario 151 oct  8  2003 copia2
+-rwx--x--x 1 usuario usuario 266 oct  8  2003 copia3
+-rwx--x--x 1 usuario usuario 133 oct 31  2002 lsbin
+
+
+
+
+      6      54     327

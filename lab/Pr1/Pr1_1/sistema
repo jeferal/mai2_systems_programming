@@ -1,0 +1,17 @@
+#!/bin/bash
+# Programa copia3
+
+
+for p in $(ls -d /proc/[1-9]*)
+do
+    echo $p
+    PID=$(awk -F" " '// { print $1 }' /$p/stat)
+    ESTADO=$(awk -F" " '/State:/ { print $3 }' /$p/status)
+    ORDEN=$(cat $p/cmdline | tr "\0" " " )
+    if [ -z "$ORDEN" ]
+    then
+        ORDEN="SIN MANDATO"
+    fi
+    
+    echo "PID: $PID  ESTADO: $ESTADO  ORDEN: $ORDEN"    
+done

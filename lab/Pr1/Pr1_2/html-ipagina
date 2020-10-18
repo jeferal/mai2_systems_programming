@@ -1,0 +1,12 @@
+#!/bin/bash
+if test $# -ne 1 
+then echo "Utilizacion de la orden: $(basename $0) titulo" >&2
+     echo Debes indicar el titulo en una sola cadena >&2
+     exit 1
+fi
+titulo=$1
+echo "<HTML>"
+echo "  <HEAD>"
+echo "  <TITLE>$titulo</TITLE>"
+echo "  </HEAD>"
+echo "<BODY>"

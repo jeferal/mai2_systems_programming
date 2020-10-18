@@ -1,0 +1,8 @@
+#!/bin/bash
+if test $# -eq 0 -o $# -gt 1
+then echo "Utilizacion de la orden: $(basename $0) \"texto\"" >&2
+     echo  Debes indicar el texto del parrafo entre comillas dobles si es de mas de una palabra >&2
+     exit 1
+fi
+texto=$1
+echo "<P>$texto</P>"

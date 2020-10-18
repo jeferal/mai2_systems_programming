@@ -1,0 +1,8 @@
+#!/bin/bash
+if test $# -ne 2
+then echo "Utilizacion de la orden: $(basename $0) direccionURL texto" >&2
+     exit 1
+fi
+ref=$1
+texto=$2
+echo "<A href=\"$ref\">$texto</A>"

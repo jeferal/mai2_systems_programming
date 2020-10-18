@@ -1,0 +1,2830 @@
+/proc/1
+PID: 1  ESTADO: (sleeping)  ORDEN: /sbin/init splash 
+/proc/10
+PID: 10  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/10018
+PID: 10018  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/10021
+PID: 10021  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/10022
+PID: 10022  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/10068
+PID: 10068  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/10070
+PID: 10070  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd 
+/proc/10075
+PID: 10075  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-fuse /run/user/1836819650/gvfs -f -o big_writes 
+/proc/10102
+PID: 10102  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately 
+/proc/10115
+PID: 10115  ESTADO: (sleeping)  ORDEN: /usr/lib/deja-dup/deja-dup-monitor 
+/proc/10121
+PID: 10121  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/10133
+PID: 10133  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/10152
+PID: 10152  ESTADO: (sleeping)  ORDEN: /usr/lib/dconf/dconf-service 
+/proc/10163
+PID: 10163  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+/proc/10179
+PID: 10179  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-metadata 
+/proc/102
+PID: 102  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/10263
+PID: 10263  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
+/proc/1028
+PID: 1028  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-network --spawner :1.2 /org/gtk/gvfs/exec_spaw/3 
+/proc/103
+PID: 103  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/104
+PID: 104  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/105
+PID: 105  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/10535
+PID: 10535  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-goa-volume-monitor 
+/proc/10545
+PID: 10545  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-daemon 
+/proc/10553
+PID: 10553  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-identity-service 
+/proc/10560
+PID: 10560  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-afc-volume-monitor 
+/proc/10566
+PID: 10566  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+/proc/10570
+PID: 10570  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-mtp-volume-monitor 
+/proc/10581
+PID: 10581  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0 
+/proc/106
+PID: 106  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/10623
+PID: 10623  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-document-portal 
+/proc/10626
+PID: 10626  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-permission-store 
+/proc/1067
+PID: 1067  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-dnssd --spawner :1.2 /org/gtk/gvfs/exec_spaw/7 
+/proc/1068
+PID: 1068  ESTADO: (sleeping)  ORDEN: /usr/sbin/xrdp-sesman 
+/proc/107
+PID: 107  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/10772
+PID: 10772  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/10773
+PID: 10773  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/108
+PID: 108  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/1081
+PID: 1081  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/sssd/sssd_be --domain upvnet.upv.es --uid 0 --gid 0 --logger=files 
+/proc/10819
+PID: 10819  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/10821
+PID: 10821  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd 
+/proc/10826
+PID: 10826  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-fuse /run/user/1836849693/gvfs -f -o big_writes 
+/proc/10829
+PID: 10829  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/10835
+PID: 10835  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/10850
+PID: 10850  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately 
+/proc/10862
+PID: 10862  ESTADO: (sleeping)  ORDEN: /usr/lib/deja-dup/deja-dup-monitor 
+/proc/10878
+PID: 10878  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/10879
+PID: 10879  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/1088
+PID: 1088  ESTADO: (sleeping)  ORDEN: /usr/sbin/sshd -D 
+/proc/10888
+PID: 10888  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/10890
+PID: 10890  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd 
+/proc/10895
+PID: 10895  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-fuse /run/user/1836833638/gvfs -f -o big_writes 
+/proc/109
+PID: 109  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/10917
+PID: 10917  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately 
+/proc/10935
+PID: 10935  ESTADO: (sleeping)  ORDEN: /usr/lib/deja-dup/deja-dup-monitor 
+/proc/1095
+PID: 1095  ESTADO: (sleeping)  ORDEN: /usr/sbin/xrdp 
+/proc/10953
+PID: 10953  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/10958
+PID: 10958  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/10964
+PID: 10964  ESTADO: (sleeping)  ORDEN: /usr/lib/dconf/dconf-service 
+/proc/10986
+PID: 10986  ESTADO: (sleeping)  ORDEN: /usr/lib/dconf/dconf-service 
+/proc/10988
+PID: 10988  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+/proc/10990
+PID: 10990  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
+/proc/10996
+PID: 10996  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+/proc/11
+PID: 11  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/110
+PID: 110  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/11027
+PID: 11027  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
+/proc/1103
+PID: 1103  ESTADO: (sleeping)  ORDEN: /sbin/dhclient -d -q -sf /usr/lib/NetworkManager/nm-dhcp-helper -pf /run/dhclient-ens160.pid -lf /var/lib/NetworkManager/dhclient-cd513642-9d4f-38c2-93b6-20243dd80434-ens160.lease -cf /var/lib/NetworkManager/dhclient-ens160.conf ens160 
+/proc/11184
+PID: 11184  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-goa-volume-monitor 
+/proc/11193
+PID: 11193  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-daemon 
+/proc/11225
+PID: 11225  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-identity-service 
+/proc/11240
+PID: 11240  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-afc-volume-monitor 
+/proc/11249
+PID: 11249  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+/proc/11264
+PID: 11264  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-mtp-volume-monitor 
+/proc/11273
+PID: 11273  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-goa-volume-monitor 
+/proc/11280
+PID: 11280  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-daemon 
+/proc/11305
+PID: 11305  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-identity-service 
+/proc/11317
+PID: 11317  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-afc-volume-monitor 
+/proc/11323
+PID: 11323  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+/proc/11328
+PID: 11328  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-mtp-volume-monitor 
+/proc/11342
+PID: 11342  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0 
+/proc/11360
+PID: 11360  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0 
+/proc/11522
+PID: 11522  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/11523
+PID: 11523  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/11569
+PID: 11569  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/11571
+PID: 11571  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd 
+/proc/11576
+PID: 11576  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-fuse /run/user/1836833155/gvfs -f -o big_writes 
+/proc/11599
+PID: 11599  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately 
+/proc/116
+PID: 116  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/11607
+PID: 11607  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/1162
+PID: 1162  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-goa-volume-monitor 
+/proc/11621
+PID: 11621  ESTADO: (sleeping)  ORDEN: /usr/lib/deja-dup/deja-dup-monitor 
+/proc/11636
+PID: 11636  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/11638
+PID: 11638  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-network --spawner :1.2 /org/gtk/gvfs/exec_spaw/1 
+/proc/11660
+PID: 11660  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-dnssd --spawner :1.2 /org/gtk/gvfs/exec_spaw/5 
+/proc/11669
+PID: 11669  ESTADO: (sleeping)  ORDEN: /usr/lib/dconf/dconf-service 
+/proc/1168
+PID: 1168  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-daemon 
+/proc/11682
+PID: 11682  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+/proc/117
+PID: 117  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/11772
+PID: 11772  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
+/proc/11802
+PID: 11802  ESTADO: (sleeping)  ORDEN: /usr/bin/zeitgeist-daemon 
+/proc/11831
+PID: 11831  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-goa-volume-monitor 
+/proc/11838
+PID: 11838  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-daemon 
+/proc/11860
+PID: 11860  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-identity-service 
+/proc/11868
+PID: 11868  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-afc-volume-monitor 
+/proc/11885
+PID: 11885  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+/proc/11896
+PID: 11896  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-mtp-volume-monitor 
+/proc/119
+PID: 119  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/11993
+PID: 11993  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/12
+PID: 12  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/120
+PID: 120  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/12089
+PID: 12089  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0 
+/proc/121
+PID: 121  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/122
+PID: 122  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/12221
+PID: 12221  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-network --spawner :1.2 /org/gtk/gvfs/exec_spaw/1 
+/proc/12242
+PID: 12242  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-dnssd --spawner :1.2 /org/gtk/gvfs/exec_spaw/5 
+/proc/123
+PID: 123  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/1235
+PID: 1235  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-identity-service 
+/proc/124
+PID: 124  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/12499
+PID: 12499  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-network --spawner :1.2 /org/gtk/gvfs/exec_spaw/2 
+/proc/125
+PID: 125  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/12528
+PID: 12528  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-dnssd --spawner :1.2 /org/gtk/gvfs/exec_spaw/7 
+/proc/126
+PID: 126  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/1269
+PID: 1269  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-afc-volume-monitor 
+/proc/127
+PID: 127  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/12783
+PID: 12783  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/12784
+PID: 12784  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/128
+PID: 128  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/1280
+PID: 1280  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/sssd/sssd_nss --uid 0 --gid 0 --logger=files 
+/proc/1281
+PID: 1281  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/sssd/sssd_pam --uid 0 --gid 0 --logger=files 
+/proc/12830
+PID: 12830  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/12832
+PID: 12832  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd 
+/proc/12837
+PID: 12837  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-fuse /run/user/1836834697/gvfs -f -o big_writes 
+/proc/12861
+PID: 12861  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately 
+/proc/12869
+PID: 12869  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/12881
+PID: 12881  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/12894
+PID: 12894  ESTADO: (sleeping)  ORDEN: /usr/lib/deja-dup/deja-dup-monitor 
+/proc/129
+PID: 129  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/1291
+PID: 1291  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+/proc/12933
+PID: 12933  ESTADO: (sleeping)  ORDEN: /usr/lib/dconf/dconf-service 
+/proc/12942
+PID: 12942  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+/proc/13
+PID: 13  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/130
+PID: 130  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/13003
+PID: 13003  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
+/proc/13040
+PID: 13040  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/1305
+PID: 1305  ESTADO: (sleeping)  ORDEN: /usr/lib/accountsservice/accounts-daemon 
+/proc/1307
+PID: 1307  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd-logind 
+/proc/13081
+PID: 13081  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-goa-volume-monitor 
+/proc/13088
+PID: 13088  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-daemon 
+/proc/131
+PID: 131  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/1310
+PID: 1310  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-network --spawner :1.2 /org/gtk/gvfs/exec_spaw/1 
+/proc/13123
+PID: 13123  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-identity-service 
+/proc/13163
+PID: 13163  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-afc-volume-monitor 
+/proc/13194
+PID: 13194  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+/proc/132
+PID: 132  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/13213
+PID: 13213  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-mtp-volume-monitor 
+/proc/13232
+PID: 13232  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/13233
+PID: 13233  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/1325
+PID: 1325  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-mtp-volume-monitor 
+/proc/13279
+PID: 13279  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/13281
+PID: 13281  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd 
+/proc/13286
+PID: 13286  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-fuse /run/user/1836846857/gvfs -f -o big_writes 
+/proc/133
+PID: 133  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/13316
+PID: 13316  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately 
+/proc/13318
+PID: 13318  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0 
+/proc/13332
+PID: 13332  ESTADO: (sleeping)  ORDEN: /usr/lib/deja-dup/deja-dup-monitor 
+/proc/13342
+PID: 13342  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/13353
+PID: 13353  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/1337
+PID: 1337  ESTADO: (sleeping)  ORDEN: /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal 
+/proc/1338
+PID: 1338  ESTADO: (sleeping)  ORDEN: /usr/sbin/gdm3 
+/proc/13399
+PID: 13399  ESTADO: (sleeping)  ORDEN: /usr/lib/dconf/dconf-service 
+/proc/134
+PID: 134  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/13431
+PID: 13431  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+/proc/1345
+PID: 1345  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-dnssd --spawner :1.2 /org/gtk/gvfs/exec_spaw/5 
+/proc/13453
+PID: 13453  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
+/proc/1347
+PID: 1347  ESTADO: (sleeping)  ORDEN: /usr/sbin/vmtoolsd 
+/proc/135
+PID: 135  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/1351
+PID: 1351  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0 
+/proc/13548
+PID: 13548  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-goa-volume-monitor 
+/proc/13562
+PID: 13562  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-daemon 
+/proc/136
+PID: 136  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/13612
+PID: 13612  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-identity-service 
+/proc/13646
+PID: 13646  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-afc-volume-monitor 
+/proc/1367
+PID: 1367  ESTADO: (sleeping)  ORDEN: gdm-session-worker [pam/gdm-launch-environment] 
+/proc/13673
+PID: 13673  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+/proc/13684
+PID: 13684  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-mtp-volume-monitor 
+/proc/137
+PID: 137  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/13791
+PID: 13791  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0 
+/proc/138
+PID: 138  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/13871
+PID: 13871  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-network --spawner :1.2 /org/gtk/gvfs/exec_spaw/1 
+/proc/13896
+PID: 13896  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/13897
+PID: 13897  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/139
+PID: 139  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/13903
+PID: 13903  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-dnssd --spawner :1.2 /org/gtk/gvfs/exec_spaw/5 
+/proc/13946
+PID: 13946  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/13948
+PID: 13948  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd 
+/proc/13953
+PID: 13953  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-fuse /run/user/1836819001/gvfs -f -o big_writes 
+/proc/13981
+PID: 13981  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately 
+/proc/13988
+PID: 13988  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/13989
+PID: 13989  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/13990
+PID: 13990  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/14
+PID: 14  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/140
+PID: 140  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/14007
+PID: 14007  ESTADO: (sleeping)  ORDEN: /usr/lib/deja-dup/deja-dup-monitor 
+/proc/1403
+PID: 1403  ESTADO: (sleeping)  ORDEN: /usr/lib/vmware-vgauth/VGAuthService -s 
+/proc/14034
+PID: 14034  ESTADO: (sleeping)  ORDEN: /usr/lib/dconf/dconf-service 
+/proc/14047
+PID: 14047  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/14055
+PID: 14055  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+/proc/14070
+PID: 14070  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/14072
+PID: 14072  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd 
+/proc/14077
+PID: 14077  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-fuse /run/user/1836833370/gvfs -f -o big_writes 
+/proc/141
+PID: 141  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/14102
+PID: 14102  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately 
+/proc/14115
+PID: 14115  ESTADO: (sleeping)  ORDEN: /usr/lib/deja-dup/deja-dup-monitor 
+/proc/14117
+PID: 14117  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
+/proc/1412
+PID: 1412  ESTADO: (sleeping)  ORDEN: /usr/bin/whoopsie -f 
+/proc/14134
+PID: 14134  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/14138
+PID: 14138  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/1414
+PID: 1414  ESTADO: (sleeping)  ORDEN: /usr/sbin/kerneloops --test 
+/proc/14155
+PID: 14155  ESTADO: (sleeping)  ORDEN: /usr/lib/dconf/dconf-service 
+/proc/1416
+PID: 1416  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/14162
+PID: 14162  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+/proc/1417
+PID: 1417  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/14177
+PID: 14177  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-goa-volume-monitor 
+/proc/1418
+PID: 1418  ESTADO: (sleeping)  ORDEN: /usr/sbin/kerneloops 
+/proc/14183
+PID: 14183  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-daemon 
+/proc/142
+PID: 142  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/14221
+PID: 14221  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
+/proc/14227
+PID: 14227  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-identity-service 
+/proc/14249
+PID: 14249  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-afc-volume-monitor 
+/proc/14264
+PID: 14264  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+/proc/14276
+PID: 14276  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-mtp-volume-monitor 
+/proc/14299
+PID: 14299  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-goa-volume-monitor 
+/proc/143
+PID: 143  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/14305
+PID: 14305  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-daemon 
+/proc/14323
+PID: 14323  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-identity-service 
+/proc/14337
+PID: 14337  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-afc-volume-monitor 
+/proc/14353
+PID: 14353  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+/proc/14372
+PID: 14372  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0 
+/proc/14378
+PID: 14378  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-mtp-volume-monitor 
+/proc/144
+PID: 144  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/14485
+PID: 14485  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0 
+/proc/145
+PID: 145  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/1459
+PID: 1459  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/146
+PID: 146  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/1460
+PID: 1460  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/1466
+PID: 1466  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/1468
+PID: 1468  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd 
+/proc/147
+PID: 147  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/1471
+PID: 1471  ESTADO: (sleeping)  ORDEN: /usr/lib/gdm3/gdm-wayland-session gnome-session --autostart /usr/share/gdm/greeter/autostart 
+/proc/1473
+PID: 1473  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/1477
+PID: 1477  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-session/gnome-session-binary --autostart /usr/share/gdm/greeter/autostart 
+/proc/148
+PID: 148  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/1480
+PID: 1480  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-fuse /run/user/1002016090/gvfs -f -o big_writes 
+/proc/1485
+PID: 1485  ESTADO: (sleeping)  ORDEN: /usr/bin/gnome-shell 
+/proc/1486
+PID: 1486  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-document-portal 
+/proc/149
+PID: 149  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/1492
+PID: 1492  ESTADO: (sleeping)  ORDEN: /usr/lib/upower/upowerd 
+/proc/1495
+PID: 1495  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-permission-store 
+/proc/15
+PID: 15  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/150
+PID: 150  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/1508
+PID: 1508  ESTADO: (sleeping)  ORDEN: /usr/bin/Xwayland :1024 -rootless -terminate -accessx -core -listen 4 -listen 5 -displayfd 6 
+/proc/151
+PID: 151  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/15129
+PID: 15129  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-network --spawner :1.2 /org/gtk/gvfs/exec_spaw/1 
+/proc/15158
+PID: 15158  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-dnssd --spawner :1.2 /org/gtk/gvfs/exec_spaw/5 
+/proc/15176
+PID: 15176  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-metadata 
+/proc/152
+PID: 152  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/1523
+PID: 1523  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher 
+/proc/15234
+PID: 15234  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-document-portal 
+/proc/15237
+PID: 15237  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-permission-store 
+/proc/1528
+PID: 1528  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/153
+PID: 153  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/1530
+PID: 1530  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session 
+/proc/15307
+PID: 15307  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/15308
+PID: 15308  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/1534
+PID: 1534  ESTADO: (sleeping)  ORDEN: /usr/bin/pulseaudio --daemonize=no 
+/proc/1535
+PID: 1535  ESTADO: (sleeping)  ORDEN: /usr/lib/rtkit/rtkit-daemon 
+/proc/15354
+PID: 15354  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/15356
+PID: 15356  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd 
+/proc/15361
+PID: 15361  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-fuse /run/user/1836846316/gvfs -f -o big_writes 
+/proc/15385
+PID: 15385  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately 
+/proc/15398
+PID: 15398  ESTADO: (sleeping)  ORDEN: /usr/lib/deja-dup/deja-dup-monitor 
+/proc/154
+PID: 154  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/15416
+PID: 15416  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/15419
+PID: 15419  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/15453
+PID: 15453  ESTADO: (sleeping)  ORDEN: /usr/lib/dconf/dconf-service 
+/proc/15463
+PID: 15463  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/15464
+PID: 15464  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/15471
+PID: 15471  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+/proc/15494
+PID: 15494  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-metadata 
+/proc/155
+PID: 155  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/1550
+PID: 1550  ESTADO: (sleeping)  ORDEN: ibus-daemon --xim --panel disable 
+/proc/15507
+PID: 15507  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-document-portal 
+/proc/1551
+PID: 1551  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-permission-store 
+/proc/15510
+PID: 15510  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/15511
+PID: 15511  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-permission-store 
+/proc/15512
+PID: 15512  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd 
+/proc/15517
+PID: 15517  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-fuse /run/user/1836834060/gvfs -f -o big_writes 
+/proc/1554
+PID: 1554  ESTADO: (sleeping)  ORDEN: /usr/lib/ibus/ibus-dconf 
+/proc/15544
+PID: 15544  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately 
+/proc/15545
+PID: 15545  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/15557
+PID: 15557  ESTADO: (sleeping)  ORDEN: /usr/lib/deja-dup/deja-dup-monitor 
+/proc/15570
+PID: 15570  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
+/proc/15588
+PID: 15588  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/156
+PID: 156  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/1560
+PID: 1560  ESTADO: (sleeping)  ORDEN: /usr/lib/ibus/ibus-x11 --kill-daemon 
+/proc/1562
+PID: 1562  ESTADO: (sleeping)  ORDEN: /usr/lib/ibus/ibus-portal 
+/proc/15644
+PID: 15644  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/15645
+PID: 15645  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/15675
+PID: 15675  ESTADO: (sleeping)  ORDEN: /usr/lib/dconf/dconf-service 
+/proc/15690
+PID: 15690  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
+/proc/15692
+PID: 15692  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+/proc/15693
+PID: 15693  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-goa-volume-monitor 
+/proc/15696
+PID: 15696  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/15700
+PID: 15700  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd 
+/proc/15704
+PID: 15704  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-daemon 
+/proc/15705
+PID: 15705  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-fuse /run/user/1836834495/gvfs -f -o big_writes 
+/proc/15728
+PID: 15728  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately 
+/proc/15729
+PID: 15729  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-identity-service 
+/proc/15740
+PID: 15740  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-afc-volume-monitor 
+/proc/15745
+PID: 15745  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/15755
+PID: 15755  ESTADO: (sleeping)  ORDEN: /usr/lib/deja-dup/deja-dup-monitor 
+/proc/15757
+PID: 15757  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+/proc/15762
+PID: 15762  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/15773
+PID: 15773  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-mtp-volume-monitor 
+/proc/158
+PID: 158  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/15837
+PID: 15837  ESTADO: (sleeping)  ORDEN: /usr/lib/dconf/dconf-service 
+/proc/15845
+PID: 15845  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
+/proc/15852
+PID: 15852  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+/proc/1586
+PID: 1586  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/boltd 
+/proc/1587
+PID: 1587  ESTADO: (sleeping)  ORDEN: /usr/lib/packagekit/packagekitd 
+/proc/1588
+PID: 1588  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-settings-daemon/gsd-xsettings 
+/proc/15901
+PID: 15901  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0 
+/proc/1592
+PID: 1592  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-settings-daemon/gsd-a11y-settings 
+/proc/1595
+PID: 1595  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-settings-daemon/gsd-clipboard 
+/proc/15954
+PID: 15954  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-goa-volume-monitor 
+/proc/15960
+PID: 15960  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-daemon 
+/proc/15983
+PID: 15983  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-identity-service 
+/proc/15988
+PID: 15988  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-goa-volume-monitor 
+/proc/1599
+PID: 1599  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-settings-daemon/gsd-color 
+/proc/15992
+PID: 15992  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-daemon 
+/proc/16
+PID: 16  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/160
+PID: 160  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/16007
+PID: 16007  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-identity-service 
+/proc/16015
+PID: 16015  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-afc-volume-monitor 
+/proc/1602
+PID: 1602  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-settings-daemon/gsd-datetime 
+/proc/16020
+PID: 16020  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+/proc/16024
+PID: 16024  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-mtp-volume-monitor 
+/proc/16035
+PID: 16035  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0 
+/proc/16044
+PID: 16044  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-afc-volume-monitor 
+/proc/16053
+PID: 16053  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+/proc/16062
+PID: 16062  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-mtp-volume-monitor 
+/proc/16069
+PID: 16069  ESTADO: (sleeping)  ORDEN: /usr/bin/zeitgeist-daemon 
+/proc/1607
+PID: 1607  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-settings-daemon/gsd-housekeeping 
+/proc/1608
+PID: 1608  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-settings-daemon/gsd-keyboard 
+/proc/1612
+PID: 1612  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-settings-daemon/gsd-media-keys 
+/proc/16127
+PID: 16127  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0 
+/proc/1613
+PID: 1613  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-settings-daemon/gsd-mouse 
+/proc/1617
+PID: 1617  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-settings-daemon/gsd-power 
+/proc/1624
+PID: 1624  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-settings-daemon/gsd-print-notifications 
+/proc/1626
+PID: 1626  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-settings-daemon/gsd-rfkill 
+/proc/1629
+PID: 1629  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-network --spawner :1.2 /org/gtk/gvfs/exec_spaw/2 
+/proc/16292
+PID: 16292  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/16293
+PID: 16293  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/16339
+PID: 16339  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/16341
+PID: 16341  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd 
+/proc/16346
+PID: 16346  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-fuse /run/user/1836833851/gvfs -f -o big_writes 
+/proc/1635
+PID: 1635  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-settings-daemon/gsd-screensaver-proxy 
+/proc/16373
+PID: 16373  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately 
+/proc/1638
+PID: 1638  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-settings-daemon/gsd-sharing 
+/proc/16382
+PID: 16382  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-metadata 
+/proc/16398
+PID: 16398  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/16399
+PID: 16399  ESTADO: (sleeping)  ORDEN: /usr/lib/deja-dup/deja-dup-monitor 
+/proc/16405
+PID: 16405  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/16436
+PID: 16436  ESTADO: (sleeping)  ORDEN: /usr/lib/dconf/dconf-service 
+/proc/1644
+PID: 1644  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-settings-daemon/gsd-smartcard 
+/proc/16448
+PID: 16448  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+/proc/1648
+PID: 1648  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-settings-daemon/gsd-sound 
+/proc/16481
+PID: 16481  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
+/proc/1651
+PID: 1651  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-settings-daemon/gsd-wacom 
+/proc/16634
+PID: 16634  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-goa-volume-monitor 
+/proc/16638
+PID: 16638  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-daemon 
+/proc/1666
+PID: 1666  ESTADO: (sleeping)  ORDEN: /usr/lib/colord/colord 
+/proc/16673
+PID: 16673  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-identity-service 
+/proc/16686
+PID: 16686  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-afc-volume-monitor 
+/proc/16703
+PID: 16703  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+/proc/16718
+PID: 16718  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-mtp-volume-monitor 
+/proc/16769
+PID: 16769  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/1679
+PID: 1679  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately 
+/proc/16817
+PID: 16817  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-network --spawner :1.2 /org/gtk/gvfs/exec_spaw/2 
+/proc/1684
+PID: 1684  ESTADO: (sleeping)  ORDEN: /usr/lib/ibus/ibus-engine-simple 
+/proc/16840
+PID: 16840  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-dnssd --spawner :1.2 /org/gtk/gvfs/exec_spaw/5 
+/proc/16867
+PID: 16867  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0 
+/proc/169
+PID: 169  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/1690
+PID: 1690  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/1696
+PID: 1696  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-dnssd --spawner :1.2 /org/gtk/gvfs/exec_spaw/7 
+/proc/17
+PID: 17  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/1708
+PID: 1708  ESTADO: (sleeping)  ORDEN: /usr/lib/deja-dup/deja-dup-monitor 
+/proc/172
+PID: 172  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/1721
+PID: 1721  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/17652
+PID: 17652  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/17653
+PID: 17653  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/17679
+PID: 17679  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/17680
+PID: 17680  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/17699
+PID: 17699  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/17701
+PID: 17701  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd 
+/proc/17706
+PID: 17706  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-fuse /run/user/1836847139/gvfs -f -o big_writes 
+/proc/17734
+PID: 17734  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately 
+/proc/17737
+PID: 17737  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/17739
+PID: 17739  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd 
+/proc/17744
+PID: 17744  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-fuse /run/user/1836846483/gvfs -f -o big_writes 
+/proc/17746
+PID: 17746  ESTADO: (sleeping)  ORDEN: /usr/lib/deja-dup/deja-dup-monitor 
+/proc/17764
+PID: 17764  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/17765
+PID: 17765  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/17772
+PID: 17772  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately 
+/proc/17784
+PID: 17784  ESTADO: (sleeping)  ORDEN: /usr/lib/deja-dup/deja-dup-monitor 
+/proc/17802
+PID: 17802  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/17812
+PID: 17812  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/17833
+PID: 17833  ESTADO: (sleeping)  ORDEN: /usr/lib/dconf/dconf-service 
+/proc/17834
+PID: 17834  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-metadata 
+/proc/17847
+PID: 17847  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+/proc/17871
+PID: 17871  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-metadata 
+/proc/17884
+PID: 17884  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
+/proc/17888
+PID: 17888  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
+/proc/17890
+PID: 17890  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-document-portal 
+/proc/17893
+PID: 17893  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-permission-store 
+/proc/1790
+PID: 1790  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
+/proc/17909
+PID: 17909  ESTADO: (sleeping)  ORDEN: /usr/lib/dconf/dconf-service 
+/proc/17914
+PID: 17914  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+/proc/17917
+PID: 17917  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-document-portal 
+/proc/17920
+PID: 17920  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-permission-store 
+/proc/18
+PID: 18  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/18013
+PID: 18013  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-goa-volume-monitor 
+/proc/18015
+PID: 18015  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-metadata 
+/proc/18026
+PID: 18026  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-daemon 
+/proc/18039
+PID: 18039  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-goa-volume-monitor 
+/proc/18045
+PID: 18045  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-daemon 
+/proc/1805
+PID: 1805  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+/proc/18052
+PID: 18052  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-metadata 
+/proc/18081
+PID: 18081  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-identity-service 
+/proc/18096
+PID: 18096  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-identity-service 
+/proc/18097
+PID: 18097  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-afc-volume-monitor 
+/proc/18104
+PID: 18104  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-network --spawner :1.2 /org/gtk/gvfs/exec_spaw/2 
+/proc/18119
+PID: 18119  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+/proc/18128
+PID: 18128  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-mtp-volume-monitor 
+/proc/18134
+PID: 18134  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-dnssd --spawner :1.2 /org/gtk/gvfs/exec_spaw/5 
+/proc/18147
+PID: 18147  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-afc-volume-monitor 
+/proc/18169
+PID: 18169  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+/proc/18178
+PID: 18178  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-mtp-volume-monitor 
+/proc/18242
+PID: 18242  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0 
+/proc/18316
+PID: 18316  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0 
+/proc/18336
+PID: 18336  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/18337
+PID: 18337  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/18384
+PID: 18384  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/18386
+PID: 18386  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd 
+/proc/18389
+PID: 18389  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-network --spawner :1.2 /org/gtk/gvfs/exec_spaw/1 
+/proc/18391
+PID: 18391  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-fuse /run/user/1836833621/gvfs -f -o big_writes 
+/proc/18414
+PID: 18414  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately 
+/proc/18417
+PID: 18417  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/18422
+PID: 18422  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-dnssd --spawner :1.2 /org/gtk/gvfs/exec_spaw/5 
+/proc/18428
+PID: 18428  ESTADO: (sleeping)  ORDEN: /usr/lib/deja-dup/deja-dup-monitor 
+/proc/18446
+PID: 18446  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/1846
+PID: 1846  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-goa-volume-monitor 
+/proc/18464
+PID: 18464  ESTADO: (sleeping)  ORDEN: /usr/lib/dconf/dconf-service 
+/proc/18488
+PID: 18488  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+/proc/185
+PID: 185  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/18537
+PID: 18537  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
+/proc/1854
+PID: 1854  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-daemon 
+/proc/18584
+PID: 18584  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-metadata 
+/proc/18596
+PID: 18596  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-document-portal 
+/proc/18599
+PID: 18599  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-permission-store 
+/proc/1863
+PID: 1863  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-identity-service 
+/proc/18663
+PID: 18663  ESTADO: (sleeping)  ORDEN: /usr/bin/zeitgeist-daemon 
+/proc/1870
+PID: 1870  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-afc-volume-monitor 
+/proc/1875
+PID: 1875  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+/proc/1880
+PID: 1880  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-mtp-volume-monitor 
+/proc/18839
+PID: 18839  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/1886
+PID: 1886  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0 
+/proc/1889
+PID: 1889  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/1890
+PID: 1890  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/18903
+PID: 18903  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-goa-volume-monitor 
+/proc/18908
+PID: 18908  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-daemon 
+/proc/18916
+PID: 18916  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-identity-service 
+/proc/18921
+PID: 18921  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-afc-volume-monitor 
+/proc/18926
+PID: 18926  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+/proc/18931
+PID: 18931  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-mtp-volume-monitor 
+/proc/18938
+PID: 18938  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0 
+/proc/19231
+PID: 19231  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-document-portal 
+/proc/19234
+PID: 19234  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-permission-store 
+/proc/1936
+PID: 1936  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/1938
+PID: 1938  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd 
+/proc/19384
+PID: 19384  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-metadata 
+/proc/1943
+PID: 1943  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-fuse /run/user/1534604560/gvfs -f -o big_writes 
+/proc/1969
+PID: 1969  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately 
+/proc/1980
+PID: 1980  ESTADO: (sleeping)  ORDEN: /usr/lib/deja-dup/deja-dup-monitor 
+/proc/1995
+PID: 1995  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-document-portal 
+/proc/1999
+PID: 1999  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-permission-store 
+/proc/2
+PID: 2  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/20
+PID: 20  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/20005
+PID: 20005  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-metadata 
+/proc/2001
+PID: 2001  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/2007
+PID: 2007  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/20108
+PID: 20108  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-network --spawner :1.2 /org/gtk/gvfs/exec_spaw/1 
+/proc/20129
+PID: 20129  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-dnssd --spawner :1.2 /org/gtk/gvfs/exec_spaw/5 
+/proc/2020
+PID: 2020  ESTADO: (sleeping)  ORDEN: /usr/lib/dconf/dconf-service 
+/proc/20251
+PID: 20251  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-network --spawner :1.2 /org/gtk/gvfs/exec_spaw/1 
+/proc/20274
+PID: 20274  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-dnssd --spawner :1.2 /org/gtk/gvfs/exec_spaw/5 
+/proc/20343
+PID: 20343  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/20344
+PID: 20344  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/20390
+PID: 20390  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/20392
+PID: 20392  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd 
+/proc/20397
+PID: 20397  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-fuse /run/user/1836823766/gvfs -f -o big_writes 
+/proc/20427
+PID: 20427  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately 
+/proc/20436
+PID: 20436  ESTADO: (sleeping)  ORDEN: /usr/lib/deja-dup/deja-dup-monitor 
+/proc/20463
+PID: 20463  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/20468
+PID: 20468  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/2049
+PID: 2049  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+/proc/20494
+PID: 20494  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-document-portal 
+/proc/20499
+PID: 20499  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-permission-store 
+/proc/20529
+PID: 20529  ESTADO: (sleeping)  ORDEN: /usr/lib/dconf/dconf-service 
+/proc/20546
+PID: 20546  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
+/proc/20549
+PID: 20549  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+/proc/2058
+PID: 2058  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
+/proc/2064
+PID: 2064  ESTADO: (sleeping)  ORDEN: /usr/lib/dconf/dconf-service 
+/proc/20685
+PID: 20685  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-goa-volume-monitor 
+/proc/20693
+PID: 20693  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-daemon 
+/proc/20716
+PID: 20716  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/20717
+PID: 20717  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/20722
+PID: 20722  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-document-portal 
+/proc/20725
+PID: 20725  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-permission-store 
+/proc/20730
+PID: 20730  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-identity-service 
+/proc/20744
+PID: 20744  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-afc-volume-monitor 
+/proc/20759
+PID: 20759  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+/proc/20772
+PID: 20772  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/20773
+PID: 20773  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-mtp-volume-monitor 
+/proc/20774
+PID: 20774  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd 
+/proc/20779
+PID: 20779  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-fuse /run/user/1836833644/gvfs -f -o big_writes 
+/proc/20809
+PID: 20809  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately 
+/proc/2081
+PID: 2081  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-metadata 
+/proc/20820
+PID: 20820  ESTADO: (sleeping)  ORDEN: /usr/lib/deja-dup/deja-dup-monitor 
+/proc/20847
+PID: 20847  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/20851
+PID: 20851  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/20866
+PID: 20866  ESTADO: (sleeping)  ORDEN: /usr/lib/dconf/dconf-service 
+/proc/20907
+PID: 20907  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+/proc/20933
+PID: 20933  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
+/proc/20952
+PID: 20952  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0 
+/proc/21
+PID: 21  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/21007
+PID: 21007  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-network --spawner :1.2 /org/gtk/gvfs/exec_spaw/1 
+/proc/21044
+PID: 21044  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-dnssd --spawner :1.2 /org/gtk/gvfs/exec_spaw/7 
+/proc/21074
+PID: 21074  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-metadata 
+/proc/21125
+PID: 21125  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-network --spawner :1.2 /org/gtk/gvfs/exec_spaw/2 
+/proc/21166
+PID: 21166  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-dnssd --spawner :1.2 /org/gtk/gvfs/exec_spaw/5 
+/proc/21262
+PID: 21262  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-goa-volume-monitor 
+/proc/21266
+PID: 21266  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-daemon 
+/proc/21277
+PID: 21277  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-identity-service 
+/proc/21283
+PID: 21283  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-afc-volume-monitor 
+/proc/21288
+PID: 21288  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+/proc/21292
+PID: 21292  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-mtp-volume-monitor 
+/proc/21304
+PID: 21304  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0 
+/proc/21362
+PID: 21362  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/21363
+PID: 21363  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/21409
+PID: 21409  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/21411
+PID: 21411  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd 
+/proc/21416
+PID: 21416  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-fuse /run/user/1836808829/gvfs -f -o big_writes 
+/proc/21441
+PID: 21441  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately 
+/proc/21452
+PID: 21452  ESTADO: (sleeping)  ORDEN: /usr/lib/deja-dup/deja-dup-monitor 
+/proc/21468
+PID: 21468  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/21470
+PID: 21470  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/21497
+PID: 21497  ESTADO: (sleeping)  ORDEN: /usr/lib/dconf/dconf-service 
+/proc/21510
+PID: 21510  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+/proc/21528
+PID: 21528  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
+/proc/21634
+PID: 21634  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/21707
+PID: 21707  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/21821
+PID: 21821  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-goa-volume-monitor 
+/proc/21827
+PID: 21827  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-daemon 
+/proc/21860
+PID: 21860  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-identity-service 
+/proc/21873
+PID: 21873  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-afc-volume-monitor 
+/proc/21879
+PID: 21879  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/21880
+PID: 21880  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/21886
+PID: 21886  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+/proc/21900
+PID: 21900  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-mtp-volume-monitor 
+/proc/21924
+PID: 21924  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0 
+/proc/21936
+PID: 21936  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/21938
+PID: 21938  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd 
+/proc/21943
+PID: 21943  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-fuse /run/user/1836832076/gvfs -f -o big_writes 
+/proc/21971
+PID: 21971  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately 
+/proc/21980
+PID: 21980  ESTADO: (sleeping)  ORDEN: /usr/lib/deja-dup/deja-dup-monitor 
+/proc/22
+PID: 22  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/22004
+PID: 22004  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/22012
+PID: 22012  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/22024
+PID: 22024  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-document-portal 
+/proc/22027
+PID: 22027  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-permission-store 
+/proc/22093
+PID: 22093  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
+/proc/22108
+PID: 22108  ESTADO: (sleeping)  ORDEN: /usr/lib/dconf/dconf-service 
+/proc/22126
+PID: 22126  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+/proc/2239
+PID: 2239  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-goa-volume-monitor 
+/proc/22445
+PID: 22445  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/22446
+PID: 22446  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/22449
+PID: 22449  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-goa-volume-monitor 
+/proc/22453
+PID: 22453  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-daemon 
+/proc/22460
+PID: 22460  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-identity-service 
+/proc/22466
+PID: 22466  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-afc-volume-monitor 
+/proc/2247
+PID: 2247  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-daemon 
+/proc/22471
+PID: 22471  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+/proc/22475
+PID: 22475  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-mtp-volume-monitor 
+/proc/22483
+PID: 22483  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0 
+/proc/22492
+PID: 22492  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/22494
+PID: 22494  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd 
+/proc/22499
+PID: 22499  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-fuse /run/user/1836837291/gvfs -f -o big_writes 
+/proc/22528
+PID: 22528  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately 
+/proc/22540
+PID: 22540  ESTADO: (sleeping)  ORDEN: /usr/lib/deja-dup/deja-dup-monitor 
+/proc/22558
+PID: 22558  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/22561
+PID: 22561  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/22588
+PID: 22588  ESTADO: (sleeping)  ORDEN: /usr/lib/dconf/dconf-service 
+/proc/22601
+PID: 22601  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+/proc/22674
+PID: 22674  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
+/proc/22717
+PID: 22717  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-metadata 
+/proc/22729
+PID: 22729  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-document-portal 
+/proc/22732
+PID: 22732  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-permission-store 
+/proc/22749
+PID: 22749  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-network --spawner :1.2 /org/gtk/gvfs/exec_spaw/1 
+/proc/22774
+PID: 22774  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-dnssd --spawner :1.2 /org/gtk/gvfs/exec_spaw/5 
+/proc/22792
+PID: 22792  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-network --spawner :1.2 /org/gtk/gvfs/exec_spaw/1 
+/proc/22831
+PID: 22831  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-dnssd --spawner :1.2 /org/gtk/gvfs/exec_spaw/5 
+/proc/22893
+PID: 22893  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-metadata 
+/proc/22906
+PID: 22906  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-document-portal 
+/proc/22909
+PID: 22909  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-permission-store 
+/proc/2297
+PID: 2297  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-identity-service 
+/proc/23
+PID: 23  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/23005
+PID: 23005  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-goa-volume-monitor 
+/proc/23009
+PID: 23009  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-daemon 
+/proc/23018
+PID: 23018  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-identity-service 
+/proc/23024
+PID: 23024  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-afc-volume-monitor 
+/proc/23029
+PID: 23029  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+/proc/23033
+PID: 23033  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-mtp-volume-monitor 
+/proc/23041
+PID: 23041  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0 
+/proc/2310
+PID: 2310  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-afc-volume-monitor 
+/proc/2318
+PID: 2318  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+/proc/2324
+PID: 2324  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-mtp-volume-monitor 
+/proc/23268
+PID: 23268  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/23269
+PID: 23269  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/23315
+PID: 23315  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/23317
+PID: 23317  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd 
+/proc/23322
+PID: 23322  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-fuse /run/user/1836846594/gvfs -f -o big_writes 
+/proc/23345
+PID: 23345  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately 
+/proc/23355
+PID: 23355  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/23362
+PID: 23362  ESTADO: (sleeping)  ORDEN: /usr/lib/deja-dup/deja-dup-monitor 
+/proc/23405
+PID: 23405  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/23409
+PID: 23409  ESTADO: (sleeping)  ORDEN: /usr/lib/dconf/dconf-service 
+/proc/23428
+PID: 23428  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+/proc/23481
+PID: 23481  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
+/proc/23575
+PID: 23575  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-goa-volume-monitor 
+/proc/23586
+PID: 23586  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-daemon 
+/proc/23620
+PID: 23620  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-identity-service 
+/proc/23648
+PID: 23648  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-afc-volume-monitor 
+/proc/23662
+PID: 23662  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+/proc/23680
+PID: 23680  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-mtp-volume-monitor 
+/proc/23685
+PID: 23685  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-metadata 
+/proc/23749
+PID: 23749  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/23809
+PID: 23809  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0 
+/proc/23831
+PID: 23831  ESTADO: (sleeping)  ORDEN: /usr/lib/snapd/snapd 
+/proc/23832
+PID: 23832  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-network --spawner :1.2 /org/gtk/gvfs/exec_spaw/2 
+/proc/23864
+PID: 23864  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-dnssd --spawner :1.2 /org/gtk/gvfs/exec_spaw/5 
+/proc/23915
+PID: 23915  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-document-portal 
+/proc/23918
+PID: 23918  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-permission-store 
+/proc/23961
+PID: 23961  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-document-portal 
+/proc/23964
+PID: 23964  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-permission-store 
+/proc/24
+PID: 24  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/24123
+PID: 24123  ESTADO: (sleeping)  ORDEN: /usr/bin/zeitgeist-daemon 
+/proc/2438
+PID: 2438  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0 
+/proc/24555
+PID: 24555  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-document-portal 
+/proc/24558
+PID: 24558  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-permission-store 
+/proc/24608
+PID: 24608  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-metadata 
+/proc/2461
+PID: 2461  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/2462
+PID: 2462  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/24766
+PID: 24766  ESTADO: (sleeping)  ORDEN: /usr/bin/zeitgeist-daemon 
+/proc/24829
+PID: 24829  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/24830
+PID: 24830  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/24915
+PID: 24915  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/250
+PID: 250  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/25009
+PID: 25009  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/2509
+PID: 2509  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/251
+PID: 251  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/2511
+PID: 2511  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd 
+/proc/2516
+PID: 2516  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-fuse /run/user/1836846496/gvfs -f -o big_writes 
+/proc/252
+PID: 252  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/253
+PID: 253  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/254
+PID: 254  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/2544
+PID: 2544  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately 
+/proc/255
+PID: 255  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/25530
+PID: 25530  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/25531
+PID: 25531  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/2554
+PID: 2554  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/25577
+PID: 25577  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/25583
+PID: 25583  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd 
+/proc/25588
+PID: 25588  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-fuse /run/user/1836831743/gvfs -f -o big_writes 
+/proc/256
+PID: 256  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/25612
+PID: 25612  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately 
+/proc/25619
+PID: 25619  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/25634
+PID: 25634  ESTADO: (sleeping)  ORDEN: /usr/lib/deja-dup/deja-dup-monitor 
+/proc/2565
+PID: 2565  ESTADO: (sleeping)  ORDEN: /usr/lib/deja-dup/deja-dup-monitor 
+/proc/25655
+PID: 25655  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/257
+PID: 257  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/25706
+PID: 25706  ESTADO: (sleeping)  ORDEN: /usr/lib/dconf/dconf-service 
+/proc/25723
+PID: 25723  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+/proc/25746
+PID: 25746  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
+/proc/25793
+PID: 25793  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-goa-volume-monitor 
+/proc/258
+PID: 258  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/25800
+PID: 25800  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-daemon 
+/proc/25857
+PID: 25857  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-identity-service 
+/proc/25884
+PID: 25884  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-afc-volume-monitor 
+/proc/259
+PID: 259  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/25910
+PID: 25910  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+/proc/25940
+PID: 25940  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-mtp-volume-monitor 
+/proc/26
+PID: 26  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/260
+PID: 260  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/2603
+PID: 2603  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/26056
+PID: 26056  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/26057
+PID: 26057  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/26087
+PID: 26087  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0 
+/proc/261
+PID: 261  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/26103
+PID: 26103  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/26105
+PID: 26105  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd 
+/proc/26110
+PID: 26110  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-fuse /run/user/1836822210/gvfs -f -o big_writes 
+/proc/26136
+PID: 26136  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately 
+/proc/26138
+PID: 26138  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/26148
+PID: 26148  ESTADO: (sleeping)  ORDEN: /usr/lib/deja-dup/deja-dup-monitor 
+/proc/26167
+PID: 26167  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/2617
+PID: 2617  ESTADO: (sleeping)  ORDEN: /usr/lib/dconf/dconf-service 
+/proc/262
+PID: 262  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/26204
+PID: 26204  ESTADO: (sleeping)  ORDEN: /usr/lib/dconf/dconf-service 
+/proc/2622
+PID: 2622  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+/proc/26238
+PID: 26238  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+/proc/26254
+PID: 26254  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
+/proc/2628
+PID: 2628  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
+/proc/263
+PID: 263  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/26384
+PID: 26384  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-goa-volume-monitor 
+/proc/26392
+PID: 26392  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-daemon 
+/proc/26399
+PID: 26399  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/264
+PID: 264  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/26418
+PID: 26418  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-identity-service 
+/proc/26447
+PID: 26447  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-afc-volume-monitor 
+/proc/26458
+PID: 26458  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/26463
+PID: 26463  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+/proc/26476
+PID: 26476  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-mtp-volume-monitor 
+/proc/265
+PID: 265  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/26551
+PID: 26551  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-network --spawner :1.2 /org/gtk/gvfs/exec_spaw/2 
+/proc/26572
+PID: 26572  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-dnssd --spawner :1.2 /org/gtk/gvfs/exec_spaw/5 
+/proc/26595
+PID: 26595  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/26596
+PID: 26596  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/266
+PID: 266  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/26605
+PID: 26605  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0 
+/proc/26643
+PID: 26643  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/26645
+PID: 26645  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd 
+/proc/26650
+PID: 26650  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-fuse /run/user/1836831792/gvfs -f -o big_writes 
+/proc/26672
+PID: 26672  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately 
+/proc/26685
+PID: 26685  ESTADO: (sleeping)  ORDEN: /usr/lib/deja-dup/deja-dup-monitor 
+/proc/267
+PID: 267  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/26700
+PID: 26700  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/26704
+PID: 26704  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/26783
+PID: 26783  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+/proc/26785
+PID: 26785  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
+/proc/268
+PID: 268  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/26832
+PID: 26832  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-goa-volume-monitor 
+/proc/26836
+PID: 26836  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-daemon 
+/proc/26843
+PID: 26843  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-identity-service 
+/proc/26849
+PID: 26849  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-afc-volume-monitor 
+/proc/26854
+PID: 26854  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+/proc/26858
+PID: 26858  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-mtp-volume-monitor 
+/proc/26863
+PID: 26863  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0 
+/proc/26879
+PID: 26879  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-metadata 
+/proc/26892
+PID: 26892  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-document-portal 
+/proc/26895
+PID: 26895  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-permission-store 
+/proc/269
+PID: 269  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/26910
+PID: 26910  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-document-portal 
+/proc/26913
+PID: 26913  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-permission-store 
+/proc/27
+PID: 27  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/270
+PID: 270  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/27025
+PID: 27025  ESTADO: (sleeping)  ORDEN: /usr/lib/dconf/dconf-service 
+/proc/271
+PID: 271  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/272
+PID: 272  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/273
+PID: 273  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/274
+PID: 274  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/275
+PID: 275  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/2758
+PID: 2758  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-metadata 
+/proc/276
+PID: 276  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/277
+PID: 277  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/2779
+PID: 2779  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-document-portal 
+/proc/278
+PID: 278  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/2782
+PID: 2782  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-permission-store 
+/proc/27883
+PID: 27883  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/27886
+PID: 27886  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/27887
+PID: 27887  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/27895
+PID: 27895  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/27896
+PID: 27896  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/279
+PID: 279  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/27935
+PID: 27935  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/27937
+PID: 27937  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd 
+/proc/27942
+PID: 27942  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/27943
+PID: 27943  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-fuse /run/user/1836831791/gvfs -f -o big_writes 
+/proc/27944
+PID: 27944  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd 
+/proc/27949
+PID: 27949  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-fuse /run/user/1836833366/gvfs -f -o big_writes 
+/proc/27972
+PID: 27972  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately 
+/proc/27976
+PID: 27976  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/27980
+PID: 27980  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately 
+/proc/27983
+PID: 27983  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/27988
+PID: 27988  ESTADO: (sleeping)  ORDEN: /usr/lib/deja-dup/deja-dup-monitor 
+/proc/27996
+PID: 27996  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/28
+PID: 28  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/280
+PID: 280  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/28001
+PID: 28001  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/28007
+PID: 28007  ESTADO: (sleeping)  ORDEN: /usr/lib/deja-dup/deja-dup-monitor 
+/proc/28045
+PID: 28045  ESTADO: (sleeping)  ORDEN: /usr/lib/dconf/dconf-service 
+/proc/28052
+PID: 28052  ESTADO: (sleeping)  ORDEN: /usr/lib/dconf/dconf-service 
+/proc/28068
+PID: 28068  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+/proc/28089
+PID: 28089  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+/proc/28090
+PID: 28090  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
+/proc/281
+PID: 281  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/28139
+PID: 28139  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
+/proc/2815
+PID: 2815  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-goa-volume-monitor 
+/proc/282
+PID: 282  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/2821
+PID: 2821  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/2822
+PID: 2822  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/283
+PID: 283  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/2831
+PID: 2831  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-daemon 
+/proc/28334
+PID: 28334  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-goa-volume-monitor 
+/proc/28346
+PID: 28346  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-daemon 
+/proc/28352
+PID: 28352  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-goa-volume-monitor 
+/proc/28357
+PID: 28357  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-daemon 
+/proc/28380
+PID: 28380  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-identity-service 
+/proc/284
+PID: 284  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/28403
+PID: 28403  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-afc-volume-monitor 
+/proc/28416
+PID: 28416  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-identity-service 
+/proc/28419
+PID: 28419  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+/proc/28432
+PID: 28432  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-mtp-volume-monitor 
+/proc/28457
+PID: 28457  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0 
+/proc/28469
+PID: 28469  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-afc-volume-monitor 
+/proc/28491
+PID: 28491  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+/proc/28495
+PID: 28495  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-mtp-volume-monitor 
+/proc/285
+PID: 285  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/28505
+PID: 28505  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0 
+/proc/286
+PID: 286  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/28607
+PID: 28607  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/28608
+PID: 28608  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/28632
+PID: 28632  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-document-portal 
+/proc/28635
+PID: 28635  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-permission-store 
+/proc/28652
+PID: 28652  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-metadata 
+/proc/28666
+PID: 28666  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/28668
+PID: 28668  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd 
+/proc/28673
+PID: 28673  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-fuse /run/user/1836834665/gvfs -f -o big_writes 
+/proc/2868
+PID: 2868  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/28697
+PID: 28697  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately 
+/proc/287
+PID: 287  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/2870
+PID: 2870  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd 
+/proc/28709
+PID: 28709  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/28717
+PID: 28717  ESTADO: (sleeping)  ORDEN: /usr/lib/deja-dup/deja-dup-monitor 
+/proc/2875
+PID: 2875  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-fuse /run/user/1836809060/gvfs -f -o big_writes 
+/proc/28752
+PID: 28752  ESTADO: (sleeping)  ORDEN: /usr/lib/dconf/dconf-service 
+/proc/28757
+PID: 28757  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/28763
+PID: 28763  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+/proc/288
+PID: 288  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/28838
+PID: 28838  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/28853
+PID: 28853  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
+/proc/289
+PID: 289  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/2891
+PID: 2891  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-identity-service 
+/proc/28941
+PID: 28941  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-goa-volume-monitor 
+/proc/28951
+PID: 28951  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-daemon 
+/proc/29
+PID: 29  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/290
+PID: 290  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/29001
+PID: 29001  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-identity-service 
+/proc/29015
+PID: 29015  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-afc-volume-monitor 
+/proc/29045
+PID: 29045  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+/proc/2905
+PID: 2905  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately 
+/proc/29071
+PID: 29071  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-mtp-volume-monitor 
+/proc/291
+PID: 291  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/2910
+PID: 2910  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/2918
+PID: 2918  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-afc-volume-monitor 
+/proc/29185
+PID: 29185  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0 
+/proc/2919
+PID: 2919  ESTADO: (sleeping)  ORDEN: /usr/lib/deja-dup/deja-dup-monitor 
+/proc/292
+PID: 292  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/29212
+PID: 29212  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/2929
+PID: 2929  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+/proc/293
+PID: 293  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/29384
+PID: 29384  ESTADO: (sleeping)  ORDEN: /usr/sbin/cupsd -l 
+/proc/29386
+PID: 29386  ESTADO: (sleeping)  ORDEN: /usr/sbin/cups-browsed 
+/proc/29392
+PID: 29392  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/29393
+PID: 29393  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/294
+PID: 294  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/29438
+PID: 29438  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/29440
+PID: 29440  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd 
+/proc/29445
+PID: 29445  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-fuse /run/user/1836833128/gvfs -f -o big_writes 
+/proc/29448
+PID: 29448  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-network --spawner :1.2 /org/gtk/gvfs/exec_spaw/2 
+/proc/29477
+PID: 29477  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-dnssd --spawner :1.2 /org/gtk/gvfs/exec_spaw/5 
+/proc/29485
+PID: 29485  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately 
+/proc/29496
+PID: 29496  ESTADO: (sleeping)  ORDEN: /usr/lib/deja-dup/deja-dup-monitor 
+/proc/295
+PID: 295  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/29513
+PID: 29513  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/29518
+PID: 29518  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/2952
+PID: 2952  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/29553
+PID: 29553  ESTADO: (sleeping)  ORDEN: /usr/lib/dconf/dconf-service 
+/proc/29559
+PID: 29559  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+/proc/296
+PID: 296  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/2961
+PID: 2961  ESTADO: (sleeping)  ORDEN: /usr/lib/dconf/dconf-service 
+/proc/29629
+PID: 29629  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
+/proc/2969
+PID: 2969  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+/proc/29692
+PID: 29692  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-goa-volume-monitor 
+/proc/297
+PID: 297  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/29705
+PID: 29705  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-daemon 
+/proc/29749
+PID: 29749  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-identity-service 
+/proc/2977
+PID: 2977  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-mtp-volume-monitor 
+/proc/29774
+PID: 29774  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-afc-volume-monitor 
+/proc/29792
+PID: 29792  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+/proc/298
+PID: 298  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/29807
+PID: 29807  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-mtp-volume-monitor 
+/proc/29886
+PID: 29886  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/29887
+PID: 29887  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/299
+PID: 299  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/29933
+PID: 29933  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/29935
+PID: 29935  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd 
+/proc/29940
+PID: 29940  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-fuse /run/user/1002197627/gvfs -f -o big_writes 
+/proc/29963
+PID: 29963  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately 
+/proc/29969
+PID: 29969  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/29974
+PID: 29974  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0 
+/proc/29998
+PID: 29998  ESTADO: (sleeping)  ORDEN: /usr/lib/deja-dup/deja-dup-monitor 
+/proc/3
+PID: 3  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/30
+PID: 30  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/300
+PID: 300  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/30000
+PID: 30000  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/30051
+PID: 30051  ESTADO: (sleeping)  ORDEN: /usr/lib/dconf/dconf-service 
+/proc/30057
+PID: 30057  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-metadata 
+/proc/30084
+PID: 30084  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+/proc/301
+PID: 301  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/30122
+PID: 30122  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
+/proc/302
+PID: 302  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/3021
+PID: 3021  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
+/proc/303
+PID: 303  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/304
+PID: 304  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/30433
+PID: 30433  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-goa-volume-monitor 
+/proc/30437
+PID: 30437  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-daemon 
+/proc/30444
+PID: 30444  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-identity-service 
+/proc/30449
+PID: 30449  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-afc-volume-monitor 
+/proc/30454
+PID: 30454  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+/proc/30458
+PID: 30458  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-mtp-volume-monitor 
+/proc/30465
+PID: 30465  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0 
+/proc/30496
+PID: 30496  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/30497
+PID: 30497  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/305
+PID: 305  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/30515
+PID: 30515  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/30543
+PID: 30543  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/30545
+PID: 30545  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd 
+/proc/30550
+PID: 30550  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-fuse /run/user/1836833651/gvfs -f -o big_writes 
+/proc/30580
+PID: 30580  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately 
+/proc/30582
+PID: 30582  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/30593
+PID: 30593  ESTADO: (sleeping)  ORDEN: /usr/lib/deja-dup/deja-dup-monitor 
+/proc/306
+PID: 306  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/30614
+PID: 30614  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/30638
+PID: 30638  ESTADO: (sleeping)  ORDEN: /usr/lib/dconf/dconf-service 
+/proc/3067
+PID: 3067  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0 
+/proc/30674
+PID: 30674  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+/proc/307
+PID: 307  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/30706
+PID: 30706  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
+/proc/30769
+PID: 30769  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-goa-volume-monitor 
+/proc/30778
+PID: 30778  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-daemon 
+/proc/30788
+PID: 30788  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/30793
+PID: 30793  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-identity-service 
+/proc/308
+PID: 308  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/30800
+PID: 30800  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-afc-volume-monitor 
+/proc/30811
+PID: 30811  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+/proc/30820
+PID: 30820  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-mtp-volume-monitor 
+/proc/309
+PID: 309  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/3091
+PID: 3091  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/3092
+PID: 3092  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/30992
+PID: 30992  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-document-portal 
+/proc/30995
+PID: 30995  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-permission-store 
+/proc/310
+PID: 310  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/31031
+PID: 31031  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0 
+/proc/31072
+PID: 31072  ESTADO: (sleeping)  ORDEN: /usr/bin/zeitgeist-daemon 
+/proc/311
+PID: 311  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/31100
+PID: 31100  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-document-portal 
+/proc/31103
+PID: 31103  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-permission-store 
+/proc/31140
+PID: 31140  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-metadata 
+/proc/31167
+PID: 31167  ESTADO: (sleeping)  ORDEN: /usr/bin/zeitgeist-daemon 
+/proc/31201
+PID: 31201  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-network --spawner :1.2 /org/gtk/gvfs/exec_spaw/2 
+/proc/31225
+PID: 31225  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-dnssd --spawner :1.2 /org/gtk/gvfs/exec_spaw/5 
+/proc/31244
+PID: 31244  ESTADO: (sleeping)  ORDEN: /bin/bash ./sistema 
+/proc/31245
+PID:   ESTADO:   ORDEN: SIN MANDATO
+/proc/3138
+PID: 3138  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/3140
+PID: 3140  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd 
+/proc/3143
+PID: 3143  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/3144
+PID: 3144  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/3145
+PID: 3145  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-fuse /run/user/1836849342/gvfs -f -o big_writes 
+/proc/31655
+PID: 31655  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/31673
+PID: 31673  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/31674
+PID: 31674  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/3168
+PID: 3168  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately 
+/proc/31720
+PID: 31720  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/31722
+PID: 31722  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd 
+/proc/31727
+PID: 31727  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-fuse /run/user/1836835053/gvfs -f -o big_writes 
+/proc/3173
+PID: 3173  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/31749
+PID: 31749  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately 
+/proc/31769
+PID: 31769  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/31776
+PID: 31776  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/31777
+PID: 31777  ESTADO: (sleeping)  ORDEN: /usr/lib/deja-dup/deja-dup-monitor 
+/proc/31849
+PID: 31849  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
+/proc/31861
+PID: 31861  ESTADO: (sleeping)  ORDEN: /usr/lib/dconf/dconf-service 
+/proc/31880
+PID: 31880  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+/proc/3189
+PID: 3189  ESTADO: (sleeping)  ORDEN: /usr/lib/deja-dup/deja-dup-monitor 
+/proc/32
+PID: 32  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/32010
+PID: 32010  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-goa-volume-monitor 
+/proc/32016
+PID: 32016  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-daemon 
+/proc/3202
+PID: 3202  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/3203
+PID: 3203  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/32044
+PID: 32044  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-identity-service 
+/proc/3205
+PID: 3205  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd 
+/proc/32064
+PID: 32064  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-afc-volume-monitor 
+/proc/32069
+PID: 32069  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+/proc/32073
+PID: 32073  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-mtp-volume-monitor 
+/proc/3210
+PID: 3210  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-fuse /run/user/1836847074/gvfs -f -o big_writes 
+/proc/32241
+PID: 32241  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0 
+/proc/3237
+PID: 3237  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately 
+/proc/3248
+PID: 3248  ESTADO: (sleeping)  ORDEN: /usr/lib/deja-dup/deja-dup-monitor 
+/proc/3257
+PID: 3257  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
+/proc/3271
+PID: 3271  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/3273
+PID: 3273  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/3284
+PID: 3284  ESTADO: (sleeping)  ORDEN: /usr/lib/dconf/dconf-service 
+/proc/33
+PID: 33  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/3306
+PID: 3306  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+/proc/3322
+PID: 3322  ESTADO: (sleeping)  ORDEN: /usr/lib/dconf/dconf-service 
+/proc/3340
+PID: 3340  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+/proc/3363
+PID: 3363  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-goa-volume-monitor 
+/proc/3367
+PID: 3367  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-daemon 
+/proc/3374
+PID: 3374  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-identity-service 
+/proc/3380
+PID: 3380  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-afc-volume-monitor 
+/proc/3385
+PID: 3385  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+/proc/339
+PID: 339  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/3391
+PID: 3391  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-mtp-volume-monitor 
+/proc/3398
+PID: 3398  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0 
+/proc/34
+PID: 34  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/341
+PID: 341  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/3412
+PID: 3412  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
+/proc/342
+PID: 342  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/3435
+PID: 3435  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-goa-volume-monitor 
+/proc/3442
+PID: 3442  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-daemon 
+/proc/345
+PID: 345  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/346
+PID: 346  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/3474
+PID: 3474  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-identity-service 
+/proc/3475
+PID: 3475  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-goa-volume-monitor 
+/proc/348
+PID: 348  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/3483
+PID: 3483  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-daemon 
+/proc/3487
+PID: 3487  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-afc-volume-monitor 
+/proc/35
+PID: 35  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/3506
+PID: 3506  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+/proc/3518
+PID: 3518  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-identity-service 
+/proc/3524
+PID: 3524  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-mtp-volume-monitor 
+/proc/3552
+PID: 3552  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-afc-volume-monitor 
+/proc/3574
+PID: 3574  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+/proc/3589
+PID: 3589  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-mtp-volume-monitor 
+/proc/36
+PID: 36  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/3673
+PID: 3673  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0 
+/proc/3737
+PID: 3737  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0 
+/proc/376
+PID: 376  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-metadata 
+/proc/3766
+PID: 3766  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/3767
+PID: 3767  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/38
+PID: 38  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/3813
+PID: 3813  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/3816
+PID: 3816  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd 
+/proc/3821
+PID: 3821  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-fuse /run/user/1836832075/gvfs -f -o big_writes 
+/proc/3845
+PID: 3845  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately 
+/proc/385
+PID: 385  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/3854
+PID: 3854  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/386
+PID: 386  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/3863
+PID: 3863  ESTADO: (sleeping)  ORDEN: /usr/lib/deja-dup/deja-dup-monitor 
+/proc/3869
+PID: 3869  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/387
+PID: 387  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/39
+PID: 39  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/3935
+PID: 3935  ESTADO: (sleeping)  ORDEN: /usr/lib/dconf/dconf-service 
+/proc/3952
+PID: 3952  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+/proc/4
+PID: 4  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/40
+PID: 40  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/4009
+PID: 4009  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
+/proc/401
+PID: 401  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/4052
+PID: 4052  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-goa-volume-monitor 
+/proc/4060
+PID: 4060  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-daemon 
+/proc/4081
+PID: 4081  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-identity-service 
+/proc/41
+PID: 41  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/4106
+PID: 4106  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-afc-volume-monitor 
+/proc/4119
+PID: 4119  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+/proc/4132
+PID: 4132  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-mtp-volume-monitor 
+/proc/4158
+PID: 4158  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/4159
+PID: 4159  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/42
+PID: 42  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/4206
+PID: 4206  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/4208
+PID: 4208  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd 
+/proc/4209
+PID: 4209  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-metadata 
+/proc/4216
+PID: 4216  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-fuse /run/user/1836849054/gvfs -f -o big_writes 
+/proc/4237
+PID: 4237  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0 
+/proc/4243
+PID: 4243  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately 
+/proc/4253
+PID: 4253  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/4261
+PID: 4261  ESTADO: (sleeping)  ORDEN: /usr/lib/deja-dup/deja-dup-monitor 
+/proc/4281
+PID: 4281  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/4290
+PID: 4290  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/4304
+PID: 4304  ESTADO: (sleeping)  ORDEN: /usr/lib/dconf/dconf-service 
+/proc/4316
+PID: 4316  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+/proc/4323
+PID: 4323  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
+/proc/434
+PID: 434  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd-journald 
+/proc/4373
+PID: 4373  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/44
+PID: 44  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/4482
+PID: 4482  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/4499
+PID: 4499  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-document-portal 
+/proc/45
+PID: 45  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/4502
+PID: 4502  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-permission-store 
+/proc/452
+PID: 452  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-document-portal 
+/proc/4535
+PID: 4535  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-goa-volume-monitor 
+/proc/4542
+PID: 4542  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-daemon 
+/proc/455
+PID: 455  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-permission-store 
+/proc/456
+PID: 456  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/4581
+PID: 4581  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-identity-service 
+/proc/4593
+PID: 4593  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-afc-volume-monitor 
+/proc/46
+PID: 46  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/4609
+PID: 4609  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+/proc/461
+PID: 461  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/4626
+PID: 4626  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-mtp-volume-monitor 
+/proc/4636
+PID: 4636  ESTADO: (sleeping)  ORDEN: /usr/bin/zeitgeist-daemon 
+/proc/464
+PID: 464  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/469
+PID: 469  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/47
+PID: 47  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/470
+PID: 470  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd-udevd 
+/proc/471
+PID: 471  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/472
+PID: 472  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/473
+PID: 473  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/4738
+PID: 4738  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/474
+PID: 474  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/475
+PID: 475  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/4756
+PID: 4756  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0 
+/proc/476
+PID: 476  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/477
+PID: 477  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/48
+PID: 48  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/482
+PID: 482  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-metadata 
+/proc/50
+PID: 50  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/5050
+PID: 5050  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/51
+PID: 51  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/5184
+PID: 5184  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/52
+PID: 52  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/53
+PID: 53  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/534
+PID: 534  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/536
+PID: 536  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/537
+PID: 537  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/54
+PID: 54  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/55
+PID: 55  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/5541
+PID: 5541  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/5542
+PID: 5542  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/5589
+PID: 5589  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/5591
+PID: 5591  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd 
+/proc/5596
+PID: 5596  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-fuse /run/user/1836834089/gvfs -f -o big_writes 
+/proc/5624
+PID: 5624  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/5627
+PID: 5627  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately 
+/proc/5645
+PID: 5645  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/5665
+PID: 5665  ESTADO: (sleeping)  ORDEN: /usr/lib/deja-dup/deja-dup-monitor 
+/proc/5680
+PID: 5680  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/5681
+PID: 5681  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/5730
+PID: 5730  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/5731
+PID: 5731  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
+/proc/5733
+PID: 5733  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd 
+/proc/5738
+PID: 5738  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-fuse /run/user/1002171993/gvfs -f -o big_writes 
+/proc/5743
+PID: 5743  ESTADO: (sleeping)  ORDEN: /usr/lib/dconf/dconf-service 
+/proc/5765
+PID: 5765  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately 
+/proc/5769
+PID: 5769  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/5776
+PID: 5776  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+/proc/5785
+PID: 5785  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/5793
+PID: 5793  ESTADO: (sleeping)  ORDEN: /usr/lib/deja-dup/deja-dup-monitor 
+/proc/5841
+PID: 5841  ESTADO: (sleeping)  ORDEN: /usr/lib/dconf/dconf-service 
+/proc/5852
+PID: 5852  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+/proc/5908
+PID: 5908  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-goa-volume-monitor 
+/proc/5912
+PID: 5912  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/5913
+PID: 5913  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/5914
+PID: 5914  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/5915
+PID: 5915  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/5916
+PID: 5916  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
+/proc/5920
+PID: 5920  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-daemon 
+/proc/5960
+PID: 5960  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-identity-service 
+/proc/5986
+PID: 5986  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-afc-volume-monitor 
+/proc/6
+PID: 6  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/6007
+PID: 6007  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+/proc/6022
+PID: 6022  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-mtp-volume-monitor 
+/proc/6041
+PID: 6041  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-goa-volume-monitor 
+/proc/6046
+PID: 6046  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-daemon 
+/proc/6081
+PID: 6081  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-identity-service 
+/proc/6103
+PID: 6103  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-afc-volume-monitor 
+/proc/6105
+PID: 6105  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0 
+/proc/6118
+PID: 6118  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+/proc/6135
+PID: 6135  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-mtp-volume-monitor 
+/proc/620
+PID: 620  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/6229
+PID: 6229  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0 
+/proc/6310
+PID: 6310  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/6439
+PID: 6439  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/6440
+PID: 6440  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/6486
+PID: 6486  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/6488
+PID: 6488  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd 
+/proc/6493
+PID: 6493  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-fuse /run/user/1836847400/gvfs -f -o big_writes 
+/proc/6519
+PID: 6519  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately 
+/proc/6529
+PID: 6529  ESTADO: (sleeping)  ORDEN: /usr/lib/deja-dup/deja-dup-monitor 
+/proc/6547
+PID: 6547  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/6553
+PID: 6553  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/6573
+PID: 6573  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/6574
+PID: 6574  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/6592
+PID: 6592  ESTADO: (sleeping)  ORDEN: /usr/lib/dconf/dconf-service 
+/proc/6604
+PID: 6604  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+/proc/6626
+PID: 6626  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/6629
+PID: 6629  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd 
+/proc/6634
+PID: 6634  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-fuse /run/user/1836833649/gvfs -f -o big_writes 
+/proc/6647
+PID: 6647  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
+/proc/6655
+PID: 6655  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-network --spawner :1.2 /org/gtk/gvfs/exec_spaw/2 
+/proc/6661
+PID: 6661  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately 
+/proc/6670
+PID: 6670  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/6675
+PID: 6675  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/6685
+PID: 6685  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-dnssd --spawner :1.2 /org/gtk/gvfs/exec_spaw/5 
+/proc/6699
+PID: 6699  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-metadata 
+/proc/6707
+PID: 6707  ESTADO: (sleeping)  ORDEN: /usr/lib/deja-dup/deja-dup-monitor 
+/proc/6757
+PID: 6757  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-document-portal 
+/proc/6762
+PID: 6762  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-permission-store 
+/proc/6786
+PID: 6786  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
+/proc/6788
+PID: 6788  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+/proc/6822
+PID: 6822  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-goa-volume-monitor 
+/proc/6826
+PID: 6826  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-daemon 
+/proc/6833
+PID: 6833  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-identity-service 
+/proc/6840
+PID: 6840  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-afc-volume-monitor 
+/proc/6846
+PID: 6846  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+/proc/6850
+PID: 6850  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-mtp-volume-monitor 
+/proc/6857
+PID: 6857  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-network --spawner :1.2 /org/gtk/gvfs/exec_spaw/1 
+/proc/686
+PID: 686  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/6861
+PID: 6861  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0 
+/proc/687
+PID: 687  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/6890
+PID: 6890  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-goa-volume-monitor 
+/proc/6892
+PID: 6892  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-dnssd --spawner :1.2 /org/gtk/gvfs/exec_spaw/7 
+/proc/6898
+PID: 6898  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-daemon 
+/proc/6942
+PID: 6942  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-identity-service 
+/proc/6952
+PID: 6952  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-afc-volume-monitor 
+/proc/6978
+PID: 6978  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+/proc/6980
+PID: 6980  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-network --spawner :1.2 /org/gtk/gvfs/exec_spaw/2 
+/proc/6991
+PID: 6991  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-mtp-volume-monitor 
+/proc/6999
+PID: 6999  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-metadata 
+/proc/7004
+PID: 7004  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0 
+/proc/7011
+PID: 7011  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-dnssd --spawner :1.2 /org/gtk/gvfs/exec_spaw/5 
+/proc/7045
+PID: 7045  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/7056
+PID: 7056  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/7057
+PID: 7057  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/706
+PID: 706  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-metadata 
+/proc/7062
+PID: 7062  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-document-portal 
+/proc/7065
+PID: 7065  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-permission-store 
+/proc/7112
+PID: 7112  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/7114
+PID: 7114  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd 
+/proc/7119
+PID: 7119  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-fuse /run/user/1836832884/gvfs -f -o big_writes 
+/proc/7142
+PID: 7142  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately 
+/proc/7143
+PID: 7143  ESTADO: (sleeping)  ORDEN: /usr/lib/dconf/dconf-service 
+/proc/7157
+PID: 7157  ESTADO: (sleeping)  ORDEN: /usr/lib/deja-dup/deja-dup-monitor 
+/proc/717
+PID: 717  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/7178
+PID: 7178  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/718
+PID: 718  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/7182
+PID: 7182  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/7203
+PID: 7203  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-network --spawner :1.2 /org/gtk/gvfs/exec_spaw/1 
+/proc/7212
+PID: 7212  ESTADO: (sleeping)  ORDEN: /usr/lib/dconf/dconf-service 
+/proc/7215
+PID: 7215  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-dnssd --spawner :1.2 /org/gtk/gvfs/exec_spaw/4 
+/proc/7227
+PID: 7227  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+/proc/7299
+PID: 7299  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
+/proc/7337
+PID: 7337  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/7353
+PID: 7353  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-goa-volume-monitor 
+/proc/736
+PID: 736  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd-timesyncd 
+/proc/7369
+PID: 7369  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-daemon 
+/proc/737
+PID: 737  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd-resolved 
+/proc/7406
+PID: 7406  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-identity-service 
+/proc/741
+PID: 741  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/7421
+PID: 7421  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-afc-volume-monitor 
+/proc/743
+PID: 743  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd 
+/proc/7449
+PID: 7449  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+/proc/7455
+PID: 7455  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-mtp-volume-monitor 
+/proc/7476
+PID: 7476  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-document-portal 
+/proc/7479
+PID: 7479  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-permission-store 
+/proc/748
+PID: 748  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-fuse /run/user/1836833136/gvfs -f -o big_writes 
+/proc/7527
+PID: 7527  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-metadata 
+/proc/7562
+PID: 7562  ESTADO: (sleeping)  ORDEN: /usr/sbin/xrdp 
+/proc/7566
+PID: 7566  ESTADO: (sleeping)  ORDEN: /usr/sbin/xrdp-sesman 
+/proc/7586
+PID: 7586  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/7591
+PID: 7591  ESTADO: (sleeping)  ORDEN: SIN MANDATO
+/proc/7597
+PID: 7597  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-network --spawner :1.2 /org/gtk/gvfs/exec_spaw/2 
+/proc/7599
+PID: 7599  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/7600
+PID: 7600  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/7614
+PID: 7614  ESTADO: (sleeping)  ORDEN: /bin/sh /etc/xrdp/startwm.sh 
+/proc/7615
+PID: 7615  ESTADO: (sleeping)  ORDEN: /usr/lib/xorg/Xorg :10 -auth .Xauthority -config xrdp/xorg.conf -noreset -nolisten tcp -logfile .xorgxrdp.%s.log 
+/proc/7623
+PID: 7623  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-dnssd --spawner :1.2 /org/gtk/gvfs/exec_spaw/5 
+/proc/7639
+PID: 7639  ESTADO: (sleeping)  ORDEN: /usr/sbin/xrdp-chansrv 
+/proc/7640
+PID: 7640  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0 
+/proc/7647
+PID: 7647  ESTADO: (sleeping)  ORDEN: /usr/bin/lxsession -s LXDE -e LXDE 
+/proc/765
+PID: 765  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-document-portal 
+/proc/7656
+PID: 7656  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/7658
+PID: 7658  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd 
+/proc/7663
+PID: 7663  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-fuse /run/user/1836807616/gvfs -f -o big_writes 
+/proc/768
+PID: 768  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-permission-store 
+/proc/7681
+PID: 7681  ESTADO: (sleeping)  ORDEN: openbox --config-file /home/alumno.upv.es/jeferal/.config/openbox/lxde-rc.xml 
+/proc/7682
+PID: 7682  ESTADO: (sleeping)  ORDEN: lxpolkit 
+/proc/7683
+PID: 7683  ESTADO: (sleeping)  ORDEN: lxpanel --profile LXDE 
+/proc/7684
+PID: 7684  ESTADO: (sleeping)  ORDEN: pcmanfm --desktop --profile LXDE 
+/proc/7685
+PID: 7685  ESTADO: (sleeping)  ORDEN: xscreensaver -no-splash 
+/proc/7698
+PID: 7698  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately 
+/proc/7699
+PID: 7699  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/7704
+PID: 7704  ESTADO: (sleeping)  ORDEN: /usr/lib/vmware-tools/sbin64/vmtoolsd -n vmusr 
+/proc/7708
+PID: 7708  ESTADO: (sleeping)  ORDEN: nm-applet 
+/proc/7711
+PID: 7711  ESTADO: (sleeping)  ORDEN: /usr/lib/deja-dup/deja-dup-monitor 
+/proc/7723
+PID: 7723  ESTADO: (sleeping)  ORDEN: clipit 
+/proc/7744
+PID: 7744  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/7752
+PID: 7752  ESTADO: (sleeping)  ORDEN: /usr/lib/menu-cache/menu-cached /run/user/1836807616/menu-cached-:10 
+/proc/7771
+PID: 7771  ESTADO: (sleeping)  ORDEN: /usr/bin/pulseaudio --start --log-target=syslog 
+/proc/7773
+PID: 7773  ESTADO: (sleeping)  ORDEN: update-notifier 
+/proc/7781
+PID: 7781  ESTADO: (sleeping)  ORDEN: /usr/lib/dconf/dconf-service 
+/proc/7806
+PID: 7806  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+/proc/782
+PID: 782  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately 
+/proc/7825
+PID: 7825  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
+/proc/7837
+PID: 7837  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session 
+/proc/793
+PID: 793  ESTADO: (sleeping)  ORDEN: /usr/lib/deja-dup/deja-dup-monitor 
+/proc/7947
+PID: 7947  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/7948
+PID: 7948  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/7994
+PID: 7994  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/7995
+PID: 7995  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-goa-volume-monitor 
+/proc/7996
+PID: 7996  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd 
+/proc/8001
+PID: 8001  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-fuse /run/user/1836834662/gvfs -f -o big_writes 
+/proc/8010
+PID: 8010  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-daemon 
+/proc/8027
+PID: 8027  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately 
+/proc/8029
+PID: 8029  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/8041
+PID: 8041  ESTADO: (sleeping)  ORDEN: /usr/lib/deja-dup/deja-dup-monitor 
+/proc/8064
+PID: 8064  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/8077
+PID: 8077  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-identity-service 
+/proc/8099
+PID: 8099  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-afc-volume-monitor 
+/proc/8105
+PID: 8105  ESTADO: (sleeping)  ORDEN: /usr/lib/dconf/dconf-service 
+/proc/8115
+PID: 8115  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+/proc/8120
+PID: 8120  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+/proc/8143
+PID: 8143  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-mtp-volume-monitor 
+/proc/8166
+PID: 8166  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
+/proc/819
+PID: 819  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/8201
+PID: 8201  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0 
+/proc/8205
+PID: 8205  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-metadata 
+/proc/821
+PID: 821  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/8235
+PID: 8235  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-goa-volume-monitor 
+/proc/8246
+PID: 8246  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-daemon 
+/proc/8255
+PID: 8255  ESTADO: (sleeping)  ORDEN: lxterminal 
+/proc/8257
+PID: 8257  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/8259
+PID: 8259  ESTADO: (sleeping)  ORDEN: bash 
+/proc/8299
+PID: 8299  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-identity-service 
+/proc/8300
+PID: 8300  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-metadata 
+/proc/8312
+PID: 8312  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-metadata 
+/proc/8324
+PID: 8324  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-afc-volume-monitor 
+/proc/8340
+PID: 8340  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+/proc/8351
+PID: 8351  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-mtp-volume-monitor 
+/proc/836
+PID: 836  ESTADO: (sleeping)  ORDEN: /usr/lib/dconf/dconf-service 
+/proc/8377
+PID: 8377  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-document-portal 
+/proc/8380
+PID: 8380  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-permission-store 
+/proc/8420
+PID: 8420  ESTADO: (sleeping)  ORDEN: /usr/bin/zeitgeist-daemon 
+/proc/843
+PID: 843  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+/proc/8464
+PID: 8464  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0 
+/proc/8467
+PID: 8467  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-metadata 
+/proc/8636
+PID: 8636  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-network --spawner :1.2 /org/gtk/gvfs/exec_spaw/1 
+/proc/865
+PID: 865  ESTADO: (sleeping)  ORDEN: /usr/lib/udisks2/udisksd 
+/proc/866
+PID: 866  ESTADO: (sleeping)  ORDEN: /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers 
+/proc/867
+PID: 867  ESTADO: (sleeping)  ORDEN: /usr/sbin/sssd -i --logger=files 
+/proc/8671
+PID: 8671  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-dnssd --spawner :1.2 /org/gtk/gvfs/exec_spaw/7 
+/proc/8687
+PID: 8687  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-document-portal 
+/proc/8690
+PID: 8690  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-permission-store 
+/proc/872
+PID: 872  ESTADO: (sleeping)  ORDEN: /usr/sbin/cron -f 
+/proc/8720
+PID: 8720  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-document-portal 
+/proc/8723
+PID: 8723  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-permission-store 
+/proc/876
+PID: 876  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/8783
+PID: 8783  ESTADO: (sleeping)  ORDEN: /lib/systemd/systemd --user 
+/proc/8784
+PID: 8784  ESTADO: (sleeping)  ORDEN: (sd-pam) 
+/proc/880
+PID: 880  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-metadata 
+/proc/8830
+PID: 8830  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+/proc/8832
+PID: 8832  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd 
+/proc/8837
+PID: 8837  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-fuse /run/user/1836809362/gvfs -f -o big_writes 
+/proc/8863
+PID: 8863  ESTADO: (sleeping)  ORDEN: /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately 
+/proc/8867
+PID: 8867  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-network --spawner :1.2 /org/gtk/gvfs/exec_spaw/4 
+/proc/8874
+PID: 8874  ESTADO: (sleeping)  ORDEN: /usr/lib/deja-dup/deja-dup-monitor 
+/proc/8895
+PID: 8895  ESTADO: (sleeping)  ORDEN: /usr/bin/ssh-agent -s 
+/proc/8897
+PID: 8897  ESTADO: (sleeping)  ORDEN: /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+/proc/8915
+PID: 8915  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-dnssd --spawner :1.2 /org/gtk/gvfs/exec_spaw/12 
+/proc/8944
+PID: 8944  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-metadata 
+/proc/8956
+PID: 8956  ESTADO: (sleeping)  ORDEN: /usr/lib/dconf/dconf-service 
+/proc/8961
+PID: 8961  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-document-portal 
+/proc/8964
+PID: 8964  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-permission-store 
+/proc/8969
+PID: 8969  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
+/proc/8974
+PID: 8974  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+/proc/9
+PID: 9  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/905
+PID: 905  ESTADO: (sleeping)  ORDEN: /usr/sbin/NetworkManager --no-daemon 
+/proc/907
+PID: 907  ESTADO: (sleeping)  ORDEN: /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant 
+/proc/9074
+PID: 9074  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-metadata 
+/proc/9087
+PID: 9087  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-document-portal 
+/proc/909
+PID: 909  ESTADO: (sleeping)  ORDEN: /usr/sbin/ModemManager --filter-policy=strict 
+/proc/9090
+PID: 9090  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-permission-store 
+/proc/9118
+PID: 9118  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-goa-volume-monitor 
+/proc/913
+PID: 913  ESTADO: (sleeping)  ORDEN: /usr/sbin/rsyslogd -n 
+/proc/9130
+PID: 9130  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-daemon 
+/proc/916
+PID: 916  ESTADO: (sleeping)  ORDEN: /usr/sbin/acpid 
+/proc/9178
+PID: 9178  ESTADO: (sleeping)  ORDEN: /usr/bin/zeitgeist-daemon 
+/proc/918
+PID: 918  ESTADO: (sleeping)  ORDEN: avahi-daemon: running [ldisca-vdi02.local] 
+/proc/9196
+PID: 9196  ESTADO: (sleeping)  ORDEN: /usr/lib/gnome-online-accounts/goa-identity-service 
+/proc/920
+PID: 920  ESTADO: (sleeping)  ORDEN: /usr/sbin/irqbalance --foreground 
+/proc/9207
+PID: 9207  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-afc-volume-monitor 
+/proc/9233
+PID: 9233  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+/proc/9242
+PID: 9242  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfs-mtp-volume-monitor 
+/proc/9256
+PID: 9256  ESTADO: (sleeping)  ORDEN: /usr/bin/zeitgeist-daemon 
+/proc/9280
+PID: 9280  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-network --spawner :1.2 /org/gtk/gvfs/exec_spaw/1 
+/proc/9301
+PID: 9301  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-dnssd --spawner :1.2 /org/gtk/gvfs/exec_spaw/5 
+/proc/9315
+PID: 9315  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/933
+PID: 933  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-document-portal 
+/proc/9355
+PID: 9355  ESTADO: (sleeping)  ORDEN: /usr/lib/gvfs/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0 
+/proc/936
+PID: 936  ESTADO: (sleeping)  ORDEN: /usr/libexec/xdg-permission-store 
+/proc/9376
+PID: 9376  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/9377
+PID: 9377  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/9378
+PID: 9378  ESTADO: (idle)  ORDEN: SIN MANDATO
+/proc/946
+PID: 946  ESTADO: (sleeping)  ORDEN: avahi-daemon: chroot helper 
+/proc/959
+PID: 959  ESTADO: (sleeping)  ORDEN: /usr/lib/policykit-1/polkitd --no-debug 
+/proc/960
+PID: 960  ESTADO: (sleeping)  ORDEN: /usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
