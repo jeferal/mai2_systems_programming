@@ -1,8 +1,5 @@
 #!/bin/bash
-# Programa argumentos.
-
-#!/bin/bash
-# Programa argumentos.
+# Programa vermandatos3 (ejercicio 7).
 
 for p in $(ls -d /proc/[1-9]*)
 do

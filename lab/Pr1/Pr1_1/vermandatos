@@ -1,5 +1,5 @@
 #!/bin/bash
-# Programa argumentos.
+# Programa vermandatos (ejercicio 5).
 
 for p in $(ls -d /proc/[1-9]*)
 do

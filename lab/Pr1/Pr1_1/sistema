@@ -1,5 +1,5 @@
 #!/bin/bash
-# Programa copia3
+# Programa sistema (ejercicio 9)
 
 
 for p in $(ls -d /proc/[1-9]*)
