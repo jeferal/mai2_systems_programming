@@ -1,0 +1,75 @@
+#!/bin/bash
+# Programa sistema mejorado
+
+HTML_name="sistema.html"
+
+HOST=$(hostname)
+
+USUARIO=$(awk -F":" '/'"$HOST"'/ { print $5 }' /etc/passwd)
+
+PROC=$(awk -F":" '/model name/ { print $2 }' /proc/cpuinfo)
+echo $PROC
+
+MEM=$(awk -F":" '/MemTotal/ { print $2 }' /proc/meminfo)
+echo $MEM
+
+MEMFREE=$(awk -F":" '/MemFree/ { print $2 }' /proc/meminfo)
+echo $MEMFREE
+
+IP=$(ifconfig | awk '$0 ~ /inet /{print $2}')
+echo $IP
+
+./html-ipagina "Sistema Web" > $HTML_name
+./html-encabezado 2 "Sistema web" >> $HTML_name
+./html-parrafo "Nombre: $HOST" >> $HTML_name
+./html-parrafo "Usuario: $USUARIO" >> $HTML_name
+./html-parrafo "Procesador: $PROC" >> $HTML_name
+./html-parrafo "Capacidad: $MEM " >> $HTML_name
+./html-parrafo "Memoria libre: $MEMFREE " >> $HTML_name
+./html-parrafo "Dirección IP: $IP " >> $HTML_name
+
+for p in $(ls -d /proc/[1-9]*)
+do
+    echo $p
+    PID=$(awk -F" " '// { print $1 }' /$p/stat)
+    ESTADO=$(awk -F" " '/State:/ { print $3 }' /$p/status)
+    ORDEN=$(cat $p/cmdline | tr "\0" " " )
+    if [ -z "$ORDEN" ]
+    then
+        ORDEN="SIN MANDATO"
+    fi
+    
+    echo "PID: $PID  ESTADO: $ESTADO  ORDEN: $ORDEN"
+    
+    PADREPID=$(awk -F":" '/PPid/ { print $1 }' /$p/status)
+    TUSR=$(awk -F" " '// { print $15 }' /$p/stat)
+    TSIS=$(awk -F" " '// { print $16 }' /$p/stat)
+    MEMV=$(awk -F" " '/VmSize:/ { print $2 $3}' /$p/status)
+    MAS=$(awk -F" " '/VmRSS:/ { print $2 $3}' /$p/status)
+    
+    if [ -z "$MEMV" ]
+    then
+        MEMV="-"
+    fi
+    
+    if [ -z "$MAS" ]
+    then
+        MAS="-"
+    fi
+    
+    ./html-itabla Característica Estado >> $HTML_name
+    ./html-filatabla "PID" "$PID" >> $HTML_name
+    ./html-filatabla "ESTADO" "$ESTADO" >> $HTML_name
+    ./html-filatabla "ORDEN" "$ORDEN" >> $HTML_name
+    ./html-filatabla "PROCESO PADRE" "$PPID" >> $HTML_name
+    ./html-filatabla "TIEMPO USUARIO" "$TUSR" >> $HTML_name
+    ./html-filatabla "TIEMPO SISTEMA" "$TSIS" >> $HTML_name
+    ./html-filatabla "MEMORIA VIRTUAL" "$MEMV" >> $HTML_name
+    ./html-filatabla "MEMORIA ASIGNADA" "$MAS" >> $HTML_name
+
+    ./html-ftabla  >> $HTML_name
+
+done
+
+./html-fpagina >> $HTML_name
+
