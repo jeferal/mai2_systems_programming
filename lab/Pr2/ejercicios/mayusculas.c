@@ -1,3 +1,7 @@
+/*
+    CÓDIGO PROGRAMA MAYÚSCULAS
+*/
+
 #include <stdio.h>
 #include <ctype.h>
 #define TAM_CADENA 200
@@ -9,7 +13,7 @@ int main(){
     char cadena[TAM_CADENA], cadena2[TAM_CADENA];
     
     printf("Introduzca una cadena: ");
-    scanf("%s", cadena);
+    gets(cadena);
 
     p1 = cadena;
     p2 = cadena2;
@@ -20,6 +24,9 @@ int main(){
         if(isupper(*p1)){
             *p2 = *p1;
         }
+        else if (*p1==' '){
+            *p2 = ' ';
+        }
         else{
              *p2 = *p1-32;
         }    
@@ -29,7 +36,7 @@ int main(){
     }
     
     *p2 = '\0';
-    printf("%s", cadena2);
+    printf("%s\n", cadena2);
 
     return 0;
 }

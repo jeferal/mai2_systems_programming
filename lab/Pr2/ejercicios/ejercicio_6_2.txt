@@ -1,0 +1,11 @@
+La suma de la fila 0 es 0.000000
+La suma de la fila 1 es 4950.000000
+La suma de la fila 2 es 9900.000000
+La suma de la fila 3 es 14850.000000
+La suma de la fila 4 es 19800.000000
+La suma de la fila 5 es 24750.000000
+La suma de la fila 6 es 29700.000000
+La suma de la fila 7 es 34650.000000
+La suma de la fila 8 es 39600.000000
+La suma de la fila 9 es 44550.000000
+La suma final es 222750.000000
