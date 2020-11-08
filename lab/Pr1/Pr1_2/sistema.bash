@@ -15,7 +15,7 @@ echo $MEM
 MEMFREE=$(awk -F":" '/MemFree/ { print $2 }' /proc/meminfo)
 echo $MEMFREE
 
-IP=$(ifconfig | awk '$0 ~ /inet /{print $2}')
+IP=$(ifconfig | awk '$0 ~ /inet /{print $2}' | head -n 1)
 echo $IP
 
 ./html-ipagina "Sistema Web" > $HTML_name
@@ -40,7 +40,7 @@ do
     
     echo "PID: $PID  ESTADO: $ESTADO  ORDEN: $ORDEN"
     
-    PADREPID=$(awk -F":" '/PPid/ { print $1 }' /$p/status)
+    PADREPID=$(awk -F":" '/PPid/ { print $1 }' /$p/status | head -n 1)
     TUSR=$(awk -F" " '// { print $15 }' /$p/stat)
     TSIS=$(awk -F" " '// { print $16 }' /$p/stat)
     MEMV=$(awk -F" " '/VmSize:/ { print $2 $3}' /$p/status)
