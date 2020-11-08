@@ -3,6 +3,7 @@
 #include <errno.h>
 #include <unistd.h>
 #include <fcntl.h>
+#include <stdlib.h>
 
 int main(){
     int fd[2];
