@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "buffer_circular.h"
+#include "buffer_struct/buffer_circular.h"
 
 int main(){
     buff my_vector;
