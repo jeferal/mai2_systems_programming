@@ -1,4 +1,0 @@
-El número de argumentos es: 4
-Argumento 1 es Compilar
-Argumento 2 es Preprocesar
-Argumento 3 Incluir /includes
