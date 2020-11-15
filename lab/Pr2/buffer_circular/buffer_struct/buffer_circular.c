@@ -2,13 +2,15 @@
 #include "buffer_circular.h"
 
 int get_item(int *data, buff *Buffer_Circ){
-    
-    //Si está vacío
+    /*
+    Función para extraer un dato del vector
+    */
+
+    //Se comprueba antes si el vector está vacío
     if(is_empty(*Buffer_Circ)){
-        printf("El buffer está vacío\n");
         return -1;
-    } else {
-    //Si no está vacío
+    } 
+    else {
         //dato igual al de la posición de salida e incremento posición de salida y decremento contador
         *data = Buffer_Circ->vector_circular[Buffer_Circ->buf_out];
         if(Buffer_Circ->buf_out == BUF_SIZE-1)
@@ -24,13 +26,15 @@ int get_item(int *data, buff *Buffer_Circ){
 
 
 int put_item(int data, buff *Buffer_Circ){
+    /*
+    Función para introducir un dato en la estructura
+    */
     
-    //Si está lleno
+    //Se comprueba antes si está lleno
     if(is_full(*Buffer_Circ)){
-        printf("El buffer está lleno");
         return -1;
-    } else {
-    //Si no está lleno
+    } 
+    else {
         //Buffer en la posición de entrada igual al dato e incremento posición de entrada y contador
         Buffer_Circ->vector_circular[Buffer_Circ->buf_in] = data;
         
@@ -42,46 +46,51 @@ int put_item(int data, buff *Buffer_Circ){
         Buffer_Circ->contador++;
         
         return 0;
-        
     }
 }
 
 int get_counter(const buff Buffer_Circ){
+    /*
+    Función que devuelve el número de elementos de la estructura
+    */
     return Buffer_Circ.contador;
 }
 
 
-int mostrar_contenido(buff *Buffer_Circ){
+int show_content(const buff Buffer_Circ){
+    /*
+    Función que muestra el contenido de la estructura
+    */
 
-    int pos=Buffer_Circ->buf_out;
-    if(is_empty(*Buffer_Circ)){
-        printf("El buffer está vacío\n");
+    int pos=Buffer_Circ.buf_out;
+    //Se comprueba si está vacío
+    if(is_empty(Buffer_Circ)){
         return -1;
     } else {
-        for(int i=Buffer_Circ->buf_out;  i<get_counter(*Buffer_Circ)+Buffer_Circ->buf_out; i++){
+        for(int i=Buffer_Circ.buf_out;  i<get_counter(Buffer_Circ)+Buffer_Circ.buf_out; i++){
             pos = (i>= BUF_SIZE ? i-BUF_SIZE : i);
-            printf("Posición %d: dato %d\n", pos, Buffer_Circ->vector_circular[pos]);
+            printf("Vector circular[%d] = %d\n", pos, Buffer_Circ.vector_circular[pos]);
         }
         return 1;
     }
 }
 
 bool is_empty(const buff Buffer_Circ){
-    if(Buffer_Circ.contador == 0){
-        printf("El buffer está vacío\n");
+    /*
+    Función que comprueba si está vacío el buffer
+    */
+    if(Buffer_Circ.contador == 0)
         return true;
-    }
-    else{
+    else
         return false;
-    }
 }
 
 bool is_full(const buff Buffer_Circ){
-    if(Buffer_Circ.contador == BUF_SIZE){
-        printf("El buffer está lleno\n");
+    /*
+    Función que comprueba si está lleno el buffer
+    */
+    if(Buffer_Circ.contador == BUF_SIZE)
         return true;
-    }
-    else{
+    else
         return false;
-    }
 }
