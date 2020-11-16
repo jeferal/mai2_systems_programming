@@ -78,14 +78,10 @@ int main()
   pthread_create(&hilo_refrescador, &atrib, RefrescadorDePantalla, 0);
 
   //Esperar la finalización de los hilos dibujadores
-  //usleep(10000000);
   
   for(int i=0; i<COLUMNAS; i++){
       pthread_join(hilo_dibujador[i], NULL);
   }
-  
-  //pthread_join(hilo_refrescador, NULL);
-  //pthread_exit(0);
-  
+    
   write(1,"\033[0m\033[?25h\r",11); //Restaurar texto normal, restaurar cursor
 }
