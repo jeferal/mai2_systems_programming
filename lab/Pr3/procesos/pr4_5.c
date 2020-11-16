@@ -11,13 +11,17 @@ int main(){
 
     for(i=0; i<NPROCESOS; i++){
         pid[i] = fork();
-        printf("Soy el padre con valor de i: %d, PID: %ld y he creado el hijo %ld\n", i, (long)getpid(), (long)getppid());
+        
         if(pid[i]!=0){
             //Solo ejecutado por los hijos
             break;
+        } else {
+            printf("Soy el padre con valor de i: %d, PID: %ld y he creado el hijo %ld\n", i, (long)pid[i], (long)getpid());
+            //while(waitpid(pid[i], &status, 0)!=pid[i]);
+            //printf("Soy el padre con PID: %ld y el valor de retorno de mi hijo es:	%d\n", (long)getpid(), WEXITSTATUS(status));
         }
     }
-    waitpid(pid[i], &status, 0);
-    printf("“Soy el padre con PID: %ld y el valor de retorno de mi hijo es:	%d\n", (long)getpid(), WEXITSTATUS(status));
+    sleep(10);
     exit(0);
+    //waitpid(pid[i], &status, 0);
 }
