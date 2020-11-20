@@ -13,10 +13,8 @@ int get_item(int *data, buff *Buffer_Circ){
     else {
         //dato igual al de la posición de salida e incremento posición de salida y decremento contador
         *data = Buffer_Circ->vector_circular[Buffer_Circ->buf_out];
-        if(Buffer_Circ->buf_out == BUF_SIZE-1)
-            Buffer_Circ->buf_out = 0;
-        else
-            Buffer_Circ->buf_out++;
+        
+        Buffer_Circ->buf_out = (Buffer_Circ->buf_out + 1) % BUF_SIZE;
         
         Buffer_Circ->contador--;
     
@@ -37,11 +35,8 @@ int put_item(int data, buff *Buffer_Circ){
     else {
         //Buffer en la posición de entrada igual al dato e incremento posición de entrada y contador
         Buffer_Circ->vector_circular[Buffer_Circ->buf_in] = data;
-        
-        if(Buffer_Circ->buf_in == BUF_SIZE-1)
-            Buffer_Circ->buf_in = 0;
-        else
-            Buffer_Circ->buf_in++;
+
+        Buffer_Circ->buf_in = (Buffer_Circ->buf_in + 1) % BUF_SIZE;
         
         Buffer_Circ->contador++;
         
