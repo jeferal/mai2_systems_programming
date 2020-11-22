@@ -1,7 +1,5 @@
 /*
-Modifica	el	programa	pr4-2	 (llámalo	pr4-4.c)	para	que	el	proceso	padre	espere	a	sus	hijos	antes	de	que	estos	
-terminen	y	no	se	generen	procesos	zombies.	Compruébalo	ejecutando	el	programa	en	background	y	con	la	orden	
-ps	como	en	el	ejercicio	2.
+Ejercicio 4
 */
 
 #include <stdio.h>
@@ -27,8 +25,10 @@ int main(){
         }
     }
 
-    if(waitpid(pid[NPROCESOS-1], &status, 0) == pid[NPROCESOS-1])
-        printf("Mi último hijo ya ha terminado");
+    for(int i=0; i<NPROCESOS; i++){
+        pid_t pid = wait(&status);
+        printf("Mi hijo con pid %ld ha acabado\n", (long)pid);
+    }
 
     return 0;
 }

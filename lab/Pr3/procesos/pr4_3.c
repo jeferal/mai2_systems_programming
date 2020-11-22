@@ -1,3 +1,7 @@
+/*
+Ejercicio 3
+*/
+
 #include <stdio.h>
 #include <unistd.h>
 #include <errno.h>
@@ -16,14 +20,12 @@ int main(){
         if(pid[i]==0){
             printf("Soy el hijo número %ld con padre %ld\n",
             (long)getpid(), (long)getppid());
+            sleep(20);
             exit(0);
         }
     }
 
-    //Ahora a esperar al tercer hijo
-    //if (waitpid(pid[2],&status,0)==pid[2])
-    //printf("Mi tercer hijo ya ha terminado\n");
-    sleep(25);
+    //sleep(25);
 
     return 0;
 }

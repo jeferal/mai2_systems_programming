@@ -1,3 +1,7 @@
+/*
+Ejercicio 2
+*/
+
 #include <stdio.h>
 #include <unistd.h>
 #include <errno.h>
