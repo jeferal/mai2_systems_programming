@@ -13,12 +13,11 @@ sem_t mutex, items, huecos;
 buff alm;
 
 void *Productor(void *ptr){
-    buff *almacen = ptr;
     for(int i=0; i<NITER; i++){
         sem_wait(&huecos);
         sem_wait(&mutex);
         //Sección crítica
-        put_item(i, almacen);
+        put_item(i, ptr);
         printf("Se ha insertado el dato: %d\n", i);
         //Sección crítica
         sem_post(&mutex);
@@ -30,12 +29,11 @@ void *Productor(void *ptr){
 
 void *Consumidor(void *ptr){
     int dato;
-    buff *almacen = ptr;
     for(int i=0; i<NITER; i++){
         sem_wait(&items);
         sem_wait(&mutex);
         //Sección crítica
-        get_item(&dato, almacen);
+        get_item(&dato, ptr);
         printf("Se ha cogido el dato: %d\n", i);
         //Sección crítica
         sem_wait(&mutex);
