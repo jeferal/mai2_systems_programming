@@ -1,48 +1,78 @@
-#include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <pthread.h>
+#include <string.h>
+#include <semaphore.h>
 #include <unistd.h>
 
 #include "buffer_struct/buffer_circular.h"
 
 #define NITER 30
 
-void *productor(void *almacen){
+sem_t mutex, items, huecos;
+buff alm;
+
+void *Productor(void *ptr){
+    buff *almacen = ptr;
     for(int i=0; i<NITER; i++){
+        sem_wait(&huecos);
+        sem_wait(&mutex);
         //Sección crítica
         put_item(i, almacen);
+        printf("Se ha insertado el dato: %d\n", i);
         //Sección crítica
-        printf("Se ha insertado el dato: %d", i);
+        sem_post(&mutex);
+        sem_post(&items);
         usleep(2000000);
     }
+    //return NULL;
 }
 
-void *consumidor(void *almacen){
+void *Consumidor(void *ptr){
     int dato;
+    buff *almacen = ptr;
     for(int i=0; i<NITER; i++){
+        sem_wait(&items);
+        sem_wait(&mutex);
         //Sección crítica
         get_item(&dato, almacen);
+        printf("Se ha cogido el dato: %d\n", i);
         //Sección crítica
-        printf("Se ha insertado el dato: %d", i);
+        sem_wait(&mutex);
+        sem_wait(&huecos);
         usleep(4000000);
     }
+    //return NULL;
 }
 
 
 int main(){
 
-    buff *almacen;
+    printf("Comenzando programa");
 
+    sem_init(&mutex, 0, 1);
+    sem_init(&huecos, 0, BUF_SIZE);
+    sem_init(&items, 0, 0);
+
+    pthread_t hilo_productor;
+    pthread_t hilo_consumidor;
     pthread_attr_t atrib;
-    pthread_t hilo_productor, hilo_consumidor;
 
     pthread_attr_init(&atrib);
 
-    pthread_create( &hilo_productor, &atrib, productor, almacen);
-    pthread_create( &hilo_consumidor, &atrib, consumidor, almacen);
+    printf("Creando hilos");
+    int i=0;
+
+    pthread_create( &hilo_productor, &atrib, Productor, &alm);
+    pthread_create( &hilo_consumidor, &atrib, Consumidor, &alm);
 
     pthread_join(hilo_productor, NULL);
     pthread_join(hilo_consumidor, NULL);
 
+    sem_destroy(&mutex);
+    sem_destroy(&huecos);
+    sem_destroy(&items);
+
     return 0;
+    
 }
