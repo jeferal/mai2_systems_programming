@@ -44,11 +44,11 @@ int put_item(int data, buff *Buffer_Circ){
     }
 }
 
-int get_counter(const buff Buffer_Circ){
+int get_counter(const buff *Buffer_Circ){
     /*
     Función que devuelve el número de elementos de la estructura
     */
-    return Buffer_Circ.contador;
+    return Buffer_Circ->contador;
 }
 
 
@@ -62,7 +62,7 @@ int show_content(const buff Buffer_Circ){
     if(is_empty(Buffer_Circ)){
         return -1;
     } else {
-        for(int i=Buffer_Circ.buf_out;  i<get_counter(Buffer_Circ)+Buffer_Circ.buf_out; i++){
+        for(int i=Buffer_Circ.buf_out;  i<get_counter(&Buffer_Circ)+Buffer_Circ.buf_out; i++){
             pos = (i>= BUF_SIZE ? i-BUF_SIZE : i);
             printf("Vector circular[%d] = %d\n", pos, Buffer_Circ.vector_circular[pos]);
         }
