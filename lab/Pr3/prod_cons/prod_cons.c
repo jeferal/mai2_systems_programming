@@ -15,9 +15,11 @@ Compilación:
 
 #define NITER 30
 
-buff alm;
 
 void *Productor(void *ptr){
+    //Cast
+    buff *almacen;
+    
     for(int i=0; i<NITER; i++){
         while(get_counter(ptr)==BUF_SIZE);
         //Sección crítica
@@ -26,7 +28,7 @@ void *Productor(void *ptr){
         //Sección crítica
         usleep(2000000);
     }
-    //return NULL;
+    return NULL;
 }
 
 void *Consumidor(void *ptr){
@@ -39,11 +41,13 @@ void *Consumidor(void *ptr){
         //Sección crítica
         usleep(4000000);
     }
-    //return NULL;
+    return NULL;
 }
 
 
 int main(){
+
+    buff alm;
 
     pthread_t hilo_productor;
     pthread_t hilo_consumidor;

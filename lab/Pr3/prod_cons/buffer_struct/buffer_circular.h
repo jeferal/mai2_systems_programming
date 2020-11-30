@@ -12,10 +12,10 @@ int get_item(int *data, buff *Buffer_Circ);
 
 int put_item(int data, buff *Buffer_Circ);
 
-int show_content(const buff Buffer_Circ);
+int show_content(const buff *Buffer_Circ);
 
-bool is_empty(const buff Buffer_Circ);
+bool is_empty(const buff *Buffer_Circ);
 
-bool is_full(const buff Buffer_Circ);
+bool is_full(const buff *Buffer_Circ);
 
 int get_counter(const buff *Buffer_Circ);
