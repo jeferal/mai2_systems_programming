@@ -19,3 +19,5 @@ bool is_empty(const buff *Buffer_Circ);
 bool is_full(const buff *Buffer_Circ);
 
 int get_counter(const buff *Buffer_Circ);
+
+void inicializar_buffer(buff *Buffer_Circ);

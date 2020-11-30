@@ -56,9 +56,8 @@ void *Consumidor(void *ptr){
 int main(){
 
     buff alm;
-    alm.buf_in=0;
-    alm.buf_out=0;
-    alm.contador=0;
+
+    inicializar_buffer(&alm);
 
     pthread_t hilo_productor;
     pthread_t hilo_consumidor;

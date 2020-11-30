@@ -89,3 +89,9 @@ bool is_full(const buff *Buffer_Circ){
     else
         return false;
 }
+
+void inicializar_buffer(buff *Buffer_Circ){
+    Buffer_Circ->buf_in=0;
+    Buffer_Circ->buf_out=0;
+    Buffer_Circ->contador=0;
+}

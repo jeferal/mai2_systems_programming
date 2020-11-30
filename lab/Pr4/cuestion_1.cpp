@@ -53,6 +53,8 @@ int main(){
 
     buff alm;
 
+    inicializar_buffer(&alm);
+
     pthread_t hilo_productor;
     pthread_t hilo_consumidor;
     pthread_attr_t atrib;
