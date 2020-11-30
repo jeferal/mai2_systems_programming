@@ -1,7 +1,7 @@
 /*
-Práctica 3 Productor - Consumidor
+Práctica 4 C
 Compilación:
-    gcc -o build/prod_cons prod_cons/prod_cons.c prod_cons/buffer_struct/buffer_circular.c -lpthread
+    gcc -o build/cuestion_1 cuestion_1.c buffer_struct/buffer_circular.c -lpthread
 */
 
 #include <stdio.h>
@@ -21,12 +21,10 @@ void *Productor(void *ptr){
     buff *almacen;
     almacen = (buff *)ptr;
     for(int i=0; i<NITER; i++){
-        while(is_full(almacen)==true);
+        while(get_counter(almacen)==BUF_SIZE);
         //Sección crítica
         put_item(i, almacen);
         printf("Se ha insertado el dato: %d\n", i);
-        if(show_content(almacen)==-1)
-            printf("El buffer está vacío\n");
         //Sección crítica
         usleep(2000000);
     }
@@ -40,12 +38,10 @@ void *Consumidor(void *ptr){
     int dato;
 
     for(int i=0; i<NITER; i++){
-        while(is_empty(almacen)==true);
+        while(get_counter(almacen)==0);
         //Sección crítica
         get_item(&dato, almacen);
         printf("Se ha cogido el dato: %d\n", i);
-        if(show_content(almacen)==-1)
-            printf("El buffer está vacío\n");
         //Sección crítica
         usleep(4000000);
     }
@@ -56,9 +52,6 @@ void *Consumidor(void *ptr){
 int main(){
 
     buff alm;
-    alm.buf_in=0;
-    alm.buf_out=0;
-    alm.contador=0;
 
     pthread_t hilo_productor;
     pthread_t hilo_consumidor;

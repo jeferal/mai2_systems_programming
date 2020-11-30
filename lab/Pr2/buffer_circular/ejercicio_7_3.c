@@ -17,7 +17,7 @@ int main(){
     printf("El contador es: %d\n", my_vector.contador);
     printf("Posición out es %d e in %d\n", my_vector.buf_out, my_vector.buf_in);
     
-    if(show_content(my_vector)==-1)
+    if(show_content(&my_vector)==-1)
         printf("El buffer está vacío\n");
     
 
@@ -30,7 +30,7 @@ int main(){
     printf("El contador es: %d\n", my_vector.contador);
     printf("Posición out es %d e in %d\n", my_vector.buf_out, my_vector.buf_in);
     
-    if(show_content(my_vector)==-1)
+    if(show_content(&my_vector)==-1)
         printf("El buffer está vacío\n");
     
     //5 Inserciones
@@ -42,7 +42,7 @@ int main(){
     printf("El contador es: %d\n", my_vector.contador);
     printf("Posición out es %d e in %d\n", my_vector.buf_out, my_vector.buf_in);
     
-    if(show_content(my_vector)==-1)
+    if(show_content(&my_vector)==-1)
         printf("El buffer está vacío\n");
     
     //Quito 2 datos
@@ -54,7 +54,7 @@ int main(){
     printf("El contador es: %d\n", my_vector.contador);
     printf("Posición out es %d e in %d\n", my_vector.buf_out, my_vector.buf_in);
     
-    if(show_content(my_vector)==-1)
+    if(show_content(&my_vector)==-1)
         printf("El buffer está vacío\n");
     
 
@@ -67,7 +67,7 @@ int main(){
     printf("El contador es: %d\n", my_vector.contador);
     printf("Posición out es %d e in %d\n", my_vector.buf_out, my_vector.buf_in);
     
-    if(show_content(my_vector)==-1)
+    if(show_content(&my_vector)==-1)
         printf("El buffer está vacío");
 
     //Intento introducir 10 datos pero son demasiados
@@ -80,7 +80,7 @@ int main(){
     printf("El contador es: %d\n", my_vector.contador);
     printf("Posición out es %d e in %d\n", my_vector.buf_out, my_vector.buf_in);
     
-    if(show_content(my_vector)==-1)
+    if(show_content(&my_vector)==-1)
         printf("El buffer está vacío");
     
     return 0;
