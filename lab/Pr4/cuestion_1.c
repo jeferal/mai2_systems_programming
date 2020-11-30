@@ -11,7 +11,7 @@ Compilación:
 #include <semaphore.h>
 #include <unistd.h>
 
-#include "buffer_struct/buffer_circular.h"
+#include "buffer_struct_sync/buffer_circular.h"
 
 #define NITER 30
 
@@ -25,8 +25,10 @@ void *Productor(void *ptr){
         //Sección crítica
         put_item(i, almacen);
         printf("Se ha insertado el dato: %d\n", i);
+        if(show_content(almacen)==-1)
+            printf("El buffer está vacío\n");
         //Sección crítica
-        usleep(2000000);
+        usleep(200);
     }
     return NULL;
 }
@@ -43,7 +45,7 @@ void *Consumidor(void *ptr){
         get_item(&dato, almacen);
         printf("Se ha cogido el dato: %d\n", i);
         //Sección crítica
-        usleep(4000000);
+        usleep(400);
     }
     return NULL;
 }
@@ -55,8 +57,8 @@ int main(){
 
     inicializar_buffer(&alm);
 
-    pthread_t hilo_productor;
-    pthread_t hilo_consumidor;
+    pthread_t productor_1;
+    pthread_t consumidor_1, consumidor_2;
     pthread_attr_t atrib;
 
     pthread_attr_init(&atrib);
@@ -64,11 +66,13 @@ int main(){
     int i=0;
 
     printf("Creando hilos\n");
-    pthread_create( &hilo_productor, &atrib, Productor, &alm);
-    pthread_create( &hilo_consumidor, &atrib, Consumidor, &alm);
+    pthread_create( &productor_1, &atrib, Productor, &alm);
+    pthread_create( &consumidor_1, &atrib, Consumidor, &alm);
+    pthread_create( &consumidor_2, &atrib, Consumidor, &alm);
 
-    pthread_join(hilo_productor, NULL);
-    pthread_join(hilo_consumidor, NULL);
+    pthread_join(productor_1, NULL);
+    pthread_join(consumidor_1, NULL);
+    pthread_join(consumidor_2, NULL);
 
     show_content(&alm);
 
