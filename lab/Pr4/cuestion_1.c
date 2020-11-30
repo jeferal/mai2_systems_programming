@@ -11,7 +11,7 @@ Compilación:
 #include <semaphore.h>
 #include <unistd.h>
 
-#include "buffer_struct_sync/buffer_circular.h"
+#include "buffer_struct/buffer_circular.h"
 
 #define NITER 30
 

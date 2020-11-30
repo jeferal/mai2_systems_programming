@@ -24,9 +24,9 @@ void *Productor(void *ptr){
         while(get_counter(almacen)==BUF_SIZE);
         //Sección crítica
         put_item(i, almacen);
-        printf("Se ha insertado el dato: %d\n", i);
         if(show_content(almacen)==-1)
             printf("El buffer está vacío\n");
+        printf("Se ha insertado el dato: %d\n", i);
         //Sección crítica
         usleep(200);
     }
@@ -43,6 +43,8 @@ void *Consumidor(void *ptr){
         while(get_counter(almacen)==0);
         //Sección crítica
         get_item(&dato, almacen);
+        if(show_content(almacen)==-1)
+            printf("El buffer está vacío\n");
         printf("Se ha cogido el dato: %d\n", i);
         //Sección crítica
         usleep(400);
@@ -73,6 +75,8 @@ int main(){
     pthread_join(productor_1, NULL);
     pthread_join(consumidor_1, NULL);
     pthread_join(consumidor_2, NULL);
+
+    printf("Los hilos han terminado");
 
     show_content(&alm);
 
