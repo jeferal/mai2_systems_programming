@@ -7,6 +7,7 @@
 void bajar_puente (void) { }
 void pasar (void) { }
 void levantar_puente (void) { }
+void pasar_puente (void) { } 
 
 sem_t turno; /*Necesario para dar prioridad a barcos*/
 sem_t mutex1; /*Exclusión mutua entre coches*/
@@ -18,7 +19,7 @@ int coches=0; /*contabiliza los coches que desean pasar*/
 void *hilo_coches(void *arg)
 {
 sem_wait(&turno);
-sem_post(&turno)
+sem_post(&turno);
 sem_wait(&mutex1);
 coches++;
 if (coches==1 )
@@ -27,17 +28,18 @@ bajar_puente();}
 sem_post(&mutex1);
 pasar_puente();
 sem_wait(&mutex1);
-coches- -;
+coches--;
 if(coches==0 )
 sem_post(&libre);
 sem_post(&mutex1);
+return NULL;
 }
 
 void *hilo_barcos(void *arg)
 {
     sem_wait(&mutex2);
     barcos++;
-    if barcos==1 {
+    if (barcos==1) {
         sem_wait(&turno);
         sem_wait(&libre);
         levantar_puente();
@@ -45,19 +47,20 @@ void *hilo_barcos(void *arg)
     sem_post(&mutex2);
     pasar_puente();
     sem_wait(&mutex2);
-    barcos - -;
+    barcos --;
     if (barcos==0) {
         sem_post(&turno);
         sem_post(&libre);
     }
     sem_post(&mutex2);
+    return NULL;
 }
 
 
 int main (void){ 
     pthread_t id_barcos[NUM_BARCOS], id_coches[NUM_COCHES];
     pthread_attr_t attr;
-    int i, j;
+    int i=5, j=4;
 
     pthread_attr_init(&attr);
     sem_init (&turno,0,1); sem_init (&mutex1,0,1);
@@ -65,11 +68,11 @@ int main (void){
     i=NUM_BARCOS; j =NUM_COCHES;
     while (i>=0 || j>=0) {
         if (i>=0) {
-            pthread_create(&id_barcos[i],&attr,hilo_barco,NULL);
+            pthread_create(&id_barcos[i],&attr,hilo_barcos,NULL);
             i--; 
         }
         if (j>=0) {
-            pthread_create(&id_coches[j],&attr,hilo_coche,NULL);
+            pthread_create(&id_coches[j],&attr,hilo_coches,NULL);
             j--; 
         }
     }
