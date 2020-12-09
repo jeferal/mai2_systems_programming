@@ -5,14 +5,14 @@ int get_item(int *data, buff *Buffer_Circ){
     /*
     Función para extraer un dato del vector
     */
-    pthread_mutex_lock(&Buffer_Circ->buffer_lock);
+
     //Se comprueba antes si el vector está vacío
     if(is_empty(Buffer_Circ)){
-        pthread_mutex_unlock(&Buffer_Circ->buffer_lock);
         return -1;
     } 
     else {
         //dato igual al de la posición de salida e incremento posición de salida y decremento contador
+        pthread_mutex_lock(&Buffer_Circ->buffer_lock);
         *data = Buffer_Circ->vector_circular[Buffer_Circ->buf_out];
         
         Buffer_Circ->buf_out = (Buffer_Circ->buf_out + 1) % BUF_SIZE;
@@ -30,13 +30,12 @@ int put_item(int data, buff *Buffer_Circ){
     */
     
     //Se comprueba antes si está lleno
-    pthread_mutex_lock(&Buffer_Circ->buffer_lock);
     if(is_full(Buffer_Circ)){
-        pthread_mutex_unlock(&Buffer_Circ->buffer_lock);
         return -1;
     } 
     else {
         //Buffer en la posición de entrada igual al dato e incremento posición de entrada y contador
+        pthread_mutex_lock(&Buffer_Circ->buffer_lock);
         Buffer_Circ->vector_circular[Buffer_Circ->buf_in] = data;
 
         Buffer_Circ->buf_in = (Buffer_Circ->buf_in + 1) % BUF_SIZE;

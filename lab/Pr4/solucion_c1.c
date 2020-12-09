@@ -13,24 +13,26 @@ Compilación:
 
 #include "buffer_struct_sync/buffer_circular.h"
 
-#define NITER 30
+#define NITER_PROD 30
+#define NITER_CONS 15
 
 
 void *Productor(void *ptr){
     //Cast
     buff *almacen;
     almacen = (buff *)ptr;
-    for(int i=0; i<NITER; i++){
-        while(get_counter(almacen)==BUF_SIZE);
+    for(int i=0; i<NITER_PROD; i++){
+        //while(get_counter(almacen)==BUF_SIZE);
         //Sección crítica
-        put_item(i, almacen);
+        if(put_item(i, almacen)==-1)
+            printf("El buffer está lleno\n");
         if(show_content(almacen)==-1)
             printf("El buffer está vacío\n");
         printf("Se ha insertado el dato: %d\n", i);
         //Sección crítica
         usleep(200);
     }
-    return NULL;
+    pthread_exit(NULL);
 }
 
 void *Consumidor(void *ptr){
@@ -39,17 +41,18 @@ void *Consumidor(void *ptr){
     almacen = (buff *)ptr;
     int dato;
 
-    for(int i=0; i<NITER; i++){
-        while(get_counter(almacen)==0);
+    for(int i=0; i<NITER_CONS; i++){
+        //while(get_counter(almacen)==0);
         //Sección crítica
-        get_item(&dato, almacen);
+        if(get_item(&dato, almacen)==0)
+            printf("El buffer está vacío\n");
         if(show_content(almacen)==-1)
             printf("El buffer está vacío\n");
         printf("Se ha cogido el dato: %d\n", i);
         //Sección crítica
         usleep(400);
     }
-    return NULL;
+    pthread_exit(NULL);
 }
 
 
@@ -76,7 +79,7 @@ int main(){
     pthread_join(consumidor_1, NULL);
     pthread_join(consumidor_2, NULL);
 
-    printf("Los hilos han terminado");
+    printf("Los hilos han terminado\n");
 
     show_content(&alm);
 
