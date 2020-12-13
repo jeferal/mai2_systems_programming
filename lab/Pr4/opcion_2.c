@@ -1,7 +1,7 @@
 /*
 Práctica 4 C
 Compilación:
-    gcc -o build/cuestion_3 cuestion_3.c buffer_struct_sem/buffer_circular.c -lpthread
+    gcc -o build/opcion_2 opcion_2.c buffer_struct_sem/buffer_circular.c -lpthread
 */
 
 #include <stdio.h>
@@ -13,10 +13,10 @@ Compilación:
 
 #include "buffer_struct_sem/buffer_circular.h"
 
-#define NITER_PROD 33
-#define NITER_CONS 15
+#define NITER_PROD 1008
+#define NITER_CONS 500
 
-//bool completed = false;
+bool completed = false;
 
 void *Productor(void *ptr){
     //Cast
@@ -28,10 +28,10 @@ void *Productor(void *ptr){
     {
         dato = i;
         put_item(dato, almacen);
-        printf("Se ha insertado el dato: %d\n", dato);
-        usleep(200);
+        //printf("Se ha insertado el dato: %d\n", dato);
+        usleep(100000);
     }
-    //completed = true;
+    completed = true;
     pthread_exit(NULL);
 }
 
@@ -45,9 +45,9 @@ void *Consumidor(void *ptr){
     for(int i=0; i<NITER_CONS; i++)
     {
         get_item(&dato, almacen);
-        printf("Se ha cogido el dato: %d\n", dato);
+        //printf("Se ha cogido el dato: %d\n", dato);
         data_collected[i] = dato;
-        usleep(400);
+        usleep(140000);
     }
 
     //Show all data collected
@@ -56,22 +56,20 @@ void *Consumidor(void *ptr){
     pthread_exit(NULL);
 }
 
-/*
 void *hilo_monitor(void *ptr)
 {
     //Cast
     buff *almacen;
     almacen = (buff *)ptr;
-
-    while(!completed){
-        if(!show_content(almacen))
-            printf("El búfer está vacío");
-        usleep(200);
+    
+    while(completed==false){
+        if(show_content(almacen)==-1)
+            printf("El búfer está vacío\n");
+        usleep(1000000);
     }
 
     pthread_exit(NULL);
 }
-*/
 
 
 int main(){
@@ -93,12 +91,12 @@ int main(){
     pthread_create( &productor_1, &atrib, Productor, &alm);
     pthread_create( &consumidor_1, &atrib, Consumidor, &alm);
     pthread_create( &consumidor_2, &atrib, Consumidor, &alm);
-    //pthread_create( &monitor_almacen, &atrib, hilo_monitor, &alm);
+    pthread_create( &monitor_almacen, &atrib, hilo_monitor, &alm);
 
     pthread_join(productor_1, NULL);
     pthread_join(consumidor_2, NULL);
     pthread_join(consumidor_1, NULL);
-    //pthread_join(monitor_almacen, NULL);
+    pthread_join(monitor_almacen, NULL);
 
     printf("Los hilos han terminado\n");
 
