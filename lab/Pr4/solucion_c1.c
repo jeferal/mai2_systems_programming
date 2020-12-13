@@ -1,7 +1,7 @@
 /*
 Práctica 4 C
 Compilación:
-    gcc -o build/cuestion_1 cuestion_1.c buffer_struct/buffer_circular.c -lpthread
+    gcc -o build/solucion_c1 cuestion_1.c buffer_struct_mutex/buffer_circular.c -lpthread
 */
 
 #include <stdio.h>
@@ -11,7 +11,7 @@ Compilación:
 #include <semaphore.h>
 #include <unistd.h>
 
-#include "buffer_struct_sync/buffer_circular.h"
+#include "buffer_struct_mutex/buffer_circular.h"
 
 #define NITER_PROD 30
 #define NITER_CONS 15
@@ -26,8 +26,8 @@ void *Productor(void *ptr){
         //Sección crítica
         if(put_item(i, almacen)==-1)
             printf("El buffer está lleno\n");
-        if(show_content(almacen)==-1)
-            printf("El buffer está vacío\n");
+        //if(show_content(almacen)==-1)
+            //printf("El buffer está vacío\n");
         printf("Se ha insertado el dato: %d\n", i);
         //Sección crítica
         usleep(200);
@@ -46,8 +46,8 @@ void *Consumidor(void *ptr){
         //Sección crítica
         if(get_item(&dato, almacen)==0)
             printf("El buffer está vacío\n");
-        if(show_content(almacen)==-1)
-            printf("El buffer está vacío\n");
+        //if(show_content(almacen)==-1)
+            //printf("El buffer está vacío\n");
         printf("Se ha cogido el dato: %d\n", i);
         //Sección crítica
         usleep(400);

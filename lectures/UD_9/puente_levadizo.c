@@ -1,13 +1,23 @@
 #include <pthread.h>
 #include <semaphore.h>
+#include "stdio.h"
 
 #define NUM_COCHES 5
 #define NUM_BARCOS 5
 
-void bajar_puente (void) { }
-void pasar (void) { }
-void levantar_puente (void) { }
-void pasar_puente (void) { } 
+void bajar_puente (void)
+{ 
+    printf("Bajando puente\n");    
+}
+
+void levantar_puente (void) 
+{
+    printf("Levantando puente\n");
+ }
+void pasar_puente (const char* vehicle)
+{
+    printf("%s pasando\n", &vehicle[0]);
+} 
 
 sem_t turno; /*Necesario para dar prioridad a barcos*/
 sem_t mutex1; /*Exclusión mutua entre coches*/
@@ -18,17 +28,19 @@ int coches=0; /*contabiliza los coches que desean pasar*/
 
 void *hilo_coches(void *arg)
 {
-sem_wait(&turno);
-sem_post(&turno);
-sem_wait(&mutex1);
-coches++;
-if (coches==1 )
-{sem_wait(&libre);
-bajar_puente();}
-sem_post(&mutex1);
-pasar_puente();
-sem_wait(&mutex1);
-coches--;
+    sem_wait(&turno);
+    sem_post(&turno);
+    sem_wait(&mutex1);
+    coches++;
+    if (coches==1 )
+    {
+        sem_wait(&libre);
+        bajar_puente();
+    }
+    sem_post(&mutex1);
+    pasar_puente("coche");
+    sem_wait(&mutex1);
+    coches--;
 if(coches==0 )
 sem_post(&libre);
 sem_post(&mutex1);
@@ -45,7 +57,7 @@ void *hilo_barcos(void *arg)
         levantar_puente();
     }
     sem_post(&mutex2);
-    pasar_puente();
+    pasar_puente("barco");
     sem_wait(&mutex2);
     barcos --;
     if (barcos==0) {
@@ -58,6 +70,7 @@ void *hilo_barcos(void *arg)
 
 
 int main (void){ 
+    printf("Comenzando\n");
     pthread_t id_barcos[NUM_BARCOS], id_coches[NUM_COCHES];
     pthread_attr_t attr;
     int i=5, j=4;
