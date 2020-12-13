@@ -13,6 +13,7 @@ typedef struct{
     int buf_out;
     int contador;
     pthread_mutex_t buffer_lock;
+    pthread_cond_t lleno, vacio;
 } buff;
 
 int get_item(int *data, buff *Buffer_Circ);
