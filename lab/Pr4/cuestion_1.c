@@ -14,17 +14,21 @@ Compilación:
 #include "buffer_struct/buffer_circular.h"
 
 #define NITER 30
+#define NITER_CONS 15
 
 
 void *Productor(void *ptr){
     //Cast
     buff *almacen;
     almacen = (buff *)ptr;
+    int dato;
+
     for(int i=0; i<NITER; i++){
+        dato = i;
         while(get_counter(almacen)==BUF_SIZE);
         //Sección crítica
-        put_item(i, almacen);
-        printf("Se ha insertado el dato: %d\n", i);
+        put_item(dato, almacen);
+        printf("Se ha insertado el dato: %d\n", dato);
         if(show_content(almacen)==-1)
             printf("El buffer está vacío\n");
         //Sección crítica
@@ -43,7 +47,7 @@ void *Consumidor(void *ptr){
         while(get_counter(almacen)==0);
         //Sección crítica
         get_item(&dato, almacen);
-        printf("Se ha cogido el dato: %d\n", i);
+        printf("Se ha cogido el dato: %d\n", dato);
         //Sección crítica
         usleep(400);
     }

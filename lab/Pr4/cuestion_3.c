@@ -11,9 +11,9 @@ Compilación:
 #include <semaphore.h>
 #include <unistd.h>
 
-#include "buffer_struct_mutex/buffer_circular.h"
+#include "buffer_struct_sem/buffer_circular.h"
 
-#define NITER_PROD 39
+#define NITER_PROD 35
 #define NITER_CONS 15
 
 
@@ -26,7 +26,7 @@ void *Productor(void *ptr){
     for(int i=0; i<NITER_PROD; i++)
     {
         dato = i;
-        put_item(i, almacen);
+        put_item(dato, almacen);
         printf("Se ha insertado el dato: %d\n", dato);
         usleep(200);
     }
@@ -44,8 +44,13 @@ void *Consumidor(void *ptr){
     {
         get_item(&dato, almacen);
         printf("Se ha cogido el dato: %d\n", dato);
+        data_collected[i] = dato;
         usleep(400);
     }
+
+    //Show all data collected
+    for(int i=0; i<NITER_CONS; i++)
+        printf("Dato: %d\n", data_collected[i]);
     pthread_exit(NULL);
 }
 
@@ -71,8 +76,8 @@ int main(){
     pthread_create( &consumidor_2, &atrib, Consumidor, &alm);
 
     pthread_join(productor_1, NULL);
-    pthread_join(consumidor_1, NULL);
     pthread_join(consumidor_2, NULL);
+    pthread_join(consumidor_1, NULL);
 
     printf("Los hilos han terminado\n");
 
