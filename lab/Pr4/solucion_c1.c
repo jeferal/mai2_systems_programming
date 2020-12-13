@@ -1,7 +1,7 @@
 /*
 Práctica 4 C
 Compilación:
-    gcc -o build/solucion_c1 solucion_c1.c buffer_struct_mutex/buffer_circular.c -lpthread
+    gcc -o build/cuestion_3 cuestion_3.c buffer_struct_sem/buffer_circular.c -lpthread
 */
 
 #include <stdio.h>
@@ -13,7 +13,7 @@ Compilación:
 
 #include "buffer_struct_mutex/buffer_circular.h"
 
-#define NITER_PROD 33
+#define NITER_PROD 35
 #define NITER_CONS 15
 
 
@@ -23,12 +23,10 @@ void *Productor(void *ptr){
     almacen = (buff *)ptr;
     int dato;
 
-    for(int i=0; i<NITER_PROD; i++){
-        
+    for(int i=0; i<NITER_PROD; i++)
+    {
         dato = i;
-        if(put_item(dato, almacen)==-1)
-            printf("El buffer está lleno\n");
-
+        put_item(dato, almacen);
         printf("Se ha insertado el dato: %d\n", dato);
         usleep(200);
     }
@@ -40,13 +38,19 @@ void *Consumidor(void *ptr){
     buff *almacen;
     almacen = (buff *)ptr;
     int dato;
+    int data_collected[NITER_CONS];
 
-    for(int i=0; i<NITER_CONS; i++){
-        if(get_item(&dato, almacen)==0)
-            printf("El buffer está vacío\n");
+    for(int i=0; i<NITER_CONS; i++)
+    {
+        get_item(&dato, almacen);
         printf("Se ha cogido el dato: %d\n", dato);
+        data_collected[i] = dato;
         usleep(400);
     }
+
+    //Show all data collected
+    for(int i=0; i<NITER_CONS; i++)
+        printf("Dato: %d\n", data_collected[i]);
     pthread_exit(NULL);
 }
 
@@ -57,13 +61,14 @@ int main(){
 
     inicializar_buffer(&alm);
 
+    if(show_content(&alm)==-1)
+        printf("El buffer está vacío\n");
+
     pthread_t productor_1;
     pthread_t consumidor_1, consumidor_2;
     pthread_attr_t atrib;
 
     pthread_attr_init(&atrib);
-
-    int i=0;
 
     printf("Creando hilos\n");
     pthread_create( &productor_1, &atrib, Productor, &alm);
@@ -71,8 +76,8 @@ int main(){
     pthread_create( &consumidor_2, &atrib, Consumidor, &alm);
 
     pthread_join(productor_1, NULL);
-    pthread_join(consumidor_1, NULL);
     pthread_join(consumidor_2, NULL);
+    pthread_join(consumidor_1, NULL);
 
     printf("Los hilos han terminado\n");
 

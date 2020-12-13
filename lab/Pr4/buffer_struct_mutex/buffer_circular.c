@@ -59,13 +59,12 @@ int show_content(const buff *Buffer_Circ){
     Función que muestra el contenido de la estructura
     */
 
-    int pos=Buffer_Circ->buf_out;
     //Se comprueba si está vacío
     if(is_empty(Buffer_Circ)){
         return -1;
     } else {
         for(int i=Buffer_Circ->buf_out;  i<get_counter(Buffer_Circ)+Buffer_Circ->buf_out; i++){
-            pos = (i>= BUF_SIZE ? i-BUF_SIZE : i);
+            int pos = (i>= BUF_SIZE ? i-BUF_SIZE : i);
             printf("Vector circular[%d] = %d\n", pos, Buffer_Circ->vector_circular[pos]);
         }
         return 1;
