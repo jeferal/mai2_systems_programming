@@ -3,7 +3,7 @@ Estructura de buffer circular con sincronización con mutex
 */
 
 #include <stdbool.h>
-#include <pthread.h>
+#include <semaphore.h>
 
 #define BUF_SIZE 10
 
@@ -12,7 +12,8 @@ typedef struct{
     int buf_in;
     int buf_out;
     int contador;
-    pthread_mutex_t buffer_lock;
+    //Protección con semáforos
+    sem_t mutex, items, huecos;
 } buff;
 
 int get_item(int *data, buff *Buffer_Circ);

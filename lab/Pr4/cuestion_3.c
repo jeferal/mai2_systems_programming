@@ -13,7 +13,7 @@ Compilación:
 
 #include "buffer_struct_mutex/buffer_circular.h"
 
-#define NITER_PROD 30
+#define NITER_PROD 39
 #define NITER_CONS 15
 
 
@@ -21,15 +21,13 @@ void *Productor(void *ptr){
     //Cast
     buff *almacen;
     almacen = (buff *)ptr;
-    for(int i=0; i<NITER_PROD; i++){
-        //while(get_counter(almacen)==BUF_SIZE);
-        //Sección crítica
-        if(put_item(i, almacen)==-1)
-            printf("El buffer está lleno\n");
-        //if(show_content(almacen)==-1)
-            //printf("El buffer está vacío\n");
-        printf("Se ha insertado el dato: %d\n", i);
-        //Sección crítica
+    int dato;
+
+    for(int i=0; i<NITER_PROD; i++)
+    {
+        dato = i;
+        put_item(i, almacen);
+        printf("Se ha insertado el dato: %d\n", dato);
         usleep(200);
     }
     pthread_exit(NULL);
@@ -40,16 +38,12 @@ void *Consumidor(void *ptr){
     buff *almacen;
     almacen = (buff *)ptr;
     int dato;
+    int data_collected[NITER_CONS];
 
-    for(int i=0; i<NITER_CONS; i++){
-        //while(get_counter(almacen)==0);
-        //Sección crítica
-        if(get_item(&dato, almacen)==0)
-            printf("El buffer está vacío\n");
-        //if(show_content(almacen)==-1)
-            //printf("El buffer está vacío\n");
-        printf("Se ha cogido el dato: %d\n", i);
-        //Sección crítica
+    for(int i=0; i<NITER_CONS; i++)
+    {
+        get_item(&dato, almacen);
+        printf("Se ha cogido el dato: %d\n", dato);
         usleep(400);
     }
     pthread_exit(NULL);
@@ -62,13 +56,14 @@ int main(){
 
     inicializar_buffer(&alm);
 
+    if(show_content(&alm)==-1)
+        printf("El buffer está vacío\n");
+
     pthread_t productor_1;
     pthread_t consumidor_1, consumidor_2;
     pthread_attr_t atrib;
 
     pthread_attr_init(&atrib);
-
-    int i=0;
 
     printf("Creando hilos\n");
     pthread_create( &productor_1, &atrib, Productor, &alm);

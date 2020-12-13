@@ -6,21 +6,19 @@ int get_item(int *data, buff *Buffer_Circ){
     Función para extraer un dato del vector
     */
 
-    //Se comprueba antes si el vector está vacío
-    if(is_empty(Buffer_Circ)){
-        return -1;
-    } 
-    else {
-        //dato igual al de la posición de salida e incremento posición de salida y decremento contador
-        pthread_mutex_lock(&Buffer_Circ->buffer_lock);
-        *data = Buffer_Circ->vector_circular[Buffer_Circ->buf_out];
-        
-        Buffer_Circ->buf_out = (Buffer_Circ->buf_out + 1) % BUF_SIZE;
-        
-        Buffer_Circ->contador--;
-        pthread_mutex_unlock(&Buffer_Circ->buffer_lock);
-        return 0;
-    }
+    sem_wait(&Buffer_Circ->items);
+    sem_wait(&Buffer_Circ->mutex);
+
+    /** SECCIÓN CRÍTICA **/
+    //dato igual al de la posición de salida e incremento posición de salida y decremento contador
+    *data = Buffer_Circ->vector_circular[Buffer_Circ->buf_out];
+    Buffer_Circ->buf_out = (Buffer_Circ->buf_out + 1) % BUF_SIZE;    
+    Buffer_Circ->contador--;
+    /** SECCIÓN CRÍTICA **/
+
+    sem_post(&Buffer_Circ->mutex);
+    sem_post(&Buffer_Circ->huecos);
+    return 0;
 }
 
 
@@ -29,21 +27,20 @@ int put_item(int data, buff *Buffer_Circ){
     Función para introducir un dato en la estructura
     */
     
-    //Se comprueba antes si está lleno
-    if(is_full(Buffer_Circ)){
-        return -1;
-    } 
-    else {
-        //Buffer en la posición de entrada igual al dato e incremento posición de entrada y contador
-        pthread_mutex_lock(&Buffer_Circ->buffer_lock);
-        Buffer_Circ->vector_circular[Buffer_Circ->buf_in] = data;
+    sem_wait(&Buffer_Circ->huecos);
+    sem_wait(&Buffer_Circ->mutex);
 
-        Buffer_Circ->buf_in = (Buffer_Circ->buf_in + 1) % BUF_SIZE;
-        
-        Buffer_Circ->contador++;
-        pthread_mutex_unlock(&Buffer_Circ->buffer_lock);
-        return 0;
-    }
+    /** SECCIÓN CRÍTICA **/
+    //Buffer en la posición de entrada igual al dato e incremento posición de entrada y contador
+    Buffer_Circ->vector_circular[Buffer_Circ->buf_in] = data;
+    Buffer_Circ->buf_in = (Buffer_Circ->buf_in + 1) % BUF_SIZE;    
+    Buffer_Circ->contador++;
+    /** SECCIÓN CRÍTICA **/
+
+    sem_post(&Buffer_Circ->mutex);
+    sem_post(&Buffer_Circ->items);
+
+    return 0;
 }
 
 int get_counter(const buff *Buffer_Circ){
@@ -59,13 +56,14 @@ int show_content(const buff *Buffer_Circ){
     Función que muestra el contenido de la estructura
     */
 
-    int pos=Buffer_Circ->buf_out;
     //Se comprueba si está vacío
-    if(is_empty(Buffer_Circ)){
+    if(is_empty(Buffer_Circ))
         return -1;
-    } else {
-        for(int i=Buffer_Circ->buf_out;  i<get_counter(Buffer_Circ)+Buffer_Circ->buf_out; i++){
-            pos = (i>= BUF_SIZE ? i-BUF_SIZE : i);
+    else 
+    {
+        for(int i=Buffer_Circ->buf_out;  i< Buffer_Circ->buf_out + get_counter(Buffer_Circ); i++)
+        {
+            int pos = (i>= BUF_SIZE ? i-BUF_SIZE : i);
             printf("Vector circular[%d] = %d\n", pos, Buffer_Circ->vector_circular[pos]);
         }
         return 1;
@@ -97,5 +95,8 @@ void inicializar_buffer(buff *Buffer_Circ){
     Buffer_Circ->buf_out=0;
     Buffer_Circ->contador=0;
     //Inicialización semáforo
-    pthread_mutex_init(&Buffer_Circ->buffer_lock, NULL);
+    sem_init(&Buffer_Circ->mutex, 0, 1);
+    sem_init(&Buffer_Circ->huecos, 0, BUF_SIZE);
+    sem_init(&Buffer_Circ->items, 0, 0);
+    printf("Buffer inicializado\n");
 }
