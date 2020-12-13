@@ -1,7 +1,7 @@
 /*
 Práctica 4 C
 Compilación:
-    gcc -o build/solucion_c1 solucion_c1.c buffer_struct_mutex/buffer_circular.c -lpthread
+    gcc -o build/cuestion_3 cuestion_3.c buffer_struct_sem/buffer_circular.c -lpthread
 */
 
 #include <stdio.h>
