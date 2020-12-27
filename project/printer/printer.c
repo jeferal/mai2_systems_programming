@@ -3,15 +3,7 @@
 #include <time.h>
 
 #include "printer.h"
-
-
-void init_printer(Printer *printer_machine, const sheet_t color)
-{
-    printer_machine->color = color;
-    printer_machine->sheets_available = PAGES_PRINTER;
-    inicializar_buffer(&printer_machine->queue);
-    printf("Printer of type %d created\n", printer_machine->color);
-}
+#include "../buffer_struct/buffer_circular.h"
 
 long getCurrentMicroseconds()
 {
@@ -166,7 +158,7 @@ void *rgb_printer(void *ptr)
         print_task(RGB, data.pages);
         long printing_time = getCurrentMicroseconds() - t0;
 
-        printf("\n[BN] Finished printing task with ID [%03d], time taken: %ld us", data.id, printing_time);
+        printf("\n[RGB] Finished printing task with ID [%03d], time taken: %ld us", data.id, printing_time);
     }
 
     pthread_exit(NULL);
