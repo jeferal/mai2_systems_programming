@@ -52,3 +52,39 @@ void *bn_tasks(void *ptr)
     
     pthread_exit(NULL);
 }
+
+void *rgb_tasks(void *ptr)
+{
+    //Casting
+    buff *task_buffer = (buff *)ptr;
+
+    for(int i=0; i<N2; i++)
+    {
+        //Produce task
+        WorkInfo print_sheets = produce_task(RGB);
+
+        //Introduce task in the buffer
+        show_task(&print_sheets);
+
+    }
+    
+    pthread_exit(NULL);
+}
+
+void *ind_tasks(void *ptr)
+{
+    //Casting
+    buff *task_buffer = (buff *)ptr;
+
+    for(int i=0; i<N3; i++)
+    {
+        //Produce task
+        WorkInfo print_sheets = produce_task(IND);
+
+        //Introduce task in the buffer
+        show_task(&print_sheets);
+
+    }
+    
+    pthread_exit(NULL);
+}
