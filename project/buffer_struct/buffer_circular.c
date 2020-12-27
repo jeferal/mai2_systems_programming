@@ -90,3 +90,15 @@ void inicializar_buffer(buff *Buffer_Circ) {
     pthread_cond_init(&Buffer_Circ->lleno, NULL);
     pthread_cond_init(&Buffer_Circ->vacio, NULL);
 }
+
+int get_pages_queue(buff *Buffer_Circ)
+{
+    int n_pages_queue = 0;
+
+    for (int i=Buffer_Circ->buf_out;  i<get_counter(Buffer_Circ)+Buffer_Circ->buf_out; i++) {
+        int pos = (i>= BUF_SIZE ? i-BUF_SIZE : i);
+        n_pages_queue = n_pages_queue + Buffer_Circ->data_array->pages;
+    }
+
+    return n_pages_queue;
+}

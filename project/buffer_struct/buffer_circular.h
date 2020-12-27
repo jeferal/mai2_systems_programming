@@ -36,4 +36,6 @@ int get_counter(const buff *Buffer_Circ);
 
 void inicializar_buffer(buff *Buffer_Circ);
 
+int get_pages_queue(buff *Buffer_Circ);
+
 #endif

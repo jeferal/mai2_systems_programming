@@ -24,13 +24,14 @@ WorkInfo produce_task(const sheet_t color)
 
 void print_task(const sheet_t color, const int pages)
 {
-    int speed;
-    if (color == BN)
-        speed = 1;  // 1 pg/sec
-    else
-        speed = 1;  // 1/4 pg/sec
+    int time;
 
-    sleep((int)pages/speed);
+    if (color == BN)
+        time = 1;  // 1 pg/sec
+    else
+        time = 4;  // 1/4 pg/sec
+
+    sleep(time*pages);
 }
 
 void show_task(const WorkInfo *task)
@@ -102,12 +103,18 @@ void *rgb_tasks(void *ptr)
 void *ind_tasks(void *ptr)
 {
     //Casting
-    buff *task_buffer = (buff *)ptr;
+    buff *task_buffer_bn = (buff *)ptr;
+    buff *task_buffer_rgb = (buff *)ptr++;
 
     for(int i=0; i<N3; i++)
     {
         //Produce task
         WorkInfo print_sheets = produce_task(IND);
+
+        //Get queue time of both
+        int time_bn = 1*get_pages_queue(task_buffer_bn);
+        int time_rgb = 4*get_pages_queue(task_buffer_rgb);
+        printf("[IND] Time BN: %d (s)\nTime RGB: %d (s)\n", time_bn, time_rgb);
 
         //Introduce task in the buffer
         show_task(&print_sheets);
