@@ -1,3 +1,6 @@
+#ifndef _BUFFER_H_
+#define _BUFFER_H_
+
 /*
 Estructura de buffer circular con sincronización con mutex
 */
@@ -32,3 +35,5 @@ bool is_full(const buff *Buffer_Circ);
 int get_counter(const buff *Buffer_Circ);
 
 void inicializar_buffer(buff *Buffer_Circ);
+
+#endif

@@ -1,6 +1,7 @@
 /*
 gcc -o build/project main.c buffer_struct/buffer_circular.c printer/printer.c -lpthread
 */
+//Create make file!!
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -11,13 +12,7 @@ gcc -o build/project main.c buffer_struct/buffer_circular.c printer/printer.c -l
 #include <time.h>
 
 #include "buffer_struct/buffer_circular.h"
-
-#define N1 20   //Tareas_BN
-#define N2 20   //Tareas_RGB
-#define N3 20   //Tareas_IND
-
-#define MIN_PG 20
-#define MAX_PG 100
+#include "printer/printer.h"
 
 int main()
 {
