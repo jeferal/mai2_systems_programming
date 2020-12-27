@@ -1,9 +1,26 @@
 #include <stdio.h>
+#include <unistd.h>
+#include <time.h>
 
 #include "printer.h"
-#include "../buffer_struct/buffer_circular.h"
 
-WorkInfo produce_task(sheet_t color)
+
+void init_printer(Printer *printer_machine, const sheet_t color)
+{
+    printer_machine->color = color;
+    printer_machine->sheets_available = PAGES_PRINTER;
+    inicializar_buffer(&printer_machine->queue);
+    printf("Printer of type %d created\n", printer_machine->color);
+}
+
+long getCurrentMicroseconds()
+{
+    struct timespec currentTime;
+    clock_gettime(CLOCK_MONOTONIC, &currentTime);
+    return (currentTime.tv_sec)*1000000 + (currentTime.tv_nsec) / 1000;
+}
+
+WorkInfo produce_task(const sheet_t color)
 {
     WorkInfo task;
     task.id = rand() % (ID_MAX - ID_MIN + 1) + ID_MIN;
@@ -13,7 +30,18 @@ WorkInfo produce_task(sheet_t color)
     return task;
 }
 
-void show_task(WorkInfo *task)
+void print_task(const sheet_t color, const int pages)
+{
+    int speed;
+    if (color == BN)
+        speed = 1;  // 1 pg/sec
+    else
+        speed = 1;  // 1/4 pg/sec
+
+    sleep((int)pages/speed);
+}
+
+void show_task(const WorkInfo *task)
 {
     printf("--- TASK --\n");
     printf("ID number: %03d\n", task->id);
@@ -45,6 +73,9 @@ void *bn_tasks(void *ptr)
         //Produce task
         WorkInfo print_sheets = produce_task(BN);
 
+        //Put the task in the buffer
+        put_item(print_sheets, task_buffer);
+
         //Introduce task in the buffer
         show_task(&print_sheets);
 
@@ -63,6 +94,9 @@ void *rgb_tasks(void *ptr)
         //Produce task
         WorkInfo print_sheets = produce_task(RGB);
 
+        //Put the task in the buffer
+        put_item(print_sheets, task_buffer);
+
         //Introduce task in the buffer
         show_task(&print_sheets);
 
@@ -71,6 +105,8 @@ void *rgb_tasks(void *ptr)
     pthread_exit(NULL);
 }
 
+
+//TODO
 void *ind_tasks(void *ptr)
 {
     //Casting
@@ -86,5 +122,52 @@ void *ind_tasks(void *ptr)
 
     }
     
+    pthread_exit(NULL);
+}
+
+
+//Consumers (PRINTERS)
+void *bn_printer(void *ptr)
+{
+    //Casting
+    buff *task_buffer = (buff *)ptr;
+
+    //Cambiar while(true)!!!
+    while(true)
+    {
+        WorkInfo data;
+        get_item(&data, task_buffer);
+
+        printf("\n[BN] Printing task with ID [%03d] collected\n Number waiting: %d\n\n", data.id, get_counter(task_buffer));
+
+        long t0 = getCurrentMicroseconds();
+        print_task(BN, data.pages);
+        long printing_time = getCurrentMicroseconds() - t0;
+        printf("\n[BN] Finished printing task with ID [%03d], time taken: %ld us", data.id, printing_time);
+    }
+
+    pthread_exit(NULL);
+}
+
+void *rgb_printer(void *ptr)
+{
+    //Casting
+    buff *task_buffer = (buff *)ptr;
+
+    //Cambiar while(true)!!!
+    while(true)
+    {
+        WorkInfo data;
+        get_item(&data, task_buffer);
+
+        printf("\n[RGB] Printing task with ID [%03d] collected\n Number waiting: %d\n\n", data.id, get_counter(task_buffer));
+
+        long t0 = getCurrentMicroseconds();
+        print_task(RGB, data.pages);
+        long printing_time = getCurrentMicroseconds() - t0;
+
+        printf("\n[BN] Finished printing task with ID [%03d], time taken: %ld us", data.id, printing_time);
+    }
+
     pthread_exit(NULL);
 }

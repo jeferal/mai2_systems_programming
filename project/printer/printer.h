@@ -3,6 +3,9 @@
 
 #include <stdlib.h>
 #include <pthread.h>
+#include "../buffer_struct/buffer_circular.h"
+
+#define PAGES_PRINTER 500
 
 #define N1 20   //Tareas_BN
 #define N2 20   //Tareas_RGB
@@ -24,14 +27,22 @@ typedef struct WorkInfo{
     int id;
 } WorkInfo;
 
+typedef struct Printer {
+    sheet_t color;
+    int sheets_available;
+    buff queue;
+} Printer;
+
+void init_printer(Printer *printer_machine, const sheet_t color);
+
 void *bn_tasks(void *ptr);
 void *rgb_tasks(void *ptr);
 void *ind_tasks(void *ptr);
-WorkInfo produce_task(sheet_t color);
-void show_task(WorkInfo *task);
+WorkInfo produce_task(const sheet_t color);
+void show_task(const WorkInfo *task);
 
 void *bn_printer(void *ptr);
 void *rgb_printer(void *ptr);
-void consume_task(WorkInfo *work_sheet);
+void print_task(const sheet_t color, const int pages);
 
 #endif
