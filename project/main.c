@@ -19,10 +19,20 @@ int main()
     //srand initialization
     srand(time(NULL));
 
-    for(int i=0; i<120; i++)
-    {
-        int r = rand() % (MAX_PG - MIN_PG + 1) + MIN_PG;
-        printf("Número de páginas: %d\n", r);
-    }
+    buff buffer_1;
+
+    inicializar_buffer(&buffer_1);
+
+    pthread_t bn_producer;
+    pthread_attr_t attrib;
+
+    pthread_attr_init(&attrib);
+
+    pthread_create(&bn_producer, &attrib, bn_tasks, &buffer_1);
+
+    pthread_join(bn_producer, NULL);
+
+    printf("All threads have finished\n");
+
     return 0;
 }
