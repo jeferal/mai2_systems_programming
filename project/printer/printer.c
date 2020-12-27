@@ -102,9 +102,8 @@ void *rgb_tasks(void *ptr)
 //TODO
 void *ind_tasks(void *ptr)
 {
-    //Casting
-    buff *task_buffer_bn = (buff *)ptr;
-    buff *task_buffer_rgb = (buff *)ptr++;
+    //Casting   TODO
+    buff buffer_array[2] = (buff (*)[2]) ptr;
 
     for(int i=0; i<N3; i++)
     {
@@ -112,8 +111,8 @@ void *ind_tasks(void *ptr)
         WorkInfo print_sheets = produce_task(IND);
 
         //Get queue time of both
-        int time_bn = 1*get_pages_queue(task_buffer_bn);
-        int time_rgb = 4*get_pages_queue(task_buffer_rgb);
+        int time_bn = 1*get_pages_queue(buffer_array[0]);
+        int time_rgb = 4*get_pages_queue(buffer_array[1]);
         printf("[IND] Time BN: %d (s)\nTime RGB: %d (s)\n", time_bn, time_rgb);
 
         //Introduce task in the buffer

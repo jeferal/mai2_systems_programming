@@ -33,7 +33,7 @@ int main()
     //Producers
     pthread_create(&bn_producer, &attrib, bn_tasks, &buffer_array[0]);
     pthread_create(&rgb_producer, &attrib, rgb_tasks, &buffer_array[1]);
-    pthread_create(&ind_producer, &attrib, ind_tasks, &buffer_array);
+    pthread_create(&ind_producer, &attrib, ind_tasks, buffer_array);
 
     //Consumers
     pthread_create(&bn_printer_machine, &attrib, bn_printer, &buffer_array[0]);
