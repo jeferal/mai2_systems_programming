@@ -1,5 +1,5 @@
 /*
-gcc -o build/project main_2.c buffer_struct/buffer_circular.c printer/printer.c -lpthread
+gcc -o build/project main.c buffer_struct/buffer_circular.c printer/printer.c -lpthread
 */
 
 #include <stdio.h>
