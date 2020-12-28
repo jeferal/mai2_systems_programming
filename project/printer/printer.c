@@ -89,6 +89,7 @@ void *bn_tasks(void *ptr)
         //Introduce task in the buffer
         show_task(&print_sheets);
 
+        sleep(5);
     }
     
     pthread_exit(NULL);
@@ -110,6 +111,7 @@ void *rgb_tasks(void *ptr)
         //Introduce task in the buffer
         show_task(&print_sheets);
 
+        sleep(5);
     }
     
     pthread_exit(NULL);
@@ -128,13 +130,12 @@ void *ind_tasks(void *ptr)
         WorkInfo print_sheets = produce_task(IND);
 
         //Get queue time of both
-        //printf("[IND] Time BN: %d (s)\nTime RGB: %d (s)\n", time_bn, time_rgb);
-
+        //put_item_ind(print_sheets, &printer_machines->bn_printer_machine.queue, &printer_machines->rgb_printer_machine.queue);
         //Introduce task in the buffer
         show_task(&print_sheets);
-
+        sleep(5);
     }
-    
+
     pthread_exit(NULL);
 }
 

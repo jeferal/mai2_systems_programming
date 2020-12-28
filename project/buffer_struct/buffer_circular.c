@@ -117,6 +117,9 @@ int put_item_ind(WorkInfo data, buff *Buffer_circ_bn, buff *Buffer_circ_rgb)
     int time_rgb = 4*get_pages_queue(Buffer_circ_rgb);
 
     if(time_bn < time_rgb)
+        put_item(data, Buffer_circ_bn);
+    else
+        put_item(data, Buffer_circ_rgb);
         
     pthread_mutex_lock(&Buffer_circ_bn->buffer_lock);
 

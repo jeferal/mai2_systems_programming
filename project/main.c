@@ -40,6 +40,7 @@ int main()
 
     pthread_join(bn_producer, NULL);
     pthread_join(rgb_producer, NULL);
+    pthread_join(ind_producer, NULL);
 
     printf("Producers threads have finished\n");
 
