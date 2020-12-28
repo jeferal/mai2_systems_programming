@@ -91,6 +91,13 @@ void inicializar_buffer(buff *Buffer_Circ) {
     pthread_cond_init(&Buffer_Circ->vacio, NULL);
 }
 
+long getCurrentMicroseconds()
+{
+    struct timespec currentTime;
+    clock_gettime(CLOCK_MONOTONIC, &currentTime);
+    return (currentTime.tv_sec)*1000000 + (currentTime.tv_nsec) / 1000;
+}
+
 int get_pages_queue(buff *Buffer_Circ)
 {
     int n_pages_queue = 0;
@@ -101,4 +108,16 @@ int get_pages_queue(buff *Buffer_Circ)
     }
 
     return n_pages_queue;
+}
+
+int put_item_ind(WorkInfo data, buff *Buffer_circ_bn, buff *Buffer_circ_rgb)
+{
+    //Get queue time
+    int time_bn = 1*get_pages_queue(Buffer_circ_bn);
+    int time_rgb = 4*get_pages_queue(Buffer_circ_rgb);
+
+    if(time_bn < time_rgb)
+        
+    pthread_mutex_lock(&Buffer_circ_bn->buffer_lock);
+
 }

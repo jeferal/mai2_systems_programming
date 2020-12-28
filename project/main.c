@@ -9,9 +9,7 @@ gcc -o build/project main.c buffer_struct/buffer_circular.c printer/printer.c -l
 #include <string.h>
 #include <semaphore.h>
 #include <unistd.h>
-#include <time.h>
 
-#include "buffer_struct/buffer_circular.h"
 #include "printer/printer.h"
 
 int main()
@@ -19,10 +17,11 @@ int main()
     //srand initialization
     srand(time(NULL));
 
-    buff buffer_array[2];
+    PrinterSystem printer_machines;
 
-    inicializar_buffer(&buffer_array[0]);
-    inicializar_buffer(&buffer_array[1]);
+    //Init printers (and its buffers inside)
+    init_printer_machine(&printer_machines.bn_printer_machine, BN);
+    init_printer_machine(&printer_machines.rgb_printer_machine, RGB);
 
     pthread_t bn_producer, rgb_producer, ind_producer, bn_printer_machine, rgb_printer_machine;
     pthread_attr_t attrib;
@@ -31,13 +30,13 @@ int main()
 
     printf("Starting threads\n");
     //Producers
-    pthread_create(&bn_producer, &attrib, bn_tasks, &buffer_array[0]);
-    pthread_create(&rgb_producer, &attrib, rgb_tasks, &buffer_array[1]);
-    pthread_create(&ind_producer, &attrib, ind_tasks, buffer_array);
+    pthread_create(&bn_producer, &attrib, bn_tasks, &printer_machines.bn_printer_machine);
+    pthread_create(&rgb_producer, &attrib, rgb_tasks, &printer_machines.rgb_printer_machine);
+    pthread_create(&ind_producer, &attrib, ind_tasks, &printer_machines);
 
     //Consumers
-    pthread_create(&bn_printer_machine, &attrib, bn_printer, &buffer_array[0]);
-    pthread_create(&rgb_printer_machine, &attrib, rgb_printer, &buffer_array[1]);
+    pthread_create(&bn_printer_machine, &attrib, bn_printer, &printer_machines.bn_printer_machine);
+    pthread_create(&rgb_printer_machine, &attrib, rgb_printer, &printer_machines.rgb_printer_machine);
 
     pthread_join(bn_producer, NULL);
     pthread_join(rgb_producer, NULL);

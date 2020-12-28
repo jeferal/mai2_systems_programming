@@ -7,10 +7,20 @@ Estructura de buffer circular con sincronización con mutex
 
 #include <stdbool.h>
 #include <pthread.h>
-
-#include "../printer/printer.h"
+#include <time.h>
 
 #define BUF_SIZE 10
+
+
+typedef enum sheet_t{
+    BN, RGB, IND
+} sheet_t;
+
+typedef struct WorkInfo{
+    int pages;
+    sheet_t color;
+    int id;
+} WorkInfo;
 
 typedef struct buff{
     //Hacer array de punteros void?? Para más generalidad de buffer
@@ -26,6 +36,8 @@ int get_item(WorkInfo *data, buff *Buffer_Circ);
 
 int put_item(WorkInfo data, buff *Buffer_Circ);
 
+int put_item_ind(WorkInfo data, buff *Buffer_circ_1, buff *Buffer_circ_2);
+
 int show_content(const buff *Buffer_Circ);
 
 bool is_empty(const buff *Buffer_Circ);
@@ -37,5 +49,7 @@ int get_counter(const buff *Buffer_Circ);
 void inicializar_buffer(buff *Buffer_Circ);
 
 int get_pages_queue(buff *Buffer_Circ);
+
+long getCurrentMicroseconds(void);
 
 #endif
