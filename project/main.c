@@ -32,7 +32,7 @@ void finish_process (int signal)
         
         printf("(%d - %s) ", printer_machines.bn_printer_machine.history[i].id, type);
     }
-    printf("\n BN has consumed %d paper boxes\n", printer_machines.bn_printer_machine.n_paper_boxes);
+    printf("\nBN has consumed %d paper boxes\n", printer_machines.bn_printer_machine.n_paper_boxes);
     
     printf("\n\nRGB has printed %d tasks with these IDs:\n", printer_machines.rgb_printer_machine.n_history_saved);
     for(int i=0; i<printer_machines.rgb_printer_machine.n_history_saved; i++)
@@ -46,7 +46,7 @@ void finish_process (int signal)
             type = "IND";
         printf("(%d - %s) ", printer_machines.rgb_printer_machine.history[i].id, type);
     }
-    printf("\n RGB has consumed %d paper boxes\n", printer_machines.rgb_printer_machine.n_paper_boxes);
+    printf("\nRGB has consumed %d paper boxes\n", printer_machines.rgb_printer_machine.n_paper_boxes);
 
     printf("\n--------Process finished--------\n\n");
 
