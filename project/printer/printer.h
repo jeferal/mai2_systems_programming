@@ -17,11 +17,15 @@
 #define ID_MIN 0
 #define ID_MAX 1000
 
+#define HIST_SIZE 1000
+
 
 typedef struct Printer{
     sheet_t type;
     int pages_available;
     buff queue;
+    WorkInfo history[HIST_SIZE];
+    int n_history_saved;
 } Printer;
 
 typedef struct PrinterSystem{

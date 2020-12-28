@@ -7,7 +7,7 @@ int get_item(WorkInfo *data, buff *Buffer_Circ){
     Función para extraer un dato del vector
     */
     pthread_mutex_lock(&Buffer_Circ->buffer_lock);
-    while(get_counter(Buffer_Circ)==0)
+    while(is_empty(Buffer_Circ))
         pthread_cond_wait(&Buffer_Circ->vacio, &Buffer_Circ->buffer_lock);
 
     //dato igual al de la posición de salida e incremento posición de salida y decremento contador
@@ -28,7 +28,7 @@ int put_item(WorkInfo data, buff *Buffer_Circ){
     */
     pthread_mutex_lock(&Buffer_Circ->buffer_lock);
 
-    while(get_counter(Buffer_Circ)==BUF_SIZE)
+    while(is_full(Buffer_Circ))
         pthread_cond_wait(&Buffer_Circ->lleno, &Buffer_Circ->buffer_lock);
 
     //Buffer en la posición de entrada igual al dato e incremento posición de entrada y contador
@@ -116,11 +116,49 @@ int put_item_ind(WorkInfo data, buff *Buffer_circ_bn, buff *Buffer_circ_rgb)
     int time_bn = 1*get_pages_queue(Buffer_circ_bn);
     int time_rgb = 4*get_pages_queue(Buffer_circ_rgb);
 
-    if(time_bn < time_rgb)
-        put_item(data, Buffer_circ_bn);
-    else
-        put_item(data, Buffer_circ_rgb);
-        
-    pthread_mutex_lock(&Buffer_circ_bn->buffer_lock);
+    buff *shortest_queue, *longest_queue;
+    char *shortest_name;
 
+    //Select shortest queue
+    if(time_bn < time_rgb)
+    {
+        shortest_queue = Buffer_circ_bn;
+        longest_queue = Buffer_circ_rgb;
+        shortest_name = "Blanco/Negro";
+    }
+    else
+    {
+        shortest_queue = Buffer_circ_rgb;
+        longest_queue = Buffer_circ_bn;
+        shortest_name = "RGB";
+    }
+        
+    if (!is_full(shortest_queue))
+    {
+        printf("[IND] Buffer de menor cola: %s - Disponible, poniendo dato\n", shortest_name);
+        put_item(data, shortest_queue);
+    }
+    else
+    {
+        printf("[IND] Buffer de menor cola: %s - Lleno, poniendo dato en el otro\n", shortest_name);
+        put_item(data, longest_queue);
+    }
+    
+    return 0;
+}
+
+
+int put_item_bn(WorkInfo data, buff *Buffer_circ_bn, buff *Buffer_circ_rgb)
+{
+    if(is_empty(Buffer_circ_rgb))
+    {
+        printf("[BN] Buffer RGB vacío, introduciendo dato en RBG");
+        put_item(data, Buffer_circ_rgb);
+    }
+    else
+    {
+        put_item(data, Buffer_circ_bn);
+    }
+    
+    return 0;
 }

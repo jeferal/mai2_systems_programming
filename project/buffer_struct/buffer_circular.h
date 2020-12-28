@@ -23,7 +23,6 @@ typedef struct WorkInfo{
 } WorkInfo;
 
 typedef struct buff{
-    //Hacer array de punteros void?? Para más generalidad de buffer
     WorkInfo data_array[BUF_SIZE];
     int buf_in;
     int buf_out;
@@ -51,5 +50,7 @@ void inicializar_buffer(buff *Buffer_Circ);
 int get_pages_queue(buff *Buffer_Circ);
 
 long getCurrentMicroseconds(void);
+
+int put_item_bn(WorkInfo data, buff *Buffer_circ_bn, buff *Buffer_circ_rgb);
 
 #endif

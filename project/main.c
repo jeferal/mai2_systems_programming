@@ -9,15 +9,35 @@ gcc -o build/project main.c buffer_struct/buffer_circular.c printer/printer.c -l
 #include <string.h>
 #include <semaphore.h>
 #include <unistd.h>
+#include <signal.h>
 
 #include "printer/printer.h"
+
+PrinterSystem printer_machines;
+
+void finish_process (int signal)
+{
+    printf("\n\n--------Finishing process--------\n");
+    printf("BN has printed %d tasks with these IDs:\n", printer_machines.bn_printer_machine.n_history_saved);
+    //Show IDs BN
+    for(int i=0; i<printer_machines.bn_printer_machine.n_history_saved; i++)
+        printf("(%d - %d) ", printer_machines.bn_printer_machine.history[i].id, printer_machines.bn_printer_machine.history[i].color);
+    
+    printf("\n\nRGB has printed %d tasks with these IDs:\n", printer_machines.rgb_printer_machine.n_history_saved);
+    for(int i=0; i<printer_machines.rgb_printer_machine.n_history_saved; i++)
+        printf("(%d - %d) ", printer_machines.rgb_printer_machine.history[i].id, printer_machines.rgb_printer_machine.history[i].color);
+
+    printf("\n--------Process finished--------\n\n");
+
+    exit(1);
+}
 
 int main()
 {
     //srand initialization
     srand(time(NULL));
 
-    PrinterSystem printer_machines;
+    signal(SIGINT, finish_process);
 
     //Init printers (and its buffers inside)
     init_printer_machine(&printer_machines.bn_printer_machine, BN);
@@ -30,7 +50,7 @@ int main()
 
     printf("Starting threads\n");
     //Producers
-    pthread_create(&bn_producer, &attrib, bn_tasks, &printer_machines.bn_printer_machine);
+    pthread_create(&bn_producer, &attrib, bn_tasks, &printer_machines);
     pthread_create(&rgb_producer, &attrib, rgb_tasks, &printer_machines.rgb_printer_machine);
     pthread_create(&ind_producer, &attrib, ind_tasks, &printer_machines);
 
@@ -43,6 +63,9 @@ int main()
     pthread_join(ind_producer, NULL);
 
     printf("Producers threads have finished\n");
+
+    sleep(1);
+    finish_process(0);
 
     return 0;
 }
