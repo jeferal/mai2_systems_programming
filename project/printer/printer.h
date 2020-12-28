@@ -17,7 +17,7 @@
 #define ID_MIN 0
 #define ID_MAX 1000
 
-#define HIST_SIZE 1000
+#define HIST_SIZE 100
 
 
 typedef struct Printer{
@@ -26,6 +26,7 @@ typedef struct Printer{
     buff queue;
     WorkInfo history[HIST_SIZE];
     int n_history_saved;
+    int n_paper_boxes;
 } Printer;
 
 typedef struct PrinterSystem{
@@ -43,6 +44,6 @@ void show_task(const WorkInfo *task);
 
 void *bn_printer(void *ptr);
 void *rgb_printer(void *ptr);
-void print_task(const sheet_t color, const int pages, int *pages_available);
+void print_task(const sheet_t color, const int pages, int *pages_available,  Printer *printer);
 
 #endif

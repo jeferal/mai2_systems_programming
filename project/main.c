@@ -21,11 +21,32 @@ void finish_process (int signal)
     printf("BN has printed %d tasks with these IDs:\n", printer_machines.bn_printer_machine.n_history_saved);
     //Show IDs BN
     for(int i=0; i<printer_machines.bn_printer_machine.n_history_saved; i++)
-        printf("(%d - %d) ", printer_machines.bn_printer_machine.history[i].id, printer_machines.bn_printer_machine.history[i].color);
+    {
+        const char* type;
+        if (printer_machines.bn_printer_machine.history[i].color == BN)
+            type = "BN";
+        else if(printer_machines.bn_printer_machine.history[i].color == RGB)
+            type = "RGB";
+        else
+            type = "IND";
+        
+        printf("(%d - %s) ", printer_machines.bn_printer_machine.history[i].id, type);
+    }
+    printf("\n BN has consumed %d paper boxes\n", printer_machines.bn_printer_machine.n_paper_boxes);
     
     printf("\n\nRGB has printed %d tasks with these IDs:\n", printer_machines.rgb_printer_machine.n_history_saved);
     for(int i=0; i<printer_machines.rgb_printer_machine.n_history_saved; i++)
-        printf("(%d - %d) ", printer_machines.rgb_printer_machine.history[i].id, printer_machines.rgb_printer_machine.history[i].color);
+    {
+        const char* type;
+        if (printer_machines.rgb_printer_machine.history[i].color == BN)
+            type = "BN";
+        else if(printer_machines.rgb_printer_machine.history[i].color == RGB)
+            type = "RGB";
+        else
+            type = "IND";
+        printf("(%d - %s) ", printer_machines.rgb_printer_machine.history[i].id, type);
+    }
+    printf("\n RGB has consumed %d paper boxes\n", printer_machines.rgb_printer_machine.n_paper_boxes);
 
     printf("\n--------Process finished--------\n\n");
 

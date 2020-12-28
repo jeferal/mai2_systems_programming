@@ -15,7 +15,7 @@ WorkInfo produce_task(const sheet_t color)
     return task;
 }
 
-void print_task(const sheet_t color, const int n_pages, int *pages_available)
+void print_task(const sheet_t color, const int n_pages, int *pages_available, Printer *printer)
 {
     int time;
     char *print_type;
@@ -45,6 +45,7 @@ void print_task(const sheet_t color, const int n_pages, int *pages_available)
             printf("[%s] Need to fill paper box, 1 min waiting\n", print_type);
             //usleep(10000000);
             *pages_available = PAGES_PRINTER;
+            printer->n_paper_boxes++;
             printf("[%s] Filled box\n", print_type);
         }
         
@@ -155,7 +156,7 @@ void *bn_printer(void *ptr)
         printf("\n[BN] Printing task with ID [%03d] collected\n Number waiting: %d\n\n", data.id, get_counter(&bn_printer_machine->queue));
 
         long t0 = getCurrentMicroseconds();
-        print_task(BN, data.pages, &bn_printer_machine->pages_available);
+        print_task(BN, data.pages, &bn_printer_machine->pages_available, bn_printer_machine);
         long printing_time = getCurrentMicroseconds() - t0;
         printf("\n[BN] Finished printing task with ID [%03d], time taken: %ld us, pages available: %d", data.id, printing_time, bn_printer_machine->pages_available);
         //Save into history
@@ -180,7 +181,7 @@ void *rgb_printer(void *ptr)
         printf("\n[RGB] Printing task with ID [%03d] collected\n Number waiting: %d\n\n", data.id, get_counter(&rgb_printer_machine->queue));
 
         long t0 = getCurrentMicroseconds();
-        print_task(RGB, data.pages, &rgb_printer_machine->pages_available);
+        print_task(RGB, data.pages, &rgb_printer_machine->pages_available, rgb_printer_machine);
         long printing_time = getCurrentMicroseconds() - t0;
 
         printf("\n[RGB] Finished printing task with ID [%03d], time taken: %ld us, pages available: %d", data.id, printing_time, rgb_printer_machine->pages_available);
@@ -198,5 +199,6 @@ void init_printer_machine(Printer *printer_machine, sheet_t color_type)
     printer_machine->type = color_type;
     printer_machine->pages_available = PAGES_PRINTER;
     printer_machine->n_history_saved = 0;
+    printer_machine->n_paper_boxes = 0;
     inicializar_buffer(&printer_machine->queue);
 }
