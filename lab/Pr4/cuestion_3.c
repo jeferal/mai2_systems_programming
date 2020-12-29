@@ -56,23 +56,6 @@ void *Consumidor(void *ptr){
     pthread_exit(NULL);
 }
 
-/*
-void *hilo_monitor(void *ptr)
-{
-    //Cast
-    buff *almacen;
-    almacen = (buff *)ptr;
-
-    while(!completed){
-        if(!show_content(almacen))
-            printf("El búfer está vacío");
-        usleep(200);
-    }
-
-    pthread_exit(NULL);
-}
-*/
-
 
 int main(){
 

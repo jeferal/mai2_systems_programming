@@ -10,9 +10,11 @@ int get_item(int *data, buff *Buffer_Circ){
         pthread_cond_wait(&Buffer_Circ->vacio, &Buffer_Circ->buffer_lock);
 
     //dato igual al de la posición de salida e incremento posición de salida y decremento contador
+    //SECCIÓN CRÍTICA
     *data = Buffer_Circ->vector_circular[Buffer_Circ->buf_out]; 
     Buffer_Circ->buf_out = (Buffer_Circ->buf_out + 1) % BUF_SIZE;     
     Buffer_Circ->contador--;
+    //SECCIÓN CRÍTICA
 
     pthread_cond_broadcast(&Buffer_Circ->lleno);
     pthread_mutex_unlock(&Buffer_Circ->buffer_lock);
@@ -30,9 +32,11 @@ int put_item(int data, buff *Buffer_Circ){
         pthread_cond_wait(&Buffer_Circ->lleno, &Buffer_Circ->buffer_lock);
 
     //Buffer en la posición de entrada igual al dato e incremento posición de entrada y contador
+    //SECCIÓN CRÍTICA
     Buffer_Circ->vector_circular[Buffer_Circ->buf_in] = data;
     Buffer_Circ->buf_in = (Buffer_Circ->buf_in + 1) % BUF_SIZE;
     Buffer_Circ->contador++;
+     //SECCIÓN CRÍTICA
 
     pthread_cond_broadcast(&Buffer_Circ->vacio);
     pthread_mutex_unlock(&Buffer_Circ->buffer_lock);
