@@ -18,7 +18,7 @@ PrinterSystem printer_machines;
 
 void finish_process (int signal)
 {
-    printf("\n\n--------Finishing process--------\n");
+    printf("\n\n--------Finishing process--------\n\n");
     printf("BN has printed %d tasks with these IDs:\n", printer_machines.bn_printer_machine.n_history_saved);
     //Show IDs BN
     for(int i=0; i<printer_machines.bn_printer_machine.n_history_saved; i++)
@@ -84,6 +84,8 @@ int main()
     pthread_join(bn_producer, NULL);
     pthread_join(rgb_producer, NULL);
     pthread_join(ind_producer, NULL);
+    pthread_join(bn_printer_machine, NULL);
+    pthread_join(rgb_printer_machine, NULL);
 
     printf("Producers threads have finished\n");
 
