@@ -10,6 +10,7 @@ gcc -o build/project main.c buffer_struct/buffer_circular.c printer/printer.c -l
 #include <semaphore.h>
 #include <unistd.h>
 #include <signal.h>
+#include <sys/types.h>
 
 #include "printer/printer.h"
 
@@ -56,6 +57,7 @@ void finish_process (int signal)
 int main()
 {
     //srand initialization
+    printf("Process started with Pid: [%ld]\n", (long)getpid());
     srand(time(NULL));
 
     signal(SIGINT, finish_process);
@@ -88,5 +90,5 @@ int main()
     sleep(1);
     finish_process(0);
 
-    return 0;
+    exit(0);
 }
