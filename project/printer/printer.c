@@ -37,13 +37,13 @@ void print_task(const sheet_t color, const int n_pages, int *pages_available, Pr
         printf("[%s] Printing %d / %d pages and %d pages available\n", print_type, i, n_pages, *pages_available);
         if(*pages_available > 0)
         {   
-            usleep(time*100000);
+            usleep(time*1000);
             *pages_available = *pages_available - 1;
         }
         else
         {
             printf("[%s] Need to fill paper box, 1 min waiting\n", print_type);
-            usleep(10000000);
+            usleep(60000);
             *pages_available = PAGES_PRINTER;
             printer->n_paper_boxes++;
             printf("[%s] Filled box\n", print_type);
@@ -79,18 +79,19 @@ void *bn_tasks(void *ptr)
     //Casting
     PrinterSystem *printer_machines = (PrinterSystem *)ptr;
 
-    for(int i=0; i<N1; i++)
+    for(int i=0; i<N_PRINTS; i++)
     {
         //Produce task
         WorkInfo print_sheets = produce_task(BN);
 
         //Put the task in the buffer
-        put_item_bn(print_sheets, &printer_machines->bn_printer_machine.queue, &printer_machines->rgb_printer_machine.queue);
+        //put_item_bn(print_sheets, &printer_machines->bn_printer_machine.queue, &printer_machines->rgb_printer_machine.queue);
+        put_item(print_sheets, &printer_machines->bn_printer_machine.queue);
 
         //Introduce task in the buffer
         show_task(&print_sheets);
 
-        sleep(5);
+        usleep(10000);
     }
     
     pthread_exit(NULL);
@@ -101,7 +102,7 @@ void *rgb_tasks(void *ptr)
     //Casting
     Printer *rgb_printer_machine = (Printer *)ptr;
 
-    for(int i=0; i<N2; i++)
+    for(int i=0; i<N_PRINTS; i++)
     {
         //Produce task
         WorkInfo print_sheets = produce_task(RGB);
@@ -112,20 +113,19 @@ void *rgb_tasks(void *ptr)
         //Introduce task in the buffer
         show_task(&print_sheets);
 
-        sleep(5);
+        usleep(10000);
     }
     
     pthread_exit(NULL);
 }
 
 
-//TODO
 void *ind_tasks(void *ptr)
 {
     //Casting
     PrinterSystem *printer_machines = (PrinterSystem *)ptr;
 
-    for(int i=0; i<N3; i++)
+    for(int i=0; i<N_PRINTS; i++)
     {
         //Produce task
         WorkInfo print_sheets = produce_task(IND);
@@ -134,7 +134,7 @@ void *ind_tasks(void *ptr)
         put_item_ind(print_sheets, &printer_machines->bn_printer_machine.queue, &printer_machines->rgb_printer_machine.queue);
         //Introduce task in the buffer
         show_task(&print_sheets);
-        sleep(5);
+        usleep(10000);
     }
 
     pthread_exit(NULL);

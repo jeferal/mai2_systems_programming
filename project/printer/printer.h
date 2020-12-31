@@ -7,9 +7,10 @@
 
 #define PAGES_PRINTER 100
 
-#define N1 20   //Tareas_BN
-#define N2 20   //Tareas_RGB
-#define N3 20   //Tareas_IND
+#define N1 4   //Tasks BN (Thread)
+#define N2 4   //Tasks RGB (Thread)
+#define N3 4   //Tasks IND (Thread)
+#define N_PRINTS 20
 
 #define PG_MIN 20
 #define PG_MAX 100

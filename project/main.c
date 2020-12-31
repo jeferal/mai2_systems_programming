@@ -66,28 +66,43 @@ int main()
     init_printer_machine(&printer_machines.bn_printer_machine, BN);
     init_printer_machine(&printer_machines.rgb_printer_machine, RGB);
 
-    pthread_t bn_producer, rgb_producer, ind_producer, bn_printer_machine, rgb_printer_machine;
+    pthread_t bn_producer[N1], rgb_producer[N2], ind_producer[N3], bn_printer_machine, rgb_printer_machine;
     pthread_attr_t attrib;
 
     pthread_attr_init(&attrib);
 
     printf("Starting threads\n");
+
     //Producers
-    pthread_create(&bn_producer, &attrib, bn_tasks, &printer_machines);
-    pthread_create(&rgb_producer, &attrib, rgb_tasks, &printer_machines.rgb_printer_machine);
-    pthread_create(&ind_producer, &attrib, ind_tasks, &printer_machines);
+    for(int i=0; i<N1; i++)
+        pthread_create(&bn_producer[i], &attrib, bn_tasks, &printer_machines);
+
+    for(int i=0; i<N2; i++)
+        pthread_create(&rgb_producer[i], &attrib, rgb_tasks, &printer_machines.rgb_printer_machine);
+
+    //for(int i=0; i<N3; i++)
+    //    pthread_create(&ind_producer[i], &attrib, ind_tasks, &printer_machines);
 
     //Consumers
     pthread_create(&bn_printer_machine, &attrib, bn_printer, &printer_machines.bn_printer_machine);
     pthread_create(&rgb_printer_machine, &attrib, rgb_printer, &printer_machines.rgb_printer_machine);
 
-    pthread_join(bn_producer, NULL);
-    pthread_join(rgb_producer, NULL);
-    pthread_join(ind_producer, NULL);
+
+    //Wait producers
+    for(int i=0; i<N1; i++)
+        pthread_join(bn_producer[i], NULL);
+
+    for(int i=0; i<N2; i++)
+        pthread_join(rgb_producer[i], NULL);
+
+    for(int i=0; i<N3; i++)
+        pthread_join(ind_producer[i], NULL);
+
+    //Wait consumers
     pthread_join(bn_printer_machine, NULL);
     pthread_join(rgb_printer_machine, NULL);
 
-    printf("Producers threads have finished\n");
+    printf("All threads have finished\n");
 
     sleep(1);
     finish_process(0);
