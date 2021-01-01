@@ -80,8 +80,8 @@ int main()
     for(int i=0; i<N2; i++)
         pthread_create(&rgb_producer[i], &attrib, rgb_tasks, &printer_machines.rgb_printer_machine);
 
-    //for(int i=0; i<N3; i++)
-    //    pthread_create(&ind_producer[i], &attrib, ind_tasks, &printer_machines);
+    for(int i=0; i<N3; i++)
+        pthread_create(&ind_producer[i], &attrib, ind_tasks, &printer_machines);
 
     //Consumers
     pthread_create(&bn_printer_machine, &attrib, bn_printer, &printer_machines.bn_printer_machine);

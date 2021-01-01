@@ -7,9 +7,9 @@
 
 #define PAGES_PRINTER 100
 
-#define N1 3   //Tasks BN (Thread)
-#define N2 3   //Tasks RGB (Thread)
-#define N3 3   //Tasks IND (Thread)
+#define N1 10   //Tasks BN (Thread)
+#define N2 10   //Tasks RGB (Thread)
+#define N3 10   //Tasks IND (Thread)
 #define N_PRINTS 20
 
 #define PG_MIN 20
@@ -18,7 +18,7 @@
 #define ID_MIN 0
 #define ID_MAX 1000
 
-#define HIST_SIZE 100
+#define HIST_SIZE 1000
 
 
 typedef struct Printer{
