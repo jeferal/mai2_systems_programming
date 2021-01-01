@@ -19,6 +19,7 @@ PrinterSystem printer_machines;
 void finish_process (int signal)
 {
     printf("\n\n--------Finishing process--------\n\n");
+    printf("These tasks where launched { BN: %d, IND: %d, RGB: %d and %d prints each task }\n\n", N1, N2, N3, N_PRINTS);
     printf("BN has printed %d tasks with these IDs:\n", printer_machines.bn_printer_machine.n_history_saved);
     //Show IDs BN
     for(int i=0; i<printer_machines.bn_printer_machine.n_history_saved; i++)
@@ -57,7 +58,8 @@ void finish_process (int signal)
 int main()
 {
     //srand initialization
-    printf("Process started with Pid: [%ld]\n", (long)getpid());
+    printf("[MAIN] Process started with Pid: [%ld]\n", (long)getpid());
+    printf("\n[MAIN] Launching BN: %d, IND: %d, RGB: %d and %d prints each task\n", N1, N2, N3, N_PRINTS);
     srand(time(NULL));
 
     signal(SIGINT, finish_process);
@@ -71,7 +73,7 @@ int main()
 
     pthread_attr_init(&attrib);
 
-    printf("Starting threads\n");
+    printf("\n[MAIN] Starting threads\n\n");
 
     //Producers
     for(int i=0; i<N1; i++)
@@ -84,8 +86,8 @@ int main()
         pthread_create(&ind_producer[i], &attrib, ind_tasks, &printer_machines);
 
     //Consumers
-    pthread_create(&bn_printer_machine, &attrib, bn_printer, &printer_machines.bn_printer_machine);
-    pthread_create(&rgb_printer_machine, &attrib, rgb_printer, &printer_machines.rgb_printer_machine);
+    pthread_create(&bn_printer_machine, &attrib, bn_printer, &printer_machines);
+    pthread_create(&rgb_printer_machine, &attrib, rgb_printer, &printer_machines);
 
 
     //Wait producers
@@ -99,12 +101,12 @@ int main()
         pthread_join(ind_producer[i], NULL);
 
     //Wait consumers
-    pthread_join(bn_printer_machine, NULL);
-    pthread_join(rgb_printer_machine, NULL);
+    
+    while ((printer_machines.bn_printer_machine.n_history_saved + printer_machines.rgb_printer_machine.n_history_saved < N1 + N2 + N3)
+            && get_counter(&printer_machines.bn_printer_machine.queue) > 0 && get_counter(&printer_machines.rgb_printer_machine.queue) > 0);
 
-    printf("All threads have finished\n");
-
-    sleep(1);
+    sleep(2);
+    
     finish_process(0);
 
     exit(0);

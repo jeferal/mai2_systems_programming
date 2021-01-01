@@ -114,7 +114,7 @@ void *rgb_tasks(void *ptr)
 
         //usleep(10000000);
     }
-    
+
     pthread_exit(NULL);
 }
 
@@ -144,14 +144,16 @@ void *ind_tasks(void *ptr)
 void *bn_printer(void *ptr)
 {
     //Casting
-    Printer *bn_printer_machine = (Printer *)ptr;
+    PrinterSystem *printer_machines = (PrinterSystem *)ptr;
+    Printer *bn_printer_machine = &printer_machines->bn_printer_machine;
+    Printer *rgb_printer_machine = &printer_machines->rgb_printer_machine;
+    
 
-    //Cambiar while(true)!!!
     while(true)
     {
         WorkInfo data;
         get_item(&data, &bn_printer_machine->queue);
-
+        
         printf("\n[BN] Printing task with ID [%03d] collected\n Number waiting: %d\n\n", data.id, get_counter(&bn_printer_machine->queue));
 
         long t0 = getCurrentMicroseconds();
@@ -162,16 +164,14 @@ void *bn_printer(void *ptr)
         bn_printer_machine->history[bn_printer_machine->n_history_saved] = data;
         bn_printer_machine->n_history_saved++;
     }
-
-    pthread_exit(NULL);
 }
 
 void *rgb_printer(void *ptr)
 {
-    //Casting
-    Printer *rgb_printer_machine = (Printer *)ptr;
+    PrinterSystem *printer_machines = (PrinterSystem *)ptr;
+    Printer *bn_printer_machine = &printer_machines->bn_printer_machine;
+    Printer *rgb_printer_machine = &printer_machines->rgb_printer_machine;
 
-    //Cambiar while(true)!!!
     while(true)
     {
         WorkInfo data;
@@ -187,9 +187,8 @@ void *rgb_printer(void *ptr)
         //Save into history
         rgb_printer_machine->history[rgb_printer_machine->n_history_saved] = data;
         rgb_printer_machine->n_history_saved++;
-    }
 
-    pthread_exit(NULL);
+    }
 }
 
 
