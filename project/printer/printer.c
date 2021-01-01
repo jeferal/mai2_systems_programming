@@ -159,7 +159,7 @@ void *bn_printer(void *ptr)
         long t0 = getCurrentMicroseconds();
         print_task(BN, data.pages, &bn_printer_machine->pages_available, bn_printer_machine);
         long printing_time = getCurrentMicroseconds() - t0;
-        printf("\n[BN] Finished printing task with ID [%03d], time taken: %ld us, pages available: %d", data.id, printing_time, bn_printer_machine->pages_available);
+        printf("\n[BN] Finished printing task with ID [%03d], time taken: %ld us, pages available: %d\n", data.id, printing_time, bn_printer_machine->pages_available);
         //Save into history
         bn_printer_machine->history[bn_printer_machine->n_history_saved] = data;
         bn_printer_machine->n_history_saved++;
@@ -183,7 +183,7 @@ void *rgb_printer(void *ptr)
         print_task(RGB, data.pages, &rgb_printer_machine->pages_available, rgb_printer_machine);
         long printing_time = getCurrentMicroseconds() - t0;
 
-        printf("\n[RGB] Finished printing task with ID [%03d], time taken: %ld us, pages available: %d", data.id, printing_time, rgb_printer_machine->pages_available);
+        printf("\n[RGB] Finished printing task with ID [%03d], time taken: %ld us, pages available: %d\n", data.id, printing_time, rgb_printer_machine->pages_available);
         //Save into history
         rgb_printer_machine->history[rgb_printer_machine->n_history_saved] = data;
         rgb_printer_machine->n_history_saved++;

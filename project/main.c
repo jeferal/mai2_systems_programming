@@ -15,9 +15,13 @@ gcc -o build/project main.c buffer_struct/buffer_circular.c printer/printer.c -l
 #include "printer/printer.h"
 
 PrinterSystem printer_machines;
+pthread_t bn_producer[N1], rgb_producer[N2], ind_producer[N3], bn_printer_machine, rgb_printer_machine;
+
 
 void finish_process (int signal)
 {
+    sleep(2);
+    
     printf("\n\n--------Finishing process--------\n\n");
     printf("These tasks where launched { BN: %d, IND: %d, RGB: %d and %d prints each task }\n\n", N1, N2, N3, N_PRINTS);
     printf("BN has printed %d tasks with these IDs:\n", printer_machines.bn_printer_machine.n_history_saved);
@@ -55,6 +59,7 @@ void finish_process (int signal)
     exit(1);
 }
 
+
 int main()
 {
     //srand initialization
@@ -68,7 +73,6 @@ int main()
     init_printer_machine(&printer_machines.bn_printer_machine, BN);
     init_printer_machine(&printer_machines.rgb_printer_machine, RGB);
 
-    pthread_t bn_producer[N1], rgb_producer[N2], ind_producer[N3], bn_printer_machine, rgb_printer_machine;
     pthread_attr_t attrib;
 
     pthread_attr_init(&attrib);
@@ -105,8 +109,6 @@ int main()
     while ((printer_machines.bn_printer_machine.n_history_saved + printer_machines.rgb_printer_machine.n_history_saved < N1 + N2 + N3)
             && get_counter(&printer_machines.bn_printer_machine.queue) > 0 && get_counter(&printer_machines.rgb_printer_machine.queue) > 0);
 
-    sleep(2);
-    
     finish_process(0);
 
     exit(0);

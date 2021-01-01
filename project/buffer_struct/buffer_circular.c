@@ -152,7 +152,7 @@ int put_item_bn(WorkInfo data, buff *Buffer_circ_bn, buff *Buffer_circ_rgb)
 {
     if(is_empty(Buffer_circ_rgb))
     {
-        printf("[BN] Buffer RGB vacío, introduciendo dato en RBG");
+        printf("[BN] Buffer RGB vacío, introduciendo dato en RBG\n");
         put_item(data, Buffer_circ_rgb);
     }
     else
