@@ -37,13 +37,13 @@ void print_task(const sheet_t color, const int n_pages, int *pages_available, Pr
         printf("[%s] Printing %d / %d pages and %d pages available\n", print_type, i, n_pages, *pages_available);
         if(*pages_available > 0)
         {   
-            //usleep(time*1000000);
+            usleep(time*1000000/1000000);
             *pages_available = *pages_available - 1;
         }
         else
         {
             printf("[%s] Need to fill paper box, 1 min waiting\n", print_type);
-            //usleep(60000000);
+            usleep(60000000/1000000);
             *pages_available = PAGES_PRINTER;
             printer->n_paper_boxes++;
             printf("[%s] Filled box\n", print_type);
@@ -90,7 +90,7 @@ void *bn_tasks(void *ptr)
         //Introduce task in the buffer
         show_task(&print_sheets);
 
-        //usleep(10000000);
+        usleep(10000000/1000000);
     }
     
     pthread_exit(NULL);
@@ -112,7 +112,7 @@ void *rgb_tasks(void *ptr)
         //Introduce task in the buffer
         show_task(&print_sheets);
 
-        //usleep(10000000);
+        usleep(10000000/1000000);
     }
 
     pthread_exit(NULL);
@@ -133,7 +133,7 @@ void *ind_tasks(void *ptr)
         
         //Introduce task in the buffer
         show_task(&print_sheets);
-        //usleep(10000000);
+        usleep(10000000/1000000);
     }
 
     pthread_exit(NULL);
