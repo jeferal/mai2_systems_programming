@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 
     if (speed < 1 || speed > 1000000){
         printf("Wrong SPEED, it must be [1 - 1000000]\n");
-        exit(1);
+        exit(2);
     }
 
     printer_machines.speed = speed;
