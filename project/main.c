@@ -14,9 +14,9 @@ gcc -o build/project main.c buffer_struct/buffer_circular.c printer/printer.c -l
 
 #include "printer/printer.h"
 
-PrinterSystem printer_machines;
-pthread_t bn_producer[N1], rgb_producer[N2], ind_producer[N3], bn_printer_machine, rgb_printer_machine;
 
+//Global variable
+PrinterSystem printer_machines;
 
 void finish_process (int signal)
 {
@@ -61,9 +61,7 @@ void finish_process (int signal)
 
 
 int main(int argc, char *argv[])
-{
-    printf("[MAIN] Process started with Pid: [%ld]\n", (long)getpid());
-    
+{   
     //Check arg inputs
     if (argc != 2){
         printf("Wrong input.\nUsage: ./build/project SPEED\n");
@@ -79,6 +77,9 @@ int main(int argc, char *argv[])
 
     printer_machines.speed = speed;
 
+    //Start program
+
+    printf("[MAIN] Process started with Pid: [%ld]\n", (long)getpid());
     printf("\n[MAIN] Launching BN: %d, IND: %d, RGB: %d and %d prints each task\n", N1, N2, N3, N_PRINTS);
 
     signal(SIGINT, finish_process);
@@ -87,6 +88,8 @@ int main(int argc, char *argv[])
     init_printer_machine(&printer_machines.bn_printer_machine, BN);
     init_printer_machine(&printer_machines.rgb_printer_machine, RGB);
 
+    //Create threads
+    pthread_t bn_producer[N1], rgb_producer[N2], ind_producer[N3], bn_printer_machine, rgb_printer_machine;
     pthread_attr_t attrib;
 
     pthread_attr_init(&attrib);
@@ -119,7 +122,6 @@ int main(int argc, char *argv[])
         pthread_join(ind_producer[i], NULL);
 
     //Wait consumers
-    
     while ((printer_machines.bn_printer_machine.n_history_saved + printer_machines.rgb_printer_machine.n_history_saved < N1 + N2 + N3)
             && get_counter(&printer_machines.bn_printer_machine.queue) > 0 && get_counter(&printer_machines.rgb_printer_machine.queue) > 0);
 

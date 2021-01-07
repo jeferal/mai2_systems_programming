@@ -2,7 +2,7 @@
 #define _BUFFER_H_
 
 /*
-Estructura de buffer circular con sincronización con mutex
+Estructura de buffer circular con acceso protegido con mutex
 */
 
 #include <stdbool.h>
