@@ -100,9 +100,16 @@ void finish_process (int signal)
     printf("These tasks where launched { BN: %d, IND: %d, RGB: %d and %d prints each task }\n\n", N1, N2, N3, N_PRINTS);
 
     if (signal==-1)
-        printf("Process has finished cleanly, all tasks have finished\n\n");
+        printf("Process finished cleanly, tasks completed: %d/%d\n\n", 
+            (printer_machines.bn_printer_machine.n_history_saved + printer_machines.rgb_printer_machine.n_history_saved), 
+            (N1+N2+N3)*N_PRINTS
+        );
     else 
-        printf("Signal %d catched, tasks remaining: %d\n\n", signal, (N1+N2+N3)*N_PRINTS-printer_machines.bn_printer_machine.n_history_saved + printer_machines.rgb_printer_machine.n_history_saved);
+        printf("Signal %d catched, tasks completed: %d/%d\n\n", 
+            signal, 
+            (printer_machines.bn_printer_machine.n_history_saved + printer_machines.rgb_printer_machine.n_history_saved), 
+            (N1+N2+N3)*N_PRINTS
+        );
 
     printf("BN has printed %d tasks with these IDs:\n", printer_machines.bn_printer_machine.n_history_saved);
     //Show IDs BN
