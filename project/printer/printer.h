@@ -20,6 +20,8 @@
 
 #define HIST_SIZE 1000
 
+#define SPEED 1000000
+
 
 typedef struct Printer{
     sheet_t type;
@@ -33,6 +35,7 @@ typedef struct Printer{
 typedef struct PrinterSystem{
     Printer bn_printer_machine;
     Printer rgb_printer_machine;
+    int speed;
 } PrinterSystem;
 
 void init_printer_machine(Printer *printer_machine, sheet_t color_type);
@@ -45,6 +48,6 @@ void show_task(const WorkInfo *task);
 
 void *bn_printer(void *ptr);
 void *rgb_printer(void *ptr);
-void print_task(const sheet_t color, const int pages, int *pages_available,  Printer *printer);
+void print_task(const sheet_t color, const int pages, int *pages_available,  Printer *printer, const int speed);
 
 #endif

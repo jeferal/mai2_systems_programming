@@ -60,12 +60,26 @@ void finish_process (int signal)
 }
 
 
-int main()
+int main(int argc, char *argv[])
 {
-    //srand initialization
     printf("[MAIN] Process started with Pid: [%ld]\n", (long)getpid());
+    
+    //Check arg inputs
+    if (argc != 2){
+        printf("Wrong input.\nUsage: ./build/project SPEED\n");
+        exit(1);
+    }
+
+    int speed = atoi(argv[1]);
+
+    if (speed < 1 || speed > 1000000){
+        printf("Wrong SPEED, it must be [1 - 1000000]\n");
+        exit(1);
+    }
+
+    printer_machines.speed = speed;
+
     printf("\n[MAIN] Launching BN: %d, IND: %d, RGB: %d and %d prints each task\n", N1, N2, N3, N_PRINTS);
-    srand(time(NULL));
 
     signal(SIGINT, finish_process);
 

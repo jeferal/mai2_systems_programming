@@ -15,7 +15,7 @@ WorkInfo produce_task(const sheet_t color)
     return task;
 }
 
-void print_task(const sheet_t color, const int n_pages, int *pages_available, Printer *printer)
+void print_task(const sheet_t color, const int n_pages, int *pages_available, Printer *printer, const int speed)
 {
     int time;
     char *print_type;
@@ -37,13 +37,13 @@ void print_task(const sheet_t color, const int n_pages, int *pages_available, Pr
         printf("[%s] Printing %d / %d pages and %d pages available\n", print_type, i, n_pages, *pages_available);
         if(*pages_available > 0)
         {   
-            usleep(time*1000000/1000000);
+            usleep(time*1000000/speed);
             *pages_available = *pages_available - 1;
         }
         else
         {
             printf("[%s] Need to fill paper box, 1 min waiting\n", print_type);
-            usleep(60000000/1000000);
+            usleep(60000000/speed);
             *pages_available = PAGES_PRINTER;
             printer->n_paper_boxes++;
             printf("[%s] Filled box\n", print_type);
@@ -90,7 +90,7 @@ void *bn_tasks(void *ptr)
         //Introduce task in the buffer
         show_task(&print_sheets);
 
-        usleep(10000000/1000000);
+        //usleep(10000000/SPEED);
     }
     
     pthread_exit(NULL);
@@ -112,7 +112,7 @@ void *rgb_tasks(void *ptr)
         //Introduce task in the buffer
         show_task(&print_sheets);
 
-        usleep(10000000/1000000);
+        //usleep(10000000/SPEED);
     }
 
     pthread_exit(NULL);
@@ -133,7 +133,7 @@ void *ind_tasks(void *ptr)
         
         //Introduce task in the buffer
         show_task(&print_sheets);
-        usleep(10000000/1000000);
+        //usleep(10000000/SPEED);
     }
 
     pthread_exit(NULL);
@@ -157,7 +157,7 @@ void *bn_printer(void *ptr)
         printf("\n[BN] Printing task with ID [%03d] collected\n Number waiting: %d\n\n", data.id, get_counter(&bn_printer_machine->queue));
 
         long t0 = getCurrentMicroseconds();
-        print_task(BN, data.pages, &bn_printer_machine->pages_available, bn_printer_machine);
+        print_task(BN, data.pages, &bn_printer_machine->pages_available, bn_printer_machine, printer_machines->speed);
         long printing_time = getCurrentMicroseconds() - t0;
         printf("\n[BN] Finished printing task with ID [%03d], time taken: %ld us, pages available: %d\n", data.id, printing_time, bn_printer_machine->pages_available);
         //Save into history
@@ -180,7 +180,7 @@ void *rgb_printer(void *ptr)
         printf("\n[RGB] Printing task with ID [%03d] collected\n Number waiting: %d\n\n", data.id, get_counter(&rgb_printer_machine->queue));
 
         long t0 = getCurrentMicroseconds();
-        print_task(RGB, data.pages, &rgb_printer_machine->pages_available, rgb_printer_machine);
+        print_task(RGB, data.pages, &rgb_printer_machine->pages_available, rgb_printer_machine, printer_machines->speed);
         long printing_time = getCurrentMicroseconds() - t0;
 
         printf("\n[RGB] Finished printing task with ID [%03d], time taken: %ld us, pages available: %d\n", data.id, printing_time, rgb_printer_machine->pages_available);
@@ -194,9 +194,11 @@ void *rgb_printer(void *ptr)
 
 void init_printer_machine(Printer *printer_machine, sheet_t color_type)
 {
+    
     printer_machine->type = color_type;
     printer_machine->pages_available = PAGES_PRINTER;
     printer_machine->n_history_saved = 0;
     printer_machine->n_paper_boxes = 0;
     inicializar_buffer(&printer_machine->queue);
+    srand(time(NULL));
 }
