@@ -7,6 +7,12 @@ libs = -lpthread
 
 MKDIR_P = mkdir -p
 
+all: build/project
+
 build/project:
 	${MKDIR_P} ${OUT_DIR}
 	${CC} ${main} ${src_deps} $(libs) -o ${OUT_DIR}/${OUT_NAME}
+
+.PHONY: clean
+clean:
+	@rm -f ./build/project

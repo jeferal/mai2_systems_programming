@@ -5,7 +5,7 @@ Consiste en un problema de concurrencia entre hilos de ejecución en C
 ### Compilación
 
 ```bash
-make
+make clean all
 ```
 
 ### Uso

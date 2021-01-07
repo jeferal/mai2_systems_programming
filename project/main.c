@@ -18,47 +18,7 @@ gcc -o build/project main.c buffer_struct/buffer_circular.c printer/printer.c -l
 //Global variable
 PrinterSystem printer_machines;
 
-void finish_process (int signal)
-{
-    sleep(2);
-    
-    printf("\n\n--------Finishing process--------\n\n");
-    printf("These tasks where launched { BN: %d, IND: %d, RGB: %d and %d prints each task }\n\n", N1, N2, N3, N_PRINTS);
-    printf("BN has printed %d tasks with these IDs:\n", printer_machines.bn_printer_machine.n_history_saved);
-    //Show IDs BN
-    for(int i=0; i<printer_machines.bn_printer_machine.n_history_saved; i++)
-    {
-        const char* type;
-        if (printer_machines.bn_printer_machine.history[i].color == BN)
-            type = "BN";
-        else if(printer_machines.bn_printer_machine.history[i].color == RGB)
-            type = "RGB";
-        else
-            type = "IND";
-        
-        printf("(%d - %s) ", printer_machines.bn_printer_machine.history[i].id, type);
-    }
-    printf("\nBN has consumed %d paper boxes\n", printer_machines.bn_printer_machine.n_paper_boxes);
-    
-    printf("\n\nRGB has printed %d tasks with these IDs:\n", printer_machines.rgb_printer_machine.n_history_saved);
-    for(int i=0; i<printer_machines.rgb_printer_machine.n_history_saved; i++)
-    {
-        const char* type;
-        if (printer_machines.rgb_printer_machine.history[i].color == BN)
-            type = "BN";
-        else if(printer_machines.rgb_printer_machine.history[i].color == RGB)
-            type = "RGB";
-        else
-            type = "IND";
-        printf("(%d - %s) ", printer_machines.rgb_printer_machine.history[i].id, type);
-    }
-    printf("\nRGB has consumed %d paper boxes\n", printer_machines.rgb_printer_machine.n_paper_boxes);
-
-    printf("\n--------Process finished--------\n\n");
-
-    exit(1);
-}
-
+void finish_process(int signal);
 
 int main(int argc, char *argv[])
 {   
@@ -125,7 +85,56 @@ int main(int argc, char *argv[])
     while ((printer_machines.bn_printer_machine.n_history_saved + printer_machines.rgb_printer_machine.n_history_saved < N1 + N2 + N3)
             && get_counter(&printer_machines.bn_printer_machine.queue) > 0 && get_counter(&printer_machines.rgb_printer_machine.queue) > 0);
 
-    finish_process(0);
+    finish_process(-1);
 
     exit(0);
+}
+
+
+void finish_process (int signal)
+{
+    sleep(2);
+    
+
+    printf("\n\n--------Finishing process--------\n\n");
+    printf("These tasks where launched { BN: %d, IND: %d, RGB: %d and %d prints each task }\n\n", N1, N2, N3, N_PRINTS);
+
+    if (signal==-1)
+        printf("Process has finished cleanly, all tasks have finished\n\n");
+    else 
+        printf("Signal %d catched, tasks remaining: %d\n\n", signal, (N1+N2+N3)*N_PRINTS-printer_machines.bn_printer_machine.n_history_saved + printer_machines.rgb_printer_machine.n_history_saved);
+
+    printf("BN has printed %d tasks with these IDs:\n", printer_machines.bn_printer_machine.n_history_saved);
+    //Show IDs BN
+    for(int i=0; i<printer_machines.bn_printer_machine.n_history_saved; i++)
+    {
+        const char* type;
+        if (printer_machines.bn_printer_machine.history[i].color == BN)
+            type = "BN";
+        else if(printer_machines.bn_printer_machine.history[i].color == RGB)
+            type = "RGB";
+        else
+            type = "IND";
+        
+        printf("(%d - %s) ", printer_machines.bn_printer_machine.history[i].id, type);
+    }
+    printf("\nBN has consumed %d paper boxes\n", printer_machines.bn_printer_machine.n_paper_boxes);
+    
+    printf("\n\nRGB has printed %d tasks with these IDs:\n", printer_machines.rgb_printer_machine.n_history_saved);
+    for(int i=0; i<printer_machines.rgb_printer_machine.n_history_saved; i++)
+    {
+        const char* type;
+        if (printer_machines.rgb_printer_machine.history[i].color == BN)
+            type = "BN";
+        else if(printer_machines.rgb_printer_machine.history[i].color == RGB)
+            type = "RGB";
+        else
+            type = "IND";
+        printf("(%d - %s) ", printer_machines.rgb_printer_machine.history[i].id, type);
+    }
+    printf("\nRGB has consumed %d paper boxes\n", printer_machines.rgb_printer_machine.n_paper_boxes);
+
+    printf("\n--------Process finished--------\n\n");
+
+    exit(1);
 }
