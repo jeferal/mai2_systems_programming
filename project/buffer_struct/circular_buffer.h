@@ -33,9 +33,9 @@ typedef struct buff{
 
 int get_item(WorkInfo *data, buff *Buffer_Circ);
 
-int put_item(WorkInfo data, buff *Buffer_Circ);
+int put_item(const WorkInfo data, buff *Buffer_Circ);
 
-int put_item_ind(WorkInfo data, buff *Buffer_circ_1, buff *Buffer_circ_2);
+int put_item_ind(const WorkInfo data, buff *Buffer_circ_1, buff *Buffer_circ_2);
 
 int show_content(const buff *Buffer_Circ);
 
@@ -51,6 +51,6 @@ int get_pages_queue(buff *Buffer_Circ);
 
 long getCurrentMicroseconds(void);
 
-int put_item_bn(WorkInfo data, buff *Buffer_circ_bn, buff *Buffer_circ_rgb);
+int put_item_bn(const WorkInfo data, buff *Buffer_circ_bn, buff *Buffer_circ_rgb);
 
 #endif

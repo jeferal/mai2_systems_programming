@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "buffer_circular.h"
+#include "circular_buffer.h"
 
 
 int get_item(WorkInfo *data, buff *Buffer_Circ){
@@ -22,7 +22,7 @@ int get_item(WorkInfo *data, buff *Buffer_Circ){
 }
 
 
-int put_item(WorkInfo data, buff *Buffer_Circ){
+int put_item(const WorkInfo data, buff *Buffer_Circ){
     /*
     Función para introducir un dato en la estructura
     */
@@ -110,7 +110,7 @@ int get_pages_queue(buff *Buffer_Circ)
     return n_pages_queue;
 }
 
-int put_item_ind(WorkInfo data, buff *Buffer_circ_bn, buff *Buffer_circ_rgb)
+int put_item_ind(const WorkInfo data, buff *Buffer_circ_bn, buff *Buffer_circ_rgb)
 {
     //Get queue time
     int time_bn = 1*get_pages_queue(Buffer_circ_bn);
@@ -148,7 +148,7 @@ int put_item_ind(WorkInfo data, buff *Buffer_circ_bn, buff *Buffer_circ_rgb)
 }
 
 
-int put_item_bn(WorkInfo data, buff *Buffer_circ_bn, buff *Buffer_circ_rgb)
+int put_item_bn(const WorkInfo data, buff *Buffer_circ_bn, buff *Buffer_circ_rgb)
 {
     if(is_empty(Buffer_circ_rgb))
     {

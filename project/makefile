@@ -2,7 +2,7 @@ OUT_NAME = project
 OUT_DIR = build
 CC = gcc
 main = main.c
-src_deps = buffer_struct/buffer_circular.c printer/printer.c
+src_deps = buffer_struct/circular_buffer.c printer/printer.c
 libs = -lpthread
 
 MKDIR_P = mkdir -p

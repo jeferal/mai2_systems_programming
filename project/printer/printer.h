@@ -3,7 +3,7 @@
 
 #include <stdlib.h>
 #include <pthread.h>
-#include "../buffer_struct/buffer_circular.h"
+#include "../buffer_struct/circular_buffer.h"
 
 #define PAGES_PRINTER 100
 
