@@ -15,7 +15,7 @@ cd build
 ```
 
 ```bash
-./project SPEED
+./project <SPEED>
 ```
 
 SPEED es un número entero entre 1 (velocidad normal de impresión) y 1000000 (velocidad más rápida)

@@ -1,7 +1,6 @@
 /*
 gcc -o build/project main.c buffer_struct/buffer_circular.c printer/printer.c -lpthread
 */
-//Create make file!!
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -86,8 +85,6 @@ int main(int argc, char *argv[])
             && get_counter(&printer_machines.bn_printer_machine.queue) > 0 && get_counter(&printer_machines.rgb_printer_machine.queue) > 0);
 
     finish_process(-1);
-
-    exit(0);
 }
 
 
@@ -143,5 +140,5 @@ void finish_process (int signal)
 
     printf("\n--------Process finished--------\n\n");
 
-    exit(1);
+    exit(signal);
 }
