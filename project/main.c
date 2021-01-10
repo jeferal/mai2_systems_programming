@@ -81,8 +81,8 @@ int main(int argc, char *argv[])
         pthread_join(ind_producer[i], NULL);
 
     //Wait consumers
-    while ((printer_machines.bn_printer_machine.n_history_saved + printer_machines.rgb_printer_machine.n_history_saved < N1 + N2 + N3)
-            && get_counter(&printer_machines.bn_printer_machine.queue) > 0 && get_counter(&printer_machines.rgb_printer_machine.queue) > 0);
+    while ((printer_machines.bn_printer_machine.n_history_saved + printer_machines.rgb_printer_machine.n_history_saved < (N1+N2+N3)*N_PRINTS)
+            || get_counter(&printer_machines.bn_printer_machine.queue) > 0 || get_counter(&printer_machines.rgb_printer_machine.queue) > 0);
 
     finish_process(-1);
 }

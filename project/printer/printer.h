@@ -5,11 +5,11 @@
 #include <pthread.h>
 #include "../buffer_struct/circular_buffer.h"
 
-#define PAGES_PRINTER 100
+#define PAGES_PRINTER 500
 
-#define N1 20   //Tasks BN (Thread)
-#define N2 20   //Tasks RGB (Thread)
-#define N3 20   //Tasks IND (Thread)
+#define N1 60   //Tasks BN (Threads)
+#define N2 20   //Tasks RGB (Threads)
+#define N3 100   //Tasks IND (Threads)
 #define N_PRINTS 20
 
 #define PG_MIN 20
@@ -18,7 +18,7 @@
 #define ID_MIN 0
 #define ID_MAX 1000
 
-#define HIST_SIZE 1000
+#define HIST_SIZE 10000
 
 #define SPEED 1000000
 
