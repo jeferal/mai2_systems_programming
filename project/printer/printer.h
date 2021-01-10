@@ -1,15 +1,20 @@
 #ifndef _PRINTER_H_
 #define _PRINTER_H_
 
+/*
+Estructuras que modelan la impresora y el sistema
+*/
+
+
 #include <stdlib.h>
 #include <pthread.h>
 #include "../buffer_struct/circular_buffer.h"
 
 #define PAGES_PRINTER 500
 
-#define N1 60   //Tasks BN (Threads)
+#define N1 100   //Tasks BN (Threads)
 #define N2 20   //Tasks RGB (Threads)
-#define N3 100   //Tasks IND (Threads)
+#define N3 50   //Tasks IND (Threads)
 #define N_PRINTS 20
 
 #define PG_MIN 20

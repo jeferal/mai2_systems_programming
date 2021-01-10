@@ -80,7 +80,7 @@ int main(int argc, char *argv[])
     for(int i=0; i<N3; i++)
         pthread_join(ind_producer[i], NULL);
 
-    //Wait consumers
+    //Wait all tasks
     while ((printer_machines.bn_printer_machine.n_history_saved + printer_machines.rgb_printer_machine.n_history_saved < (N1+N2+N3)*N_PRINTS)
             || get_counter(&printer_machines.bn_printer_machine.queue) > 0 || get_counter(&printer_machines.rgb_printer_machine.queue) > 0);
 
@@ -124,6 +124,7 @@ void finish_process (int signal)
     }
     printf("\nBN has consumed %d paper boxes\n", printer_machines.bn_printer_machine.n_paper_boxes);
     
+    //Show IDs RGB
     printf("\n\nRGB has printed %d tasks with these IDs:\n", printer_machines.rgb_printer_machine.n_history_saved);
     for(int i=0; i<printer_machines.rgb_printer_machine.n_history_saved; i++)
     {
