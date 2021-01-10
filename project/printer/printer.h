@@ -53,6 +53,6 @@ void show_task(const WorkInfo *task);
 
 void *bn_printer(void *ptr);
 void *rgb_printer(void *ptr);
-long print_task(const sheet_t color, const int pages, int *pages_available,  Printer *printer, const int speed);
+long print_task(const sheet_t color, const int pages,  Printer *printer, const int speed);
 
 #endif
