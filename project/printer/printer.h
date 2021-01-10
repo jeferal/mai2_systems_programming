@@ -14,7 +14,7 @@ Estructuras que modelan la impresora y el sistema
 
 #define N1 100   //Tasks BN (Threads)
 #define N2 20   //Tasks RGB (Threads)
-#define N3 50   //Tasks IND (Threads)
+#define N3 45   //Tasks IND (Threads)
 #define N_PRINTS 20
 
 #define PG_MIN 20
@@ -32,7 +32,7 @@ typedef struct Printer{
     sheet_t type;
     int pages_available;
     buff queue;
-    WorkInfo history[HIST_SIZE];
+    WorkInfo history[(N1+N2+N3)*N_PRINTS];
     int n_history_saved;
     int n_paper_boxes;
 } Printer;
