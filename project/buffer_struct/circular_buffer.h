@@ -51,6 +51,4 @@ int get_pages_queue(buff *Buffer_Circ);
 
 long getCurrentMicroseconds(void);
 
-int put_item_bn(const WorkInfo data, buff *Buffer_circ_bn, buff *Buffer_circ_rgb);
-
 #endif

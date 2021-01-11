@@ -12,13 +12,13 @@ Estructuras que modelan la impresora y el sistema
 
 #define PAGES_PRINTER 500
 
-#define N1 100   //Tasks BN (Threads)
-#define N2 20   //Tasks RGB (Threads)
-#define N3 45   //Tasks IND (Threads)
+#define N1 40   //Tasks BN (Threads)
+#define N2 10   //Tasks RGB (Threads)
+#define N3 10   //Tasks IND (Threads)
 #define N_PRINTS 20
 
-#define PG_MIN 20
-#define PG_MAX 100
+#define PG_MIN 10
+#define PG_MAX 200
 
 #define ID_MIN 0
 #define ID_MAX 1000

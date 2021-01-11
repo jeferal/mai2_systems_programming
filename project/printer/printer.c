@@ -88,8 +88,8 @@ void *bn_tasks(void *ptr)
         //Produce task
         WorkInfo print_sheets = produce_task(BN);
 
-        //Put the task in the buffer
-        put_item_bn(print_sheets, &printer_machines->bn_printer_machine.queue, &printer_machines->rgb_printer_machine.queue);
+        //Put the task in the buffer BN
+        put_item(print_sheets, &printer_machines->bn_printer_machine.queue);
 
         //Introduce task in the buffer
         show_task(&print_sheets);
@@ -110,7 +110,7 @@ void *rgb_tasks(void *ptr)
         //Produce task
         WorkInfo print_sheets = produce_task(RGB);
 
-        //Put the task in the buffer
+        //Put the task in the buffer RGB
         put_item(print_sheets, &rgb_printer_machine->queue);
 
         //Introduce task in the buffer
@@ -133,9 +133,9 @@ void *ind_tasks(void *ptr)
         //Produce task
         WorkInfo print_sheets = produce_task(IND);
 
+        //Introduce task in the buffer (RGB or BN)
         put_item_ind(print_sheets, &printer_machines->bn_printer_machine.queue, &printer_machines->rgb_printer_machine.queue);
         
-        //Introduce task in the buffer
         show_task(&print_sheets);
         //usleep(10000000/SPEED);
     }
@@ -178,13 +178,24 @@ void *rgb_printer(void *ptr)
     while(true)
     {
         WorkInfo data;
-        get_item(&data, &rgb_printer_machine->queue);
+        
+        //Si el buffer de la impresora RGB está vacío
+        if(is_empty(&rgb_printer_machine->queue)) {
+            //Procesa datos de la cola blanco y negro
+            printf("[RGB] Buffer vacío, procesando dato de la cola BN");
+            get_item(&data, &bn_printer_machine->queue);
+        }
+        else {
+            //Si no, procesa datos de su propia cola, RGB
+            get_item(&data, &rgb_printer_machine->queue);
+        }
 
         printf("\n[RGB] Printing task with ID [%03d] collected\n Number waiting: %d\n\n", data.id, get_counter(&rgb_printer_machine->queue));
 
         long time_taken = print_task(RGB, data.pages, rgb_printer_machine, printer_machines->speed);
 
         printf("\n[RGB] Finished printing task with ID [%03d], time taken: %ld us, pages available: %d\n", data.id, time_taken, rgb_printer_machine->pages_available);
+        
         //Save into history
         rgb_printer_machine->history[rgb_printer_machine->n_history_saved] = data;
         rgb_printer_machine->n_history_saved++;
